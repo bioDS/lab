@@ -27,6 +27,7 @@ title: People
 ### Project students
 
 - Kieran Elmes (Ranked phylogenetic trees)
+- Moizle Ocariza (Tumour evolution)
 - Tom Hanson (Tumour evolution)
 - Anna Redmond (Fitness landscapes, co-supervised by [Zhiyi Huang](https://www.otago.ac.nz/computer-science/people/otago675737.html))
 
