@@ -1,0 +1,55 @@
+==================================================================
+https://keybase.io/gavruskin
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of http://lab.gavruskin.com
+  * I am gavruskin (https://keybase.io/gavruskin) on keybase.
+  * I have a public key ASCvRJ96L15WFRwD6zLIeCldlqCVBjdr93ug8x0nlANaPwo
+
+To do so, I am signing this object:
+
+{
+  "body": {
+    "key": {
+      "eldest_kid": "0101b4ee37973437511b51f45d68d2348f6eba92d86e9c40b8fb7317daf7807025c30a",
+      "host": "keybase.io",
+      "kid": "0120af449f7a2f5e56151c03eb32c878295d96a09506376bf77ba0f31d2794035a3f0a",
+      "uid": "a0a6c88e659005a2277b3040aa5adb19",
+      "username": "gavruskin"
+    },
+    "merkle_root": {
+      "ctime": 1515071529,
+      "hash": "88381e3f1e8576ea8381b62890ab6f3faff71d1acf8f2ac7f7e4f6f1657a563d6c91b432318d162b2f0fd3be5135c94510fe5c0d8c008947a2d836d8df6699e9",
+      "hash_meta": "ae7e21e85f70eea084c0e6ad21af3f83433bb3c5e9b7f2167f4ebb9ec48462ec",
+      "seqno": 1886202
+    },
+    "service": {
+      "hostname": "lab.gavruskin.com",
+      "protocol": "http:"
+    },
+    "type": "web_service_binding",
+    "version": 1
+  },
+  "client": {
+    "name": "keybase.io go client",
+    "version": "1.0.38"
+  },
+  "ctime": 1515071568,
+  "expire_in": 504576000,
+  "prev": "0c019299d4acab844e646f8a1fe1a74e73cfd2e541cb6fb7e30e0cde5ea618e3",
+  "seqno": 20,
+  "tag": "signature"
+}
+
+which yields the signature:
+
+hKRib2R5hqhkZXRhY2hlZMOpaGFzaF90eXBlCqNrZXnEIwEgr0Sfei9eVhUcA+syyHgpXZaglQY3a/d7oPMdJ5QDWj8Kp3BheWxvYWTFA0p7ImJvZHkiOnsia2V5Ijp7ImVsZGVzdF9raWQiOiIwMTAxYjRlZTM3OTczNDM3NTExYjUxZjQ1ZDY4ZDIzNDhmNmViYTkyZDg2ZTljNDBiOGZiNzMxN2RhZjc4MDcwMjVjMzBhIiwiaG9zdCI6ImtleWJhc2UuaW8iLCJraWQiOiIwMTIwYWY0NDlmN2EyZjVlNTYxNTFjMDNlYjMyYzg3ODI5NWQ5NmEwOTUwNjM3NmJmNzdiYTBmMzFkMjc5NDAzNWEzZjBhIiwidWlkIjoiYTBhNmM4OGU2NTkwMDVhMjI3N2IzMDQwYWE1YWRiMTkiLCJ1c2VybmFtZSI6ImdhdnJ1c2tpbiJ9LCJtZXJrbGVfcm9vdCI6eyJjdGltZSI6MTUxNTA3MTUyOSwiaGFzaCI6Ijg4MzgxZTNmMWU4NTc2ZWE4MzgxYjYyODkwYWI2ZjNmYWZmNzFkMWFjZjhmMmFjN2Y3ZTRmNmYxNjU3YTU2M2Q2YzkxYjQzMjMxOGQxNjJiMmYwZmQzYmU1MTM1Yzk0NTEwZmU1YzBkOGMwMDg5NDdhMmQ4MzZkOGRmNjY5OWU5IiwiaGFzaF9tZXRhIjoiYWU3ZTIxZTg1ZjcwZWVhMDg0YzBlNmFkMjFhZjNmODM0MzNiYjNjNWU5YjdmMjE2N2Y0ZWJiOWVjNDg0NjJlYyIsInNlcW5vIjoxODg2MjAyfSwic2VydmljZSI6eyJob3N0bmFtZSI6ImxhYi5nYXZydXNraW4uY29tIiwicHJvdG9jb2wiOiJodHRwOiJ9LCJ0eXBlIjoid2ViX3NlcnZpY2VfYmluZGluZyIsInZlcnNpb24iOjF9LCJjbGllbnQiOnsibmFtZSI6ImtleWJhc2UuaW8gZ28gY2xpZW50IiwidmVyc2lvbiI6IjEuMC4zOCJ9LCJjdGltZSI6MTUxNTA3MTU2OCwiZXhwaXJlX2luIjo1MDQ1NzYwMDAsInByZXYiOiIwYzAxOTI5OWQ0YWNhYjg0NGU2NDZmOGExZmUxYTc0ZTczY2ZkMmU1NDFjYjZmYjdlMzBlMGNkZTVlYTYxOGUzIiwic2Vxbm8iOjIwLCJ0YWciOiJzaWduYXR1cmUifaNzaWfEQF5g/9dBnPjCmdQzDhdirlujDstUzMb67vQC4ZNsrHlLdCrtjQt4WMNwoSLJc+GMHBorMBjWgHcm5T8PKTgl2w+oc2lnX3R5cGUgpGhhc2iCpHR5cGUIpXZhbHVlxCCPH5o3T0d8al24wOXeYL+b1cD8aOMHBIA7bq9VJC1m7qN0YWfNAgKndmVyc2lvbgE=
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/gavruskin
+
+==================================================================

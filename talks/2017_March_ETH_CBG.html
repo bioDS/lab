@@ -1,0 +1,297 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<title>Gene interactions</title>
+	<meta name="author" content="Alex Gavryushkin">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+	<meta name="apple-mobile-web-app-capable" content="yes" />
+	<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+	<link rel="stylesheet" href="css/reveal.css">
+	<link rel="stylesheet" href="css/theme/simple_gavruskin_left.css" id="theme">
+	<link rel="stylesheet" href="lib/css/zenburn.css">
+	<!--[if lt IE 9]>
+	<script src="lib/js/html5shiv.js"></script>
+	<![endif]-->
+</head>
+
+<body>
+<div class="reveal">
+<div class="slides">
+
+<section data-background-image="images/ETH_image_covered_completely.svg">
+<div align="center">
+	<h2>Bayesian phylogenetics</h2>
+	<br>
+	<h3>Alex Gavryushkin</h3>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	March 20, 2017
+</div>
+</section>
+
+<section>
+	<h3>Phylogenetic tree</h3>
+	<img data-src="images/hyrax.svg" width="100%">
+	<br>
+	<div align="center">
+	<img class="fragment" data-src="images/hyrax_foto.jpg" width="40%" data-fragment-index="1">
+	</div>
+	<p class="fragment" data-fragment-index="1" style="font-size:10pt" align="center">
+	Image source: Wikipedia
+	</p>
+</section>
+
+<section>
+	<h3>(Discrete) Time tree</h3>
+	<img class="stretch" data-src="images/discreteTimeTree.pdf.png">
+</section>
+
+<section>
+        <h3>Sampled ancestor tree</h3>
+	<div align="center">
+        <img class="stretch" data-src="images/SampledAncestorTree.svg">
+	</div>
+</section>
+
+<section>
+        <h3>NNI graph</h3>
+	<div align="center">
+        <img class="stretch" data-src="images/NNI.svg" width="65%">
+	</div>
+</section>
+
+<section>
+	<h3>SPR graph</h3>
+	<img class="stretch" data-src="images/unrooted_SPR_def_Chris.svg">
+	<p style="font-size:10pt">
+	C. Whidden and E. Matsen. Calculating the unrooted Subtree Prune-and-Regraft distance. <i>arXiv preprint</i> arXiv:1511.07529 (2015).
+	</p>
+</section>
+
+<section>
+	<h3>Other phylogenetic graphs</h3>
+	<ul>
+	  <li> Lazy SPR
+	  <li> Tree Bisection and Reconnection
+	  <li> Subtree swapping
+	</ul>
+	<br>
+	<br>
+	<br>
+	Main trade-off: <u>local VS bold moves</u>
+	<br>
+	<br>
+	“Random subtree swapping is too bold to compete successfully with the other moves”
+	<br>
+	<br>
+	<p style="font-size:10pt">
+	Lakner et al. "Efficiency of Markov chain Monte Carlo tree proposals in Bayesian phylogenetics." <i>Systematic biology</i> 57.1 (2008): 86-103.
+	</p>
+</section>
+
+<section>
+	<img class="stretch" data-src="images/top_10_algorithms.png">
+	<img class="fragment" data-fragment-index="1" data-src="images/top_10_MCMC.png">
+	<p class="fragment fade-in" data-fragment-index="2">
+	<b>MCMC in a nutshell:</b><br>
+	Drunk version of the greedy search
+	</p>
+</section>
+
+<section>
+	<img align="center" width="75%" data-src="images/MCMC_proposal_comparison.png">
+	<p style="font-size:10pt">
+	Lakner et al. "Efficiency of Markov chain Monte Carlo tree proposals in Bayesian phylogenetics." <i>Systematic biology</i> 57.1 (2008): 86-103.
+	</p>
+</section>
+
+<section>
+	Despite expectations to the contrary, we could not detect any correlation between the difficulty of sampling the posterior and the number of taxa, the number of characters, or the number of trees in the 50% credible set.
+	<br>
+	[...]
+	<br>
+	Apparently, the exact shape of the posterior distribution was more important in determining the sampling difficulty of our data sets than factors such as tree size, number of characters, or number of trees in the credible set.
+	<br>
+	[...]
+	<br>
+	<br>
+	<br>
+	<p style="font-size:10pt">
+	Lakner et al. "Efficiency of Markov chain Monte Carlo tree proposals in Bayesian phylogenetics." <i>Systematic biology</i> 57.1 (2008): 86-103.
+	</p>
+</section>
+
+<section>
+	<h3>My take</h3>
+	<ul>
+	  <li> There is no best tree proposal — every proposal alone is pretty bad
+	  <li> When combined in a smart way, they can speed up convergence by orders of magnitude
+	  <li> Although the simple rule "first bold then local" is generally applicable, careful tuning of proposals' weights speeds up convergence
+	  <li> Combining and weighting proposals is still an art to a large extent, but a systematic approach is on the way:
+	</ul>
+	<br>
+	<br>
+	<p style="font-size:10pt">
+	G. Baele, P. Lemey, A. Rambaut, and M. Suchard. Adaptive MCMC in Bayesian Phylogenetics. <i>Bioinformatics,</i> 2017.
+	</p>
+</section>
+
+<section>
+        <h3>Why is this hard?</h3>
+	<div align="center">
+        Trees are many!
+        <br>
+	<br>
+        <img class="fragment" data-src="images/NNI_diameter.svg" data-fragment-index="1">
+	<p class="fragment" data-fragment-index="1">
+	But lots of other things are many &mdash; trees have complicated geometry
+	</p>
+	</div>
+</section>
+
+<section data-markdown>
+        <script type="text/template">
+                ### Let's look at the numbers
+                | $\hskip10mm n \hskip10mm$ | $\hskip2cm n! \hskip2cm$ | $\hskip1cm n\log n \hskip1cm$ |
+                |:-------:|:--------------------:|:----------------------:|
+                |    10   |   3,628,800          |          34            |
+                |    20   |$2.4\times 10^{18}$   |          87            |
+                |    30   |$2.6\times 10^{32}$   |         148            |
+                |	  |![](images/NNI_diameter.svg)|		  |
+        </script>
+</section>
+
+<section>
+	<h4>Different geometries and approximate algorithm</h4>
+	<img data-src="images/NNI_VS_rNNI.svg">
+	<br>
+	<br>
+	<p style="font-size:10pt">
+	Gavryushkin, Whidden, and Matsen. The Combinatorics of Discrete Time-Trees: Theory and Open Problems. Under review at <i>Journal of Mathematical Biology.</i> bioRxiv doi:10.1101/063362, 2016.
+	</p>
+</section>
+
+<section>
+	<h4>Why geometry matters?</h4>
+	<img data-src="images/MarsdenFSpicture.svg">
+	<br>
+	<br>
+	<p style="font-size:10pt">
+	[17] Gavryushkin and Drummond. The Space of Ultrametric Phylogenetic Trees. <i>Journal of Theoretical Biology</i> 403 (2016): 197–208.<br>
+	[49] Whidden and Matsen. Quantifying MCMC Exploration of Phylogenetic Tree Space. <i>Systematic Biology</i> 64 (3): 472–91, 2015.
+	</p>
+</section>
+
+<section>
+	<h3>Geometry helps solving the semi-convergence problem</h3>
+	<br>
+	Conventional approach:
+	<br>
+	<a href="http://king2.scs.fsu.edu/CEBProjects/awty/awty_start.php">http://king2.scs.fsu.edu/CEBProjects/awty/awty_start.php</a>
+	<br>
+	<br>
+	More recent approach:
+	<br>
+	<a href="https://github.com/danlwarren/RWTY">https://github.com/danlwarren/RWTY</a>
+	<br>
+	<br>
+	<p style="font-size:10pt">
+	D. Warren, A. Geneva, and R. Lanfear. RWTY (R We There Yet): An R Package for Examining Convergence of Bayesian Phylogenetic Analyses. <i>Molecular Biology and Evolution,</i> 2017.
+	</p>
+</section>
+
+<section>
+	<h3>Other options: Sequential Monte Carlo</h3>
+	Running phylogenetic SMC (PosetSMC) requires:
+	<br>
+	<br>
+	<ul>
+	  <li> Choice of proposal
+	  <li> Requires an extension of the density on trees to a density on forests
+	  <li> MCMC is generally defined as a metric, for SMC we need a richer structure of posets
+	</ul>
+	<p style="font-size:10pt">
+	A. Bouchard-Côté, S. Sankararaman, and M. Jordan. “Phylogenetic Inference via Sequential Monte Carlo.” <i>Systematic Biology</i> 61 (4), 579–93, 2012.
+	</p>
+</section>
+
+<section>
+	<h3>Other options: Sequential Monte Carlo</h3>
+	Differences between MCMC and SMC:
+	<br>
+	<br>
+	<ul>
+	  <li> New partial states obtained from the proposal distribution are always “accepted”
+	  <li> The weights of newly proposed states influence the chance each particle survives into the next iteration
+	  <li> Once full states have been created by PosetSMC, the algorithm terminates
+	  <li> PosetSMC is readily parallelized, simply by distributing particles across multiple processors
+	</ul>
+	<p style="font-size:10pt">
+	A. Bouchard-Côté, S. Sankararaman, and M. Jordan. “Phylogenetic Inference via Sequential Monte Carlo.” <i>Systematic Biology</i> 61 (4), 579–93, 2012.
+	</p>
+</section>
+
+<section>
+	<h4 align="center">Phylogenetic SMC (particle filtering)</h4>
+	<img data-src="images/SMC_summary.png" align="center" width="85%">
+	<p style="font-size:10pt">
+	A. Bouchard-Côté, S. Sankararaman, and M. Jordan. “Phylogenetic Inference via Sequential Monte Carlo.” <i>Systematic Biology</i> 61 (4), 579–93, 2012.
+	</p>
+</section>
+
+<section>
+	<h4 align="center">SMC versus MCMC running time</h4>
+	<img data-src="images/SMC_vs_MCMC_running_time.png">
+	<p style="font-size:10pt">
+	A. Bouchard-Côté, S. Sankararaman, and M. Jordan. “Phylogenetic Inference via Sequential Monte Carlo.” <i>Systematic Biology</i> 61 (4), 579–93, 2012.
+	</p>
+</section>
+
+<section>
+	<h3>Other options:<br>
+	Hamiltonian Monte Carlo</h3>
+	<ul>
+	  <li> Use the idea of Hamiltonian dynamics to speed up the valley traversal
+	  <li> Outperforms MCMC on (Euclidean) manifolds by up to two orders of magnitude
+	  <li> Good for branch length inference (e.g.&nbsp;dating)
+	  <li> Tuning-sensitive + many parameters to tune
+	  <li> Few standard implementations
+	  <li> No standard phylogenetic implementation
+	</ul>
+</section>
+
+<section>
+	<h3>Phylogenetic HMC</h3>
+	<img data-src="images/HMC_Erick.png">
+	<p style="font-size:10pt">
+	V. Dinh, A. Bilge, C. Zhang, and E. Matsen. “Probabilistic Path Hamiltonian Monte Carlo.” <i>arXiv [q-bio.PE],</i> 2017, http://arxiv.org/abs/1702.07814
+	</p>
+</section>
+
+<section data-background-image="images/MCEB_2017_logo.png">
+</section>
+
+</div>
+</div>
+
+<script src="lib/js/head.min.js"></script>
+<script src="js/reveal.js"></script>
+<script>
+  Reveal.initialize({
+    dependencies: [
+        // Interpret Markdown in <section> elements
+        { src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+        { src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+        // MathJax
+        { src: 'plugin/math/math.js', async: true }
+    ]
+  });
+</script>
+</body>
+</html>

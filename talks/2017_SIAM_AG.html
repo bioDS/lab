@@ -1,0 +1,425 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<title>Polyhedral complexes in evolutionary biology - Alex Gavryushkin</title>
+	<meta name="author" content="Alex Gavryushkin">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+	<meta name="apple-mobile-web-app-capable" content="yes" />
+	<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+	<link rel="stylesheet" href="css/reveal.css">
+	<link rel="stylesheet" href="css/theme/simple_gavruskin_left.css" id="theme">
+	<link rel="stylesheet" href="lib/css/zenburn.css">
+	<!--[if lt IE 9]>
+	<script src="lib/js/html5shiv.js"></script>
+	<![endif]-->
+</head>
+
+<body>
+<div class="reveal">
+<div class="slides">
+
+<section data-background-image="images/ETH_image_covered_completely_non_transparent.svg">
+<div align="center">
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<h4>Polyhedral complexes in phylogenetics<br>
+	and gene interaction studies</h4>
+	<h4>Alex Gavryushkin</h4>
+	<font size="5">August 1, 2017</font>
+</div>
+</section>
+
+<section>
+	<h3>Phylogenetics</h3>
+	<h4>Input:</h4>
+	<ul>
+	  <li> Evolutionary model
+	  <li> Data (amino acid sequences, sampling times, geographic information, transmission information, etc.)
+	</ul>
+	<br>
+	<br>
+	<h4>Output:</h4>
+	<img data-src="images/hyrax_phylo_c.svg" width="60%" align="center">
+</section>
+
+<section>
+	<h3>Time trees</h3>
+	<img data-src="images/discreteTimeTree.pdf.png">
+</section>
+
+<section>
+	<img data-src="images/discreteTimeTree.pdf.png">
+	<div align="center" style="font-size:20pt">
+	Two possible parameterizations:<br>
+	<ul>
+	  <li> Absolute (calendar) time, as above
+	  <li> Distance between evolutionary events
+	</ul>
+	<div>
+</section>
+
+<section>
+	<div align="center">
+	  <h4>Distance between evolutionary events ($\tau$-space)</h4>
+	  <img data-src="images/tauSpace.svg"><br>
+	  <font size="2">Gavryushkin, Alex, and Alexei J. Drummond. "The space of ultrametric phylogenetic trees." <i>Journal of theoretical biology</i> 403 (2016): 197-208.</font>
+	</div>
+</section>
+
+<section>
+	<div align="center">
+	  <img data-src="images/tauSpace.svg" width="55%">
+	</div>
+	<b>Theorem 1.</b> $\tau$-space is non-positively curved cubical complex, that is, piecewise Euclidean geodesics are unique.
+	<br><br>
+	<b>Theorem 2.</b> Geodesics in $\tau$-space are computable in $\mathcal O(n^4)$ time, where $n$ is the number of leaves.
+	<br>
+	<font size="4">Implementation: <a href="https://github.com/gavruskin/tauGeodesic">https://github.com/gavruskin/tauGeodesic</a></font>
+	<br>
+	<font size="2">Gavryushkin, Alex, and Alexei J. Drummond. "The space of ultrametric phylogenetic trees." <i>Journal of theoretical biology</i> 403 (2016): 197-208.</font>
+</section>
+
+<section data-background-image="images/penguin_emperor_background.svg">
+	<div style="font-size:10pt">
+	<ul>
+	  <li> Gavryushkin, Alex, and Alexei J. Drummond. "The space of ultrametric phylogenetic trees."
+	  <li> Gavryushkin, Alex, and Alexei Drummond. <i>tauGeodesic</i>. Mar. 2015. doi: 10.5281/zenodo.47152.
+	  <li> Gavryushkina, Alexandra, Tracy A. Heath, Daniel T. Ksepka, Tanja Stadler,
+	  David Welch, and Alexei J. Drummond.
+	  "Bayesian total-evidence dating reveals the recent crown radiation of penguins."
+	  <i>Systematic Biology</i> 66.1 (2016): 57-73.
+	<a href="https://github.com/gavruskin/tauGeodesic">https://github.com/gavruskin/tauGeodesic</a>
+	</ul>
+	<img data-src="images/trees_penguins.gif" width="60%">
+	<div>
+</section>
+
+<section>
+	<div align="center">
+	  <h4>Absolute time of evolutionary events (t-space)</h4>
+	  <img data-src="images/tau_2.png" width="55%">
+	</div>
+</section>
+
+<section>
+	<div align="center">
+	  <h4>Absolute time of evolutionary events (t-space)</h4>
+	  <img data-src="images/tau_4.png" width="55%">
+	</div>
+</section>
+
+<section>
+	<div align="center">
+	  <h4>Absolute time of evolutionary events (t-space)</h4>
+	  <img data-src="images/tau_3.png" width="55%">
+	</div>
+</section>
+
+<section>
+	<div align="center">
+	<img data-src="images/tau_3.png" width="55%">
+	</div>
+	<b>Theorem 3.</b> t-space is a non-positively curved simplicial complex.
+	<br><br>
+	<b>Question 1.</b> What is the complexity of computing geodesics in t-space?
+	<br>
+	<font size="2">Gavryushkin, Alex, and Alexei J. Drummond. "The space of ultrametric phylogenetic trees." <i>Journal of theoretical biology</i> 403 (2016): 197-208.</font>
+</section>
+
+<section>
+	<div align="center">
+	  <img data-src="images/DtT_with_rank_move.pdf.png" width="60%">
+	</div>
+	<b>Observation.</b> The discrete component of t-space is a new graph on phylogenetic trees, geometrically and algorithmically different from all those previously known in phylogenetics, including NNI, SPR, and TBR.
+	<br>
+	<p style="font-size:10pt">
+	  Gavryushkin, Alex, Chris Whidden, and Frederick Matsen. "The combinatorics of discrete time-trees: theory and open problems." <i>Journal of Mathematical Biology,</i> (2017), DOI <a href="https://doi.org/10.1007/s00285-017-1167-9">10.1007/s00285-017-1167-9</a>
+	</p>
+</section>
+
+<section>
+	<div align="center">
+	  <img data-src="images/NNI_VS_rNNI.svg">
+	</div>
+	<b>Note.</b> All previously known graph-distances, including NNI, SPR, and TBR, on phylogenetic trees are NP-hard to compute.
+	<br>
+	<br>
+	<p class="fragment" data-fragment-index="1">
+	  <b>Question 2.</b> Is the ranked NNI graph-distance (as above) polynomial-time computable?
+	</p>
+	<br>
+	<p style="font-size:10pt">
+	  Gavryushkin, Alex, Chris Whidden, and Frederick Matsen. "The combinatorics of discrete time-trees: theory and open problems." <i>Journal of Mathematical Biology,</i> (2017), DOI <a href="https://doi.org/10.1007/s00285-017-1167-9">10.1007/s00285-017-1167-9</a>
+	</p>
+</section>
+
+<section>
+	<h3>Genetic interactions</h3>
+	<ul>
+	  <li> All commonly used models of sequence evolution assume independence between sites.
+	  <li class="fragment"> However, there is biological evidence that in many cases sites are not independent.
+	  <li class="fragment">Furthermore, this non-independence is used more and more widely, e.g. in drug discovery and design using synthetic lethal gene pairs.
+	</ul>
+	<img class="fragment" data-src="images/synthetic_lethality_grey.svg">
+</section>
+
+<section>
+	We consider $n$ <b>biallelic</b> loci, for different $n$.
+	<p>
+	  That is, the set of genotypes is $\mathcal G = \{0,1\}^{n}$.
+	</p>
+	<p>
+	  A <i>fitness landscape</i> is a function $w:\mathcal G \to \mathbb R^+$.
+	</p>
+	<p>
+	  For $g \in \mathcal G$, &ensp;$w(g)$ is called the <i>fitness</i> of genotype $g$ and denoted $w_g$.
+	</p>
+</section>
+
+<section>
+	<h3>
+	Epistasis, or gene interaction,
+	</h3>
+	is defined as the deviation from the additive expectation of allelic effects:
+	$$u_{11} = w_{00} + w_{11} - (w_{01} + w_{10})$$
+</section>
+
+<section>
+	<h4>Higher order interactions: interaction coordinates</h4>
+	<br>
+	$$
+	\scriptsize
+	\begin{align*}
+	u_{011}&= w_{000}+w_{100}+w_{011}+w_{111}−(w_{001}+w_{101})−(w_{010}+w_{110})\\
+	u_{101}&= w_{000}+w_{010}+w_{101}+w_{111}−(w_{001}+w_{011})−(w_{100}+w_{110})\\
+	u_{110}&= w_{000}+w_{001}+w_{110}+w_{111}−(w_{010}+w_{011})−(w_{100}+w_{101})\\
+	u_{111}&= w_{000}+w_{011}+w_{101}+w_{110}−(w_{001}+w_{010}+w_{100}+w_{111})\\
+	\end{align*}
+	$$
+	<br>
+	<br>
+	<p style="font-size:10pt">
+	Beerenwinkel, Niko, Lior Pachter, and Bernd Sturmfels. "Epistasis and shapes of fitness landscapes." <i>Statistica Sinica</i> (2007): 1317-1342.
+	</p>
+</section>
+
+<section>
+	<h4>Higher order interactions: circuits</h4>
+	$$
+	\scriptsize
+	\begin{align*}
+	a&= w_{000}-w_{010}-w_{100}+w_{110} & m&=w_{001}+w_{010}+w_{100}-w_{111}-2w_{000}\\
+	b&=w_{001}-w_{011}-w_{101}+w_{111} & n&=w_{011}+w_{101}+w_{110}-w_{000}-2w_{111}\\
+	c&=w_{000}-w_{001}-w_{100}+w_{101} & o&=w_{010}+w_{100}+w_{111}-w_{001}-2w_{110}\\
+	d&=w_{010}-w_{011}-w_{110}+w_{111} & p&=w_{000}+w_{011}+w_{101}-w_{110}-2w_{001}\\
+	e&=w_{000}-w_{001}-w_{010}+w_{011} & q&=w_{001}+w_{100}+ w_{111}-w_{010}-2w_{101}\\
+	f&=w_{100}-w_{101}-w_{110}+w_{111} & r&=w_{000}+w_{011}+ w_{110}-w_{101}-2w_{010}\\
+	g&=w_{000}-w_{011}-w_{100}+w_{111} & s&=w_{000}+w_{101}+ w_{110}-w_{011}-2w_{100}\\
+	h&=w_{001}-w_{010}-w_{101}+w_{110} & t&=w_{001}+w_{010}+w_{111}-w_{100}-2w_{011}\\
+	i&=w_{000}-w_{010}-w_{101}+w_{111}\\
+	j&=w_{001}-w_{011}-w_{100}+w_{110}\\
+	k&=w_{000}-w_{001}-w_{110}+w_{111}\\
+	l&=w_{010}-w_{011}-w_{100}+w_{101}\\
+	\end{align*}
+	$$
+	<p style="font-size:10pt">
+	Beerenwinkel, Niko, Lior Pachter, and Bernd Sturmfels. "Epistasis and shapes of fitness landscapes." <i>Statistica Sinica</i> (2007): 1317-1342.
+	</p>
+</section>
+
+<section>
+<section>
+	<h3><u>Problem:</u> What if no (credible) fitness measurements are available?</h3>
+	<p align="center">
+	Like in this malaria drug resistance data set:
+	<img class="stretch" data-src="images/tem.svg" align="center">
+	<br>
+	<font size="3">Ogbunugafor et al. <i>Malar. J.</i> 2016</font>
+	</p>
+</section>
+
+<section>
+	<h3>Why is fitness hard to measure?</h3>
+	<div align="center">
+	<img data-src="images/disc_diffusion.png" align="center">
+	</div>
+	<div align="center">
+	<font size="3"><a href="https://en.wikipedia.org/wiki/Agar_diffusion_test">Wikipedia</a></font>
+	</div>
+</section>
+</section>
+
+<section>
+	<h3>When partial order implies interaction?</h3>
+	<br>
+	We say that a partial order $\prec$ on the set of genotypes $\mathcal G = \{g_1,\ldots, g_m\}$ implies positive $f$-interaction if
+	\[
+	f(w_{g_1},\ldots, w_{g_m}) > 0
+	\]
+	whenever the genotypes $\mathcal G$ are ordered according to $\prec$.
+</section>
+
+<section>
+	  <b>Theorem 1.</b> Let $f$ be a linear form with integer coefficients.
+	  Assume that the sum of the coefficients of $f$ is zero.
+	  Then a linear order $L$ implies $f$-interaction iff the signs of coefficients of $f$ ordered according to $L$ form a Dyck word.
+	<p class="fragment" data-fragment-index="1">
+	  <b>Theorem 2.</b> A partial order implies $f$-interaction exactly if all its total extensions do.
+	</p>
+	<p class="fragment" data-fragment-index="2">
+	  Let $N$ be the set of genotypes with negative coefficients in $f$ and $P$ with positive.
+	  We can think of a partial order $\prec$ as of a directed bipartite graph $G$ on $N \cup P$.
+	</p>
+	<p class="fragment" data-fragment-index="3">
+	  <b><s>Conjecture 3.</s> Theorem 3.</b> A partial order $\prec$ implies interaction iff the graph $G$ has a perfect matching.
+	</p>
+	<p class="fragment" data-fragment-index="3">
+	<font size="3">
+	Crona, Gavryushkin, Greene, and Beerenwinkel. Inferring genetic interactions from comparative fitness data. <i>bioRxiv.</i> <i>eLife,</i> under revision.<br>
+	Lienkaemper, Drain, Lamberti, and Gavryushkin. Inferring genetic interactions from partial fitness orders. <i>bioRxiv,</i> to appear this month.
+	</font>
+	</p>
+</section>
+
+<section>
+	<h3>Major challenges</h3>
+	<br>
+	<br>
+	<div align="center">
+	What do we do when $n$ is large?
+	<br>
+	<br>
+	<ul>
+	  <li> Triangulations of the convex hull?
+	  <li> What are the canonical interactions?
+	  <li> How to interpret the result?
+	</ul>
+	</div>
+</section>
+
+<section>
+	<h3>Applications</h3>
+	<ul>
+	<li> <p>HIV-1</p>
+	<li> <p class="fragment highlight-blue">Antibiotic resistance</p>
+	<li> <p>Gut microbiome (with Will Ludington, UC Berkeley)</p>
+	<li> <p>Synthetic lethality</p>
+	<li> <p>Knockdown cell lines</p>
+	</ul>
+	<div align="left">
+	<p class="fragment" data-fragment-index="1">
+	Methodologically, this allows us to advise further measurements (experiments) for incomplete data sets, thus reducing the number of potential experiments significantly.
+	</p>
+	</div>
+</section>
+
+<section data-transition="slide-in fade-out">
+	<img class="stretch" data-src="images/tem_for_Niko.svg">
+</section>
+
+<section data-transition="fade-in fade-out">
+	<img class="stretch" data-src="images/tem_highlight_for_Niko.svg">
+</section>
+
+<section data-transition="fade-in slide-out">
+	<img class="stretch" data-src="images/tem_highlight_shaded.svg">
+</section>
+
+<section>
+	<img class="stretch" data-src="images/tem_order.svg">
+</section>
+
+<section>
+	<img class="stretch" data-src="images/tem_order_extension.svg">
+	$\small f(\bar w) = w_{000} + w_{011} + w_{101} + w_{110} - w_{001} - w_{010} - w_{100} - w_{111}$
+</section>
+
+<section>
+	<h3>Want to learn more?</h3>
+	We've got you covered!<br><br>
+	<ul>
+	<li> All my talks (including this one) are at<br>
+	<a href="http://alex.gavruskin.com/talks">http://alex.gavruskin.com/talks</a><br><br>
+	<li> Papers are at<br>
+	<a href="http://alex.gavruskin.com/publications">http://alex.gavruskin.com/publications</a><br><br>
+	<li> Software (and manuscripts in-progress) here:<br>
+	<a href="https://github.com/gavruskin">https://github.com/gavruskin</a><br><br>
+	</ul>
+</section>
+
+<section>
+	<h3>References</h3>
+	<font size="5">
+	<ul>
+	  <li> Gavryushkin, Alex, and Alexei J. Drummond. "The space of ultrametric phylogenetic trees."
+	    <i>Journal of Theoretical Biology</i> 403 (2016): 197-208.<br><br>
+	  <li> Gavryushkin, Alex, Chris Whidden, and Frederick A. Matsen. "The combinatorics of discrete time-trees: theory and open problems."
+	    <i>Journal of Mathematical Biology,</i> (2017), doi: <a href="http://dx.doi.org/10.1007/s00285-017-1167-9">http://dx.doi.org/10.1007/s00285-017-1167-9</a>.<br><br>
+	  <li> Beerenwinkel, Niko, Lior Pachter, and Bernd Sturmfels.
+	    "Epistasis and shapes of fitness landscapes."
+	    <i>Statistica Sinica</i> (2007): 1317-1342.<br><br>
+	  <li> Crona, Kristina, Alex Gavryushkin, Devin Greene, and Niko Beerenwinkel.
+	    "Inferring genetic interaction from comparative fitness data."
+	    <i>bioRxiv,</i> doi: <a href="http://dx.doi.org/10.1101/137372">http://dx.doi.org/10.1101/137372</a>.<br><br>
+	  <li> Lienkaemper, Caitlin, James Drain, Lisa Lamberti, and Alex Gavryushkin.
+	    "Inferring genetic interactions from partial fitness orders."
+	    <i>bioRxiv,</i> to appear this month.
+	</ul>
+	</font>
+</section>
+
+<section>
+	<div align="center">
+	<h4>Acknowledgments</h4>
+	  <font size="5">
+	<ul>
+	  <li> Alexei Drummond, University of Auckland
+	  <li> Niko Beerenwinkel, ETH Zürich
+	  <li> Bernd Sturmfels, Max Planck Institute Leipzig
+	  <li> Kristina Crona, American University
+	  <li> Devin Greene, American University
+	  <li> Lisa Lamberti, ETH Zürich
+	  <li> Caitlin Lienkaemper, Max Planck Institute Leipzig
+	</ul>
+	  </font>
+        <img data-src="images/funding_Auckland_ETH_SiB.svg" width="60%">
+	</div>
+</section>
+
+<section data-transition="fade-in" data-autoslide="1000" data-background-image="images/ethKuppel.svg">
+	<h3>
+	Thanks for your attention!<br>
+	<br>
+	<br>
+	<p class="fragment slide-in" data-autoslide="1000">and stay tuned</p>
+	</h3>
+</section>
+
+</div>
+</div>
+
+<script src="lib/js/head.min.js"></script>
+<script src="js/reveal.js"></script>
+<script>
+  Reveal.initialize({
+    dependencies: [
+	// Speaker notes
+	{ src: 'plugin/notes/notes.js', async: true },
+        // Interpret Markdown in <section> elements
+        { src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+        { src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+        // MathJax
+        { src: 'plugin/math/math.js', async: true }
+    ]
+  });
+  Reveal.configure({ slideNumber: true });
+</script>
+</body>
+</html>

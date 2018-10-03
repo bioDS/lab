@@ -1,0 +1,417 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="451.55029mm"
+   height="65.030762mm"
+   viewBox="0 0 1599.9814 230.42396"
+   id="svg2"
+   version="1.1"
+   inkscape:version="0.91 r13725"
+   sodipodi:docname="synthetic_lethality_grey.svg">
+  <defs
+     id="defs4" />
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="0.72597656"
+     inkscape:cx="821.01393"
+     inkscape:cy="-90.897065"
+     inkscape:document-units="px"
+     inkscape:current-layer="layer1"
+     showgrid="false"
+     inkscape:window-width="1920"
+     inkscape:window-height="1200"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     fit-margin-top="0"
+     fit-margin-left="0"
+     fit-margin-right="0"
+     fit-margin-bottom="0" />
+  <metadata
+     id="metadata7">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(746.09601,-39.07721)">
+    <g
+       id="g4247"
+       transform="translate(-717.01695,-46.21472)">
+      <g
+         inkscape:label="Layer 1"
+         id="layer1-6"
+         transform="matrix(0.117549,0,0,0.117549,-1.8964033,259.68815)">
+        <g
+           id="g7404"
+           transform="matrix(7.545273,0,0,7.545273,-5983.2438,-2611.6783)">
+          <circle
+             style="fill:#f0f0f0;fill-opacity:1;stroke:#505050;stroke-width:2;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+             id="circle6096"
+             r="65.266655"
+             cx="940.96454"
+             cy="324.36865" />
+          <ellipse
+             style="fill:#505050;fill-opacity:1"
+             rx="8.1583309"
+             ry="13.053329"
+             cx="921.38452"
+             cy="301.52533"
+             id="ellipse6101" />
+          <ellipse
+             transform="scale(-1,1)"
+             id="ellipse6173"
+             cy="301.52533"
+             cx="-960.54449"
+             ry="13.053329"
+             rx="8.1583309"
+             style="fill:#505050;fill-opacity:1" />
+          <path
+             id="path6107"
+             d="m 901.80453,340.68534 a 44.054988,44.054988 0 0 0 78.31998,0 42.423322,42.423322 0 0 1 -78.31998,0"
+             inkscape:connector-curvature="0"
+             style="fill:none;stroke:#505050;stroke-width:2.44749928;stroke-opacity:1" />
+        </g>
+      </g>
+      <g
+         id="g4241">
+        <text
+           xml:space="preserve"
+           style="font-style:normal;font-weight:normal;font-size:35px;line-height:0.99999998%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+           x="-31.044388"
+           y="120.88412"
+           id="text4233"
+           sodipodi:linespacing="0.99999998%"><tspan
+             sodipodi:role="line"
+             id="tspan4235"
+             x="-31.044388"
+             y="120.88412">Gene A</tspan></text>
+        <text
+           xml:space="preserve"
+           style="font-style:normal;font-weight:normal;font-size:35px;line-height:0.99999998%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+           x="162.69679"
+           y="120.88412"
+           id="text4237"
+           sodipodi:linespacing="0.99999998%"><tspan
+             sodipodi:role="line"
+             id="tspan4239"
+             x="162.69679"
+             y="120.88412">Gene B</tspan></text>
+      </g>
+    </g>
+    <g
+       id="g4681"
+       transform="translate(-4.060201,0)">
+      <g
+         inkscape:label="Layer 1"
+         id="layer1-6-5"
+         transform="matrix(0.117549,0,0,0.117549,-293.10505,213.47343)">
+        <g
+           id="g7404-3"
+           transform="matrix(7.545273,0,0,7.545273,-5983.2438,-2611.6783)">
+          <circle
+             style="fill:#f0f0f0;fill-opacity:1;stroke:#505050;stroke-width:2;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+             id="circle6096-5"
+             r="65.266655"
+             cx="940.96454"
+             cy="324.36865" />
+          <ellipse
+             style="fill:#505050;fill-opacity:1"
+             rx="8.1583309"
+             ry="13.053329"
+             cx="921.38452"
+             cy="301.52533"
+             id="ellipse6101-6" />
+          <ellipse
+             transform="scale(-1,1)"
+             id="ellipse6173-2"
+             cy="301.52533"
+             cx="-960.54449"
+             ry="13.053329"
+             rx="8.1583309"
+             style="fill:#505050;fill-opacity:1" />
+          <path
+             id="path6107-9"
+             d="m 901.80453,340.68534 a 44.054988,44.054988 0 0 0 78.31998,0 42.423322,42.423322 0 0 1 -78.31998,0"
+             inkscape:connector-curvature="0"
+             style="fill:none;stroke:#505050;stroke-width:2.44749928;stroke-opacity:1" />
+        </g>
+      </g>
+      <text
+         sodipodi:linespacing="0.99999998%"
+         id="text4237-0"
+         y="74.669395"
+         x="-128.51186"
+         style="font-style:normal;font-weight:normal;font-size:35px;line-height:0.99999998%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+         xml:space="preserve"><tspan
+           y="74.669395"
+           x="-128.51186"
+           id="tspan4239-9"
+           sodipodi:role="line">Gene B</tspan></text>
+      <g
+         id="g4674">
+        <text
+           xml:space="preserve"
+           style="font-style:normal;font-weight:normal;font-size:35px;line-height:0.99999998%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+           x="-322.25305"
+           y="74.669395"
+           id="text4233-2"
+           sodipodi:linespacing="0.99999998%"><tspan
+             sodipodi:role="line"
+             id="tspan4235-7"
+             x="-322.25305"
+             y="74.669395">Gene A</tspan></text>
+        <g
+           id="g4402"
+           transform="translate(0.56902872,-2.9243856)">
+          <rect
+             transform="matrix(0.96592583,-0.25881905,0.25881905,0.96592583,0,0)"
+             y="-6.2578111"
+             x="-346.7984"
+             height="4.1323647"
+             width="161.16223"
+             id="rect4385"
+             style="opacity:1;fill:#000000;fill-opacity:0.98039216;fill-rule:evenodd;stroke:none;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:6, 6;stroke-dashoffset:0;stroke-opacity:1" />
+          <rect
+             transform="matrix(0.96592583,0.25881904,-0.25881904,0.96592583,0,0)"
+             y="127.4124"
+             x="-313.22784"
+             height="4.1323647"
+             width="161.16223"
+             id="rect4385-1"
+             style="opacity:1;fill:#000000;fill-opacity:0.98039216;fill-rule:evenodd;stroke:none;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:6, 6;stroke-dashoffset:0;stroke-opacity:1" />
+        </g>
+      </g>
+    </g>
+    <g
+       id="g4704"
+       transform="translate(-73.967209,0)">
+      <g
+         inkscape:label="Layer 1"
+         id="layer1-6-6"
+         transform="matrix(0.117549,0,0,0.117549,182.80563,213.47343)">
+        <g
+           id="g7404-0"
+           transform="matrix(7.545273,0,0,7.545273,-5983.2438,-2611.6783)">
+          <circle
+             style="fill:#f0f0f0;fill-opacity:1;stroke:#505050;stroke-width:2;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+             id="circle6096-6"
+             r="65.266655"
+             cx="940.96454"
+             cy="324.36865" />
+          <ellipse
+             style="fill:#505050;fill-opacity:1"
+             rx="8.1583309"
+             ry="13.053329"
+             cx="921.38452"
+             cy="301.52533"
+             id="ellipse6101-2" />
+          <ellipse
+             transform="scale(-1,1)"
+             id="ellipse6173-6"
+             cy="301.52533"
+             cx="-960.54449"
+             ry="13.053329"
+             rx="8.1583309"
+             style="fill:#505050;fill-opacity:1" />
+          <path
+             id="path6107-1"
+             d="m 901.80453,340.68534 a 44.054988,44.054988 0 0 0 78.31998,0 42.423322,42.423322 0 0 1 -78.31998,0"
+             inkscape:connector-curvature="0"
+             style="fill:none;stroke:#505050;stroke-width:2.44749928;stroke-opacity:1" />
+        </g>
+      </g>
+      <text
+         sodipodi:linespacing="0.99999998%"
+         id="text4233-7"
+         y="74.669395"
+         x="153.65764"
+         style="font-style:normal;font-weight:normal;font-size:35px;line-height:0.99999998%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+         xml:space="preserve"><tspan
+           y="74.669395"
+           x="153.65764"
+           id="tspan4235-9"
+           sodipodi:role="line">Gene A</tspan></text>
+      <g
+         id="g4697">
+        <text
+           xml:space="preserve"
+           style="font-style:normal;font-weight:normal;font-size:35px;line-height:0.99999998%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+           x="347.39883"
+           y="74.669395"
+           id="text4237-2"
+           sodipodi:linespacing="0.99999998%"><tspan
+             sodipodi:role="line"
+             id="tspan4239-0"
+             x="347.39883"
+             y="74.669395">Gene B</tspan></text>
+        <g
+           id="g4402-9"
+           transform="translate(669.16134,-2.9243856)">
+          <rect
+             transform="matrix(0.96592583,-0.25881905,0.25881905,0.96592583,0,0)"
+             y="-6.2578111"
+             x="-346.7984"
+             height="4.1323647"
+             width="161.16223"
+             id="rect4385-4"
+             style="opacity:1;fill:#000000;fill-opacity:0.98039216;fill-rule:evenodd;stroke:none;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:6, 6;stroke-dashoffset:0;stroke-opacity:1" />
+          <rect
+             transform="matrix(0.96592583,0.25881904,-0.25881904,0.96592583,0,0)"
+             y="127.4124"
+             x="-313.22784"
+             height="4.1323647"
+             width="161.16223"
+             id="rect4385-1-7"
+             style="opacity:1;fill:#000000;fill-opacity:0.98039216;fill-rule:evenodd;stroke:none;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:6, 6;stroke-dashoffset:0;stroke-opacity:1" />
+        </g>
+      </g>
+    </g>
+    <g
+       id="g4734"
+       transform="translate(-173.99999,0)">
+      <g
+         id="g4720">
+        <text
+           xml:space="preserve"
+           style="font-style:normal;font-weight:normal;font-size:35px;line-height:0.99999998%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+           x="692.24249"
+           y="74.669395"
+           id="text4233-6"
+           sodipodi:linespacing="0.99999998%"><tspan
+             sodipodi:role="line"
+             id="tspan4235-1"
+             x="692.24249"
+             y="74.669395">Gene A</tspan></text>
+        <g
+           id="g4402-9-8"
+           transform="translate(1015.0646,-2.9243856)">
+          <rect
+             transform="matrix(0.96592583,-0.25881905,0.25881905,0.96592583,0,0)"
+             y="-6.2578111"
+             x="-346.7984"
+             height="4.1323647"
+             width="161.16223"
+             id="rect4385-4-4"
+             style="opacity:1;fill:#000000;fill-opacity:0.98039216;fill-rule:evenodd;stroke:none;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:6, 6;stroke-dashoffset:0;stroke-opacity:1" />
+          <rect
+             transform="matrix(0.96592583,0.25881904,-0.25881904,0.96592583,0,0)"
+             y="127.4124"
+             x="-313.22784"
+             height="4.1323647"
+             width="161.16223"
+             id="rect4385-1-7-5"
+             style="opacity:1;fill:#000000;fill-opacity:0.98039216;fill-rule:evenodd;stroke:none;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:6, 6;stroke-dashoffset:0;stroke-opacity:1" />
+        </g>
+      </g>
+      <g
+         id="g4727">
+        <text
+           xml:space="preserve"
+           style="font-style:normal;font-weight:normal;font-size:35px;line-height:0.99999998%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+           x="885.9837"
+           y="74.669395"
+           id="text4237-29"
+           sodipodi:linespacing="0.99999998%"><tspan
+             sodipodi:role="line"
+             id="tspan4239-3"
+             x="885.9837"
+             y="74.669395">Gene B</tspan></text>
+        <g
+           id="g4402-9-0"
+           transform="translate(1207.7462,-2.9243856)">
+          <rect
+             transform="matrix(0.96592583,-0.25881905,0.25881905,0.96592583,0,0)"
+             y="-6.2578111"
+             x="-346.7984"
+             height="4.1323647"
+             width="161.16223"
+             id="rect4385-4-3"
+             style="opacity:1;fill:#000000;fill-opacity:0.98039216;fill-rule:evenodd;stroke:none;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:6, 6;stroke-dashoffset:0;stroke-opacity:1" />
+          <rect
+             transform="matrix(0.96592583,0.25881904,-0.25881904,0.96592583,0,0)"
+             y="127.4124"
+             x="-313.22784"
+             height="4.1323647"
+             width="161.16223"
+             id="rect4385-1-7-6"
+             style="opacity:1;fill:#000000;fill-opacity:0.98039216;fill-rule:evenodd;stroke:none;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:6, 6;stroke-dashoffset:0;stroke-opacity:1" />
+        </g>
+      </g>
+      <g
+         transform="matrix(0.42584641,0,0,0.42584641,775.99548,117.51755)"
+         id="g4629">
+        <g
+           style="clip-rule:evenodd;fill:#4c4c4c;fill-rule:evenodd"
+           id="g4631">
+          <path
+             inkscape:connector-curvature="0"
+             d="m 173.38,3.106 19.517,0 c 43.645,4.009 77.266,21.927 94.796,53.373 8.538,15.313 11.722,38 12.747,61.337 1.028,23.431 -4.993,45.76 -20.313,52.975 -3.495,-9.252 0.141,-25.633 -2.788,-35.449 -6.215,1.867 -7.005,10.354 -7.17,18.72 -0.17,8.631 0.815,18.736 0.399,26.687 5.813,6.268 19.753,4.41 23.101,13.144 -11.993,34.874 -57.768,35.965 -75.28,65.32 -24.99,-1.313 -61.318,7.983 -79.261,-3.187 -6.823,-4.248 -11.126,-15.134 -15.932,-19.915 -6.756,-6.72 -19.214,-10.077 -29.475,-14.338 -9.739,-4.046 -22.358,-9.469 -25.491,-18.322 -5.51,-15.571 10.282,-18.369 15.932,-23.898 -2.276,-49.8 10.763,-87.022 23.764,-113.64 -31.274,20.531 -29.607,59.478 -30.147,105.67 -1.475,0.536 -2.449,-1.528 -3.188,-2.39 C 65.411,158.484 61.349,145.637 59.854,127.77 57.008,93.746 69.045,67.303 82.558,49.304 102.448,22.81 132.016,4.342 172.574,3.5 c 0.31,-0.012 0.78,-0.083 0.79,-0.404 z m -58.94,129.05 c -10.908,10.451 -15.861,47.4 -1.195,56.161 3.952,2.361 9.446,2.823 13.144,2.788 19.596,-0.188 36.023,-21.877 35.847,-42.618 -0.142,-16.74 -10.831,-25.664 -28.279,-23.897 -8.66,0.87 -14.58,2.83 -19.51,7.57 z m 83.64,19.91 c 1.699,15.94 17.866,35.094 30.271,37.042 31.714,4.979 32.435,-34.1 19.517,-52.176 -5.606,-7.849 -13.411,-12.735 -23.5,-12.347 -17.5,0.68 -28.23,9.25 -26.29,27.49 z m -5.58,70.1 c -1.92,-19.056 -7.939,-38.258 -18.76,-48.414 -7.503,14.537 -11.074,26.813 -9.918,50.009 4.87,-8.13 22.89,-6.65 28.68,-1.6 z"
+             id="path4633" />
+          <path
+             inkscape:connector-curvature="0"
+             d="m 101.29,244.08 c 25.997,3.686 21.101,40.712 32.262,59.744 6.146,10.48 19.771,17.734 33.856,19.914 14.772,2.287 33.086,0.332 45.008,-6.771 24.411,-14.543 10.94,-63.992 44.609,-69.702 6.439,62.097 -12.286,102.67 -64.923,108.74 -16.66,1.918 -36.868,1.1 -50.983,-5.976 -15.02,-7.52 -26.18,-24.22 -33.07,-41.02 -7.202,-17.564 -11.092,-40.57 -7.169,-63.729 -0.03,-0.56 -0.06,-1.13 0.4,-1.19 z"
+             id="path4635" />
+          <path
+             inkscape:connector-curvature="0"
+             d="m 151.08,263.99 c 2.375,5.558 1.922,14.729 -1.991,18.322 -10.37,0.17 -9.12,-21.68 1.99,-18.32 z"
+             id="path4637" />
+          <path
+             inkscape:connector-curvature="0"
+             d="m 205.65,280.72 c -2.191,-4.647 -3.885,-19.786 4.381,-16.729 6.01,2.23 6.8,18.28 -4.38,16.73 z"
+             id="path4639" />
+          <path
+             inkscape:connector-curvature="0"
+             d="m 167.41,282.31 -8.365,0 c -0.776,-7.511 0.373,-21.475 6.771,-17.924 4.43,2.46 0.41,11.76 1.6,17.92 z"
+             id="path4641" />
+          <path
+             inkscape:connector-curvature="0"
+             d="m 188.92,282.31 c -3.348,-6.564 1.051,-13.505 3.188,-18.322 9.16,1.19 8.63,22.01 -3.19,18.32 z"
+             id="path4643" />
+          <path
+             inkscape:connector-curvature="0"
+             d="m 180.95,265.58 c 2.312,3.798 3.752,8.465 3.188,15.136 l -9.957,0 c 0.06,-6.4 -3.11,-17.47 6.77,-15.14 z"
+             id="path4645" />
+          <path
+             inkscape:connector-curvature="0"
+             d="m 185.73,301.83 c 1.426,7.507 -2.863,12.103 -5.177,17.128 -12.64,-1.23 -7.42,-26.46 5.18,-17.13 z"
+             id="path4647" />
+          <path
+             inkscape:connector-curvature="0"
+             d="m 150.68,301.03 c 2.291,2.589 2.512,8.192 0.398,11.152 -8.64,2.27 -9.1,-15.71 -0.4,-11.15 z"
+             id="path4649" />
+          <path
+             inkscape:connector-curvature="0"
+             d="m 166.21,315.37 c -9.395,3.604 -9.287,-18.735 -1.593,-14.338 3.69,2.11 3.8,9.92 1.59,14.34 z"
+             id="path4651" />
+          <path
+             inkscape:connector-curvature="0"
+             d="m 207.24,301.83 c 0.514,6.704 -2.152,14.426 -7.965,13.542 -8.56,-1.29 -1.88,-22.09 7.96,-13.54 z"
+             id="path4653" />
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

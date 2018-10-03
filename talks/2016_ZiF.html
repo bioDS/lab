@@ -1,0 +1,420 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<title>Gene interactions</title>
+	<meta name="author" content="Alex Gavryushkin">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+	<meta name="apple-mobile-web-app-capable" content="yes" />
+	<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+	<link rel="stylesheet" href="css/reveal.css">
+	<link rel="stylesheet" href="css/theme/simple_gavruskin.css" id="theme">
+	<link rel="stylesheet" href="lib/css/zenburn.css">
+	<!--[if lt IE 9]>
+	<script src="lib/js/html5shiv.js"></script>
+	<![endif]-->
+</head>
+
+<body>
+<div class="reveal">
+<div class="slides">
+
+<section data-background-image="images/ETH_image_covered_completely.svg">
+	<h2>Gene interactions:<br>
+	a geometric approach</h2>
+	<h3>Alex Gavryushkin</h3>
+	Joint work with:<br>
+	<ul>
+	<li> Kristina Crona, American U., Washington, DC, USA<br>
+	<li> Bernd Sturmfels, U.&nbsp;of California, Berkeley, USA<br>
+	<li> Ewa Szczurek, U.&nbsp;of Warsaw, Poland<br>
+	<li> Niko Beerenwinkel, ETH Zurich, Basel, Switzerland
+	</ul>
+	<br>
+	<br>
+	December 1, 2016
+</section>
+
+<section>
+	<h3>Throughout, we consider $n$ <b>biallelic</b> loci, for various values of $n$</h3>
+	<p class="fragment" data-fragment-index="1">
+	<img class="stretch" data-src="images/n_cite_biallelic.svg">
+	</p>
+</section>
+
+<section>
+	<h4>
+	Notation
+	</h4>
+	For a genotype $g$, $w_g$ denotes the fitness of $g$,<br>
+	for example, $w_{11}$ is the fitness of the double mutant.
+	<h3>
+	<p class="fragment" data-fragment-index="1">
+	Epistasis &nbsp; $u_{11}$
+	</p>
+	</h3>
+	<h4>
+	<p class="fragment" data-fragment-index="1">
+	Additive allelic effect &nbsp; $=$ &nbsp; no epistasis:
+	</p>
+	</h4>
+	<p class="fragment" data-fragment-index="1">
+	$$
+	w_{11} + w_{00} = w_{01} + w_{10}
+	$$
+	<br>
+	</p>
+	<h4>
+	<p class="fragment" data-fragment-index="2">
+	Deviation from the additive expectation of allelic effects:
+	<p>
+	</h4>
+	<p class="fragment" data-fragment-index="2">
+	$u_{11} = w_{00} + w_{11} - (w_{01} + w_{10})$
+	</p>
+</section>
+
+<section>
+	<h3>Understanding three-way interactions</h3>
+
+	<h4>
+	<p class="fragment" data-fragment-index="1">
+	Marginal epistasis?
+	</p>
+	</h4>
+	<p class="fragment" data-fragment-index="1">
+	$\small u_{\color{blue}{0}11} = w_{\color{blue}{0}00} + w_{\color{blue}{1}00} + w_{\color{blue}{0}11} + w_{\color{blue}{1}11} − (w_{\color{blue}{0}01} + w_{\color{blue}{1}01}) − (w_{\color{blue}{0}10} + w_{\color{blue}{1}10})$
+	</p>
+	
+	<h4>
+	<p class="fragment" data-fragment-index="2">
+	Total three-way interaction?
+	</p>
+	</h4>
+	 <p class="fragment" data-fragment-index="2">
+	$\small u_{111} = w_{000} + w_{011} + w_{101} + w_{110} - (w_{001} + w_{010} + w_{100} + w_{111})$
+	</p>
+
+	<h4>
+	<p class="fragment" data-fragment-index="3">
+	Conditional epistasis?
+	<p>
+	</h4>
+	<p class="fragment" data-fragment-index="3">
+	$\small e = w_{\color{blue}{0}00} − w_{\color{blue}{0}01} − w_{\color{blue}{0}10} + w_{\color{blue}{0}11}$
+	</p>
+	<h4>
+	<p class="fragment" data-fragment-index="4">
+	Total mess!
+	</p>
+	</h4>
+</section>
+
+<section>
+	<h3>(Algebraic) Geometry sorts out the mess!</h3>
+	$e = u_{011} + u_{111}$
+	<p class="fragment" data-fragment-index="1">
+	In general, the four <i>interaction coordinates</i>
+	$$
+	u_{011}, u_{101}, u_{110}, u_{111}
+	$$
+	allow to describe <i>all</i> possible kinds of interaction!
+	</p>
+	<p class="fragment" data-fragment-index="2">
+	There are 20 types of interaction and they are known as <i>circuits</i> to Algebraic Geometry 111 students
+	</p>
+	<p class="fragment" data-fragment-index="3">
+	Yep, we've got the list!
+	</p>
+</section>
+
+<section data-transition="slide-in none-out">
+	$$
+	\scriptsize
+	\begin{align*}
+	a&= w_{000}-w_{010}-w_{100}+w_{110} & m&=w_{001}+w_{010}+w_{100}-w_{111}-2w_{000}\\
+	b&=w_{001}-w_{011}-w_{101}+w_{111} & n&=w_{011}+w_{101}+w_{110}-w_{000}-2w_{111}\\
+	c&=w_{000}-w_{001}-w_{100}+w_{101} & o&=w_{010}+w_{100}+w_{111}-w_{001}-2w_{110}\\
+	d&=w_{010}-w_{011}-w_{110}+w_{111} & p&=w_{000}+w_{011}+w_{101}-w_{110}-2w_{001}\\
+	e&=w_{000}-w_{001}-w_{010}+w_{011} & q&=w_{001}+w_{100}+ w_{111}-w_{010}-2w_{101}\\
+	f&=w_{100}-w_{101}-w_{110}+w_{111} & r&=w_{000}+w_{011}+ w_{110}-w_{101}-2w_{010}\\
+	g&=w_{000}-w_{011}-w_{100}+w_{111} & s&=w_{000}+w_{101}+ w_{110}-w_{011}-2w_{100}\\
+	h&=w_{001}-w_{010}-w_{101}+w_{110} & t&=w_{001}+w_{010}+w_{111}-w_{100}-2w_{011}\\
+	i&=w_{000}-w_{010}-w_{101}+w_{111}\\
+	j&=w_{001}-w_{011}-w_{100}+w_{110}\\
+	k&=w_{000}-w_{001}-w_{110}+w_{111}\\
+	l&=w_{010}-w_{011}-w_{100}+w_{101}\\
+	\end{align*}
+	$$
+</section>
+
+<section data-transition="none-in slide-out">
+	$$
+	\scriptsize
+	\begin{align*}
+	a&= w_{000}-w_{010}-w_{100}+w_{110} & m&=w_{001}+w_{010}+w_{100}-w_{111}-2w_{000}\\
+	b&=w_{001}-w_{011}-w_{101}+w_{111} & n&=w_{011}+w_{101}+w_{110}-w_{000}-2w_{111}\\
+	c&=w_{000}-w_{001}-w_{100}+w_{101} & o&=w_{010}+w_{100}+w_{111}-w_{001}-2w_{110}\\
+	d&=w_{010}-w_{011}-w_{110}+w_{111} & p&=w_{000}+w_{011}+w_{101}-w_{110}-2w_{001}\\
+	e&=w_{000}-w_{001}-w_{010}+w_{011} & q&=w_{001}+w_{100}+ w_{111}-w_{010}-2w_{101}\\
+	f&=w_{100}-w_{101}-w_{110}+w_{111} & r&=w_{000}+w_{011}+ w_{110}-w_{101}-2w_{010}\\
+	\color{blue}{g}&\hskip{2pt}\color{blue}{=w_{000}-w_{011}-w_{100}+w_{111}} & s&=w_{000}+w_{101}+ w_{110}-w_{011}-2w_{100}\\
+	h&=w_{001}-w_{010}-w_{101}+w_{110} & t&=w_{001}+w_{010}+w_{111}-w_{100}-2w_{011}\\
+	i&=w_{000}-w_{010}-w_{101}+w_{111}\\
+	j&=w_{001}-w_{011}-w_{100}+w_{110}\\
+	k&=w_{000}-w_{001}-w_{110}+w_{111}\\
+	l&=w_{010}-w_{011}-w_{100}+w_{101}\\
+	\end{align*}
+	$$
+</section>
+
+<section>
+	<h3>This is known as Beerenwinkel-Pachter-Sturmfels approach,</h3>
+	which provides a complete picture of interactions!<br>
+	<br>
+	<h3>BUT</h3>
+	<p class="fragment" data-fragment-index="1">
+	the approach is
+	</p>
+	<ul>
+	<li>
+	<p class="fragment" data-fragment-index="1">
+	based on the availability of fitness measurements
+	</p>
+	<li>
+	<p class="fragment" data-fragment-index="1">
+	computationally feasible for up to four loci
+	</p>
+	</ul>
+	<h3>
+	<p class="fragment" data-fragment-index="2">
+	Hence, we come to two research questions
+	</p>
+	</h3>
+</section>
+
+<section>
+	<h3><u>Problem 1:</u> What if no (credible) fitness measurements are available?</h3>
+	<p class="fragment" data-fragment-index="1">
+	Like in this malaria drug resistance data set:
+	<img class=stretch data-src="images/tem.svg">
+	<br>
+	Ogbunugafor et al. <i>Malar. J.</i> 2016
+	</p>
+</section>
+
+<section>
+	<h3>Results at a glance</h3>
+	<ul>
+	<li> We provide a complete characterization of <i>fitness graphs</i> that imply circuit interaction (think epistasis).
+	<li> Fitness graphs arise in competition-like experiments and include:
+		<ul>
+		<li> Rank orders
+		<li> Mutation graphs
+		</ul>
+	</ul>
+	<br>
+	<br>
+	(Preprint(s) with Crona, Beerenwinkel, and others to appear)
+</section>
+
+<section>
+	<h4>Rank orders. The simplest case.</h4>
+	<img class=stretch data-src="images/all_24_rankings_two_loci.svg">
+	$\small u_{11} = w_{00} + w_{11} - (w_{01} + w_{10})$
+</section>
+
+<section>
+	<h3>Characterization of epistatic rank orders</h3>
+	<p class="fragment shrink" data-fragment-index="1">
+	<b>Theorem.</b> Consider a biallelic $n$-locus system. 
+	The number of rank orders which imply $n$-way epistasis is:
+	\[
+	\frac{(2^n)! \times 2}{2^{n-1}+1}
+	\]
+	</p>
+	<p class="fragment" data-fragment-index="1">
+	<b>Corollary.</b> The fraction of rank orders that imply $n$-way epistasis
+among all rank orders is:
+	\[
+	\frac{2}{2^{n-1}+1}
+	\]
+	</p>
+</section>
+
+<section data-markdown>
+<script type="text/template">
+	## Numbers at a glance
+	|    Loci | Imply epistasis |       Number of orders | Fraction |
+	|:-------:|:---------------:|:----------------------:|:--------:|
+	|    2    |      16         |          24            |   2/3    |
+	|    3    |      16,128     |          40,320        |   2/5    |
+	|    4    |4,649,508,864,000|  20,922,789,890,000    |   2/9    |
+</script>
+</section>
+
+<section>
+	<h4>Mutation graph</h4>
+	<img class=stretch data-src="images/tem_1111_top.svg">
+</section>
+
+<section>
+	<h4>Connection between rank orders and mutation graphs</h4>
+	<img class=stretch data-src="images/all_total_extensions_of_p_o.svg">
+</section>
+
+<section>
+	<h3>Applications</h3>
+	<ul>
+	<li> <p>HIV-1</p>
+	<li> <p class="fragment highlight-blue">Antibiotic resistance</p>
+	<li> <p>Gut microbiome (with Will Ludington, UC Berkeley)</p>
+	<li> <p>Synthetic lethality</p>
+	<li> <p>Knockdown cell lines</p>
+	</ul>
+	<div align="left">
+	<p class="fragment" data-fragment-index="1">
+	Methodologically, this allows us to advise further measurements (experiments) for incomplete data sets, thus reducing the number of potential experiments significantly.
+	</p>
+	</div>
+</section>
+
+<section data-transition="slide-in fade-out">
+	<h4>Example: antibiotic resistance</h4>
+	<img class=stretch data-src="images/Mira_2015_genotypes.svg">
+	<div align="left">
+	<font size="4">Mira et al. <i>PLOS ONE,</i> 2015</font>
+	</div>
+</section>
+
+<section data-transition="fade-in fade-out">
+	<h4>Example: antibiotic resistance</h4>
+	<img class=stretch data-src="images/Mira_2015_antibiotics.svg">
+</section>
+
+<section data-transition="fade-in fade-out">
+	<h4>Example: antibiotic resistance</h4>
+	<img class=stretch data-src="images/Mira_2015_fitness_summary.svg">
+</section>
+
+<section data-transition="fade-in slide-out">
+	<h4>Example: antibiotic resistance</h4>
+	<img class=stretch data-src="images/Mira_2015_rank_order.svg">
+</section>
+
+<section data-transition="slide-in fade-out">
+	<h4>Mutation graph</h4>
+	<img class=stretch data-src="images/tem_for_Niko.svg">
+</section>
+
+<section data-transition="fade-in fade-out">
+	<h4>Mutation graph</h4>
+	<img class=stretch data-src="images/tem_highlight_for_Niko.svg">
+</section>
+
+<section data-transition="fade-in slide-out">
+	<h4>Mutation graph</h4>
+	<img class=stretch data-src="images/tem_highlight_shaded.svg">
+</section>
+
+<section>
+	<h4>Mutation graph</h4>
+	<img class=stretch data-src="images/tem_order.svg">
+</section>
+
+<section>
+	<h4>Mutation graph</h4>
+	<img class=stretch data-src="images/tem_order_extension.svg">
+</section>
+
+<section>
+	<h3>Results in more detail</h3>
+	Efficient methods for:
+	<ul>
+	<li> Circuit interaction inference (including epistasis and three-way interaction) for total orders
+	<li> Complete analysis of partial orders (including mutation graphs) with "distance to interaction" inference
+	<li> Suggestions for possible completions in case of missing data and/or high uncertainty
+	</ul>
+	<br>
+	<br>
+	Software (pre-release stage):<br>
+	<a href="https://github.com/gavruskin/fitlands">https://github.com/gavruskin/fitlands</a>
+</section>
+
+<section>
+	<h3><u>Problem 2:</u> What if the number of genes (loci) is 20,822?</h3>
+	<ul>
+	<li>2^20822 of conditional epistases?
+	<li>2^20822 measurements to estimate marginal epistasis?
+	</ul>
+	<p>Not in this life</p>
+	<h3>
+	<p class="fragment" data-fragment-index="1">
+	Concrete example: genome-wide RNAi perturbation screens
+	</p>
+	</h3>
+	<p class="fragment" data-fragment-index="1">
+	20,822 genes, 90,000 "trials" (siRNA's)
+	</p>
+</section>
+
+<section>
+	<h3>RNAi perturbation screen</h3>
+	<img class="stretch" data-src="images/RNAi_promisedVSactual_pups.svg">
+</section>
+
+<section data-transition="slide-in fade-out">
+	<h3>Two ways out</h3>
+	<ol>
+	<li> Isolate a small number of "interesting" genes, e.g.&nbsp;main fitness drivers (like we did in the HIV study)
+	<li> Add statistical assumptions, for example:
+		<ul>
+		<li> <p class="fragment highlight-blue">Ignore higher-order interactions<p>
+		<li> Structural hypotheses: <i>"It rarely make sense to have interactions without main effects"</i>&mdash;Lim and Hastie
+		</ul>
+	</ol>
+	<br>
+	<br>
+	(Ongoing work with Schmich, Szczurek, Beerenwinkel, et al.)
+</section>
+
+<section>
+	<h3>Want to learn more?</h3>
+	We've got you covered!<br><br>
+	<ul>
+	<li> All my talks (including this one) are here:<br>
+	<a href="http://alex.gavruskin.com/talks">http://alex.gavruskin.com/talks</a><br><br>
+	<li> Preprints are here:<br>
+	<a href="http://alex.gavruskin.com/publications">http://alex.gavruskin.com/publications</a><br><br>
+	<li> Software (and manuscripts in-progress) here:<br>
+	<a href="https://github.com/gavruskin">https://github.com/gavruskin</a><br><br>
+	</ul>
+</section>
+
+<section data-transition="fade-in" data-autoslide="3000" data-background-image="images/ethKuppel.svg">
+	<h3>
+	Thanks for your attention!<br>
+	<br>
+	<br>
+	<p class="fragment slide-in" data-autoslide="3000">and stay tuned</p>
+	</h3>
+</section>
+</div>
+</div>
+<script src="lib/js/head.min.js"></script>
+<script src="js/reveal.js"></script>
+<script>
+  Reveal.initialize({
+    dependencies: [
+        // Interpret Markdown in <section> elements
+        { src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+        { src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+        // MathJax
+        { src: 'plugin/math/math.js', async: true }
+    ]
+  });
+</script>
+</body>
+</html>
+
