@@ -16,14 +16,14 @@
 author: Alex Gavryushkin
 timezone: Pacific/Auckland
 title: Biological Data Science Lab @Otago
-email: alex@gavruskin.com
+email: alex@biods.org
 description: > # this means to ignore newlines until "baseurl:"
   We develop mathematics and computer science necessary to answer rigorous questions about molecular data.
   Our ultimate goal is achieved when we observe how molecular biology and data science shape modern mathematics and computer science.
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "http://lab.gavruskin.com" # the base hostname & protocol for your site, e.g. http://example.com
+url: "https://biods.org" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: gavruskin
-github_username:  gavruskin
+github_username: biods
 
 # Build settings
 markdown: kramdown
