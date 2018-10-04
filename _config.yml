@@ -22,8 +22,8 @@ description: > # this means to ignore newlines until "baseurl:"
   Our ultimate goal is achieved when we observe how molecular biology and data science shape modern mathematics and computer science.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://biods.org" # the base hostname & protocol for your site, e.g. http://example.com
-twitter_username: biods_lab
-github_username: biods
+twitter_username: bioDS_lab
+github_username: bioDS
 
 # Build settings
 markdown: kramdown
