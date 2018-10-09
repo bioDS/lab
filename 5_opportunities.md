@@ -15,7 +15,7 @@ We are currently accepting applications for MSc and PhD programmes and have scho
   This projects includes the development and applications of computational phylogenomic inference methods from cancer data.
   We will combine several known approaches to phylogenomic inference to create robust methods and efficient tools for evolutionary analysis of heterogeneous clinical data, including various types of molecular sequencing data, images, and clinical history.
 
-- **Evolutionary landsapces of antibiotic resistance.**
+- **Evolutionary landscapes of antibiotic resistance.**
   This project is aimed at developing mathematical and computational methods to analyse mutational pathways in bacteria responsible for the development of antibiotic resistance.
   We will specifically focus on studying the combinatorially complicated structure of interactions within and between mutational pathways/ genes.
   The ultimate goal will be to computationally predict evolutionary trajectories of certain strains of bacteria under antibiotic pressure, and suggest possible strategies to prevent the development of resistance.
