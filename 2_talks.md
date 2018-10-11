@@ -5,6 +5,8 @@ permalink: /talks/
 title: Talks & Slides
 ---
 
+- [October 2018](http://www.maths.otago.ac.nz/?events_seminararchives=P1), Department of Mathematics and Statistics, University of Otago. Seminar talk [The geometry and combinatorics of phylogenetic tree spaces](2018_Otago_Maths)
+
 - [April 2018](https://www.otago.ac.nz/biochemistry/news/events/otago683209.html), Department of Biochemistry, University of Otago. Seminar talk [Fitness landscapes, genetic interactions, and inexact data](2018_Otago_Biochem)
 
 - [February 2018](http://www.canterbury.ac.nz/engineering/schools/mathematics-statistics/research/bio/events/portobello-2018/), Portobello 2018, the Interface of Mathematics and Biology, 22nd Annual New Zealand Phylogenomics Meeting. Regular talk [Fitness landscapes and incomplete data](2018_Portobello)
