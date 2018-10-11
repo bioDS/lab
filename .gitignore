@@ -116,11 +116,7 @@ sympy-plots-for-*.tex/
 # xindy
 *.xdy
 
-# Matsen group
-.sconsign.dblite
-SConstruct
-
-# @gavruskin
+# bioDS
 tmp/
 .DS_Store
 .idea
