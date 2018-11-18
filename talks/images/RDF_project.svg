@@ -4753,7 +4753,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -8253,7 +8253,7 @@
     </g>
     <path
        style="fill:none;stroke:#000000;stroke-width:3.86884189;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;marker-end:url(#marker1544)"
-       d="M -342.72023,-61.716292 -194.88907,-314.82686"
+       d="m -342.72023,-74.4163 147.83116,-253.11064"
        id="path1508"
        inkscape:connector-curvature="0" />
     <path
