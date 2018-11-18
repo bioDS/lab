@@ -89,7 +89,7 @@
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
      inkscape:zoom="0.98994949"
-     inkscape:cx="342.78922"
+     inkscape:cx="350.36536"
      inkscape:cy="271.5695"
      inkscape:document-units="mm"
      inkscape:current-layer="layer1"
@@ -156,17 +156,6 @@
        cy="82.343002"
        rx="26.928488"
        ry="13.464244" />
-    <text
-       xml:space="preserve"
-       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:6.3499999px;line-height:1.25;font-family:sans-serif;-inkscape-font-specification:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
-       x="86.422554"
-       y="84.710297"
-       id="text308"><tspan
-         sodipodi:role="line"
-         id="tspan306"
-         x="86.422554"
-         y="84.710297"
-         style="stroke-width:0.26458332">Mathematics</tspan></text>
     <g
        id="g330"
        transform="translate(-0.47387045,-1.1939301)">
@@ -218,6 +207,32 @@
            x="27.698559"
            id="tspan562"
            sodipodi:role="line">Biology</tspan></text>
+    </g>
+    <g
+       id="g1243"
+       transform="translate(-1.2059984,-0.6276749)">
+      <text
+         id="text308"
+         y="81.503059"
+         x="92.837021"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:6.3499999px;line-height:1.25;font-family:sans-serif;-inkscape-font-specification:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+         xml:space="preserve"><tspan
+           style="stroke-width:0.26458332"
+           y="81.503059"
+           x="92.837021"
+           id="tspan306"
+           sodipodi:role="line">Maths &amp;</tspan></text>
+      <text
+         id="text1237"
+         y="89.17289"
+         x="97.97934"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:6.3499999px;line-height:1.25;font-family:sans-serif;-inkscape-font-specification:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+         xml:space="preserve"><tspan
+           style="stroke-width:0.26458332"
+           y="89.17289"
+           x="97.97934"
+           id="tspan1235"
+           sodipodi:role="line">Stats</tspan></text>
     </g>
   </g>
 </svg>
