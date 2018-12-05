@@ -7,7 +7,8 @@ title: Publications
 
 - **High-dimensional microbiome interactions shape host fitness**<br>
   Alison Gould, Vivian Zhang, Lisa Lamberti, Eric Jones, Benjamin Obadia, Alex Gavryushkin, Jean Carlson, Niko Beerenwinkel, and Will Ludington<br>
-  *PNAS* 2018 (to appear)<br>
+  *PNAS* 2018<br>
+  [<i class="ai ai-open-access-square ai-3x"></i>](https://doi.org/10.1073/pnas.1809349115)
   [<i class="ai ai-biorxiv-square ai-3x"></i>](https://doi.org/10.1101/232959)
 
 - **The geometry of partial fitness orders and an efficient method for detecting genetic interactions**<br>
