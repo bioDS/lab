@@ -10,7 +10,8 @@ title: People
 
 ### Postdocs
 
-[You!](/opportunities/)
+- [Jiří Moravec](https://www.linkedin.com/in/ji%C5%99%C3%AD-moravec-2a104815b/) (Cancer phylogenetics)
+- [Astra Heywook](https://www.linkedin.com/in/astra-heywood-a43229163/) (Antibiotic resistance, co-mentored by [Iain Lamont](https://www.otago.ac.nz/biochemistry/people/profile/index.html?id=41))
 
 
 ### PhD students
@@ -21,12 +22,12 @@ title: People
 
 ### Masters students
 
-[You!](/opportunities/)
+- Kieran Elmes (Fitness landscapes and gene-gene interactions)
+- [You!](/opportunities/)
 
 
 ### Project students
 
-- Kieran Elmes (Ranked phylogenetic trees)
 - Moizle Ocariza (Tumour evolution)
 - Tom Hanson (Tumour evolution)
 - Anna Redmond (Fitness landscapes, co-supervised by [Zhiyi Huang](https://www.otago.ac.nz/computer-science/people/otago675737.html))
