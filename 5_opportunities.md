@@ -8,7 +8,7 @@ title: Opportunities
 Are you interested in developing algorithms and scalable statistical methods for molecular data analysis, including phylogenomic methods, fitness landscape inference and analysis, genetic interactions, and other computationally demanding areas of genomics and related fields?
 Or working on mathematical foundations of these methods?
 Want to live in New Zealand's most magnificent region of Otago?
-Get [in touch](mailto:alex@biods.org) with us to express your interest in joining the lab.
+Get [in touch](/alex/) with us to express your interest in joining the lab.
 We are currently accepting applications for MSc and PhD programmes and have scholarships available for the following projects:
 
 - **Phylogenomic methods and tools for within-patient tumour evolution analysis.**
