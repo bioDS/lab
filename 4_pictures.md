@@ -5,7 +5,7 @@ permalink: /pictures/
 title: Pictures
 ---
 
-### [bioDS lab]](/) in January 2019:
+### [bioDS lab](/) in January 2019:
 ![January 2019](/assets/bioDS_lab_2019_summer.jpeg)
 
 ### [Alex](/alex/) with [Mike Steel](http://www.math.canterbury.ac.nz/~m.steel/) at field work:
