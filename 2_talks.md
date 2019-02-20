@@ -5,6 +5,9 @@ permalink: /talks/
 title: Talks & Slides
 ---
 
+- [February 2019](https://www.canterbury.ac.nz/engineering/schools/mathematics-statistics/research/bio/events/deco-2019/), Deco 2019, The 23rd Annual New Zealand Phylogenomics Meeting, Napier. Regular talk [The Ranked Nearest Neighbour Interchange
+space of phylogenetic trees](2019_NZPGM.pdf)
+
 - [October 2018](http://www.maths.otago.ac.nz/?events_seminararchives=P1), Department of Mathematics and Statistics, University of Otago. Seminar talk [The geometry and combinatorics of phylogenetic tree spaces](2018_Otago_Maths)
 
 - [April 2018](https://www.otago.ac.nz/biochemistry/news/events/otago683209.html), Department of Biochemistry, University of Otago. Seminar talk [Fitness landscapes, genetic interactions, and inexact data](2018_Otago_Biochem)
