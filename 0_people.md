@@ -11,12 +11,12 @@ title: People
 ### Postdocs
 
 - [Jiří Moravec](https://www.linkedin.com/in/ji%C5%99%C3%AD-moravec-2a104815b/) (Cancer phylogenetics)
-- [Astra Heywood](https://www.linkedin.com/in/astra-heywood-a43229163/) (Antibiotic resistance, co-mentored by [Iain Lamont](https://www.otago.ac.nz/biochemistry/people/profile/index.html?id=41))
+- [Astra Heywood](https://www.linkedin.com/in/astra-heywood-a43229163/) (Antibiotic resistance, co-mentored by [Iain Lamont](https://www.otago.ac.nz/biochemistry/people/profile/index.html?id=41) at [Biochemistry](https://www.otago.ac.nz/biochemistry/index.html))
 
 
 ### PhD students
 
-- Lena Collienne (Online algorithms in phylogenetics, co-supervised by [David Bryant](http://www.maths.otago.ac.nz/~dbryant/))
+- Lena Collienne (Online algorithms in phylogenetics, co-supervised by [David Bryant](http://www.maths.otago.ac.nz/~dbryant/) at [Maths and Stats](http://www.maths.otago.ac.nz/))
 - [You!](/opportunities/)
 
 
