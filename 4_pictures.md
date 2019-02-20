@@ -5,11 +5,8 @@ permalink: /pictures/
 title: Pictures
 ---
 
-### [Alex Gavryushkin](/alex/):
-![March 2015](/assets/Gavryushkin_20150318.jpg)
-
-### Lena Collienne:
-![Lena](/assets/Lena_Collienne.jpg)
+### [bioDS lab, January 2019](/):
+![March 2015](/assets/bioDS_lab_2019_summer.jpeg)
 
 ### Alex with [Mike Steel](http://www.math.canterbury.ac.nz/~m.steel/) at field work:
 ![With Mike](/assets/with_Mike_20150209.jpg)
