@@ -9,7 +9,7 @@ title: Kieran Elmes
 MSc student - Discovering pairwise genetic interactions.
 
 ### Research Interests
-I have an interest in parallell computing, operating systems, and computer architecuture. Particularly focusing on applications to:
+I have an interest in parallel computing, operating systems, and computer architecture. Particularly focusing on applications to:
 
 - Genetic interaction detection
 - Phylogenetic trees
