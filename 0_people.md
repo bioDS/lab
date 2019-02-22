@@ -22,7 +22,7 @@ title: People
 
 ### Masters students
 
-- Kieran Elmes: Fitness landscapes and gene-gene interactions
+- [Kieran Elmes](/kieran/): Fitness landscapes and gene-gene interactions
 - William Warren: Synthetic lethal interactions in cancer, co-supervised by [Sarah Diermeier](https://www.otago.ac.nz/biochemistry/people/profile/index.html?id=2797) at [Biochemistry](https://www.otago.ac.nz/biochemistry/index.html)
 - [You!](/opportunities/)
 
