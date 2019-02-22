@@ -7,7 +7,7 @@ title: Pictures
 
 ### [bioDS lab](/) in January 2019:
 ![January 2019](/assets/bioDS_lab_2019_summer.jpeg)
-[Alex](/alex/), [Astra](/people/), [Lena](/people/), [Moizle](/people/), [Jiří](/people/), [Anna](/people/), [Tom](/people/), [Kieran](/people/)
+[Alex](/alex/), [Astra](/people/), [Lena](/people/), [Moizle](/people/), [Jiří](/people/), [Anna](/people/), [Tom](/people/), [Kieran](/kieran/)
 
 ### [Alex](/alex/) with [Mike Steel](http://www.math.canterbury.ac.nz/~m.steel/) at field work:
 ![With Mike](/assets/with_Mike_20150209.jpg)
