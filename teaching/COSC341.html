@@ -37,8 +37,27 @@
 	<br>
 	<font size="5">
 	  2019 Semester 1<br>
-	  <a href="#/ToC">ToC</a>
 	</font>
+</section>
+
+<section>
+	<h3>Table of contents</h3>
+
+	<ul>
+	  <li> <a href="#/L1">Lecture 1: Introduction</a>
+	  <li> <a href="#/L2">Lecture 2</a>
+	  <li> <a href="#/L3">Lecture 3</a>
+	  <li> <a href="#/L4">Lecture 4</a>
+	  <li> <a href="#/L5">Lecture 5</a>
+	  <li> <a href="#/L6">Lecture 6</a>
+	  <li> <a href="#/L7">Lecture 7</a>
+	  <li> <a href="#/L8">Lecture 8</a>
+	  <li> <a href="#/L9">Lecture 9</a>
+	  <li> <a href="#/L10">Lecture 10</a>
+	  <li> <a href="#/L11">Lecture 11</a>
+	  <li> <a href="#/L12">Lecture 12</a>
+	  <li> <a href="#/L13">Lecture 13</a>
+	</ul>
 </section>
 
 <section>
@@ -60,33 +79,12 @@
 		  <li> Assignment 3: 10% due Friday <b>24 May</b>
 		  <li> Final exam: 70% on <b>TBA</b>
 		</ul>
-	  <li> <a href="#/data-science">What is data science</a>?
 	</ul>
 </section>
 
 <section>
 	<h3><a href="https://biods.org/alex">Lecturer</a></h3>
 	<img data-src="images/bioDS_lab_2019_COSC341.svg">
-</section>
-
-<section id="ToC">
-	<h3>Table of contents</h3>
-
-	<ul>
-	  <li> <a href="#/L1">Lecture 1: Introduction</a>
-	  <li> <a href="#/L2">Lecture 2</a>
-	  <li> <a href="#/L3">Lecture 3</a>
-	  <li> <a href="#/L4">Lecture 4</a>
-	  <li> <a href="#/L5">Lecture 5</a>
-	  <li> <a href="#/L6">Lecture 6</a>
-	  <li> <a href="#/L7">Lecture 7</a>
-	  <li> <a href="#/L8">Lecture 8</a>
-	  <li> <a href="#/L9">Lecture 9</a>
-	  <li> <a href="#/L10">Lecture 10</a>
-	  <li> <a href="#/L11">Lecture 11</a>
-	  <li> <a href="#/L12">Lecture 12</a>
-	  <li> <a href="#/L13">Lecture 13</a>
-	</ul>
 </section>
 
 <section id="L1">
@@ -142,11 +140,11 @@
 
 <section>
 	<h3>Sets</h3>
-	A set is a collection of objects, completely defined by the objects.
+	A set is a collection of objects, completely determined by the objects.
 	Two sets are equal if they contain the same objects.<br><br>
 
-	$X = \{1, 2, 5\}$<br><br>
-	$X = \{x \mid P(x)$, where $P(x)$ is a logical condition on $x$.<br><br>
+	$X = \{1, 2, 5\} = \{2, 5, 1\}$ = \{5, 2, 1, 5, 1\}<br><br>
+	$X = \{x \mid P(x)\}$, where $P(x)$ is a logical condition on $x$.<br><br>
 	$\mathbb N = \{0, 1, \ldots \}$<br><br>
 	$X = \{x \mid (\exists y \in \mathbb N) x = y^2\} \stackrel{?}{=} \{x \mid x = y^2\}$<br><br>
 	$9 \in X?$
@@ -170,7 +168,8 @@
 </section>
 
 <section>
-	<h3>Ordered tuples, relations, and functions</h3>
+	<h3>Subsets, ordered tuples, relations, and functions</h3>
+	$A \subseteq B \iff (\forall x) (x \in A \Rightarrow x \in B)$<br><br>
 	$(a, b) = (c, d) \iff (a = c~\&~b = d)$<br><br>
 	$A \times B = \{(a, b) \mid a \in A, b \in B\}$<br><br>
 	$P \subseteq A \times B$ is a <b>relation</B> (from $A$ to $B$, or <b>on</b> $A$ if $A = B$)<br><br>
@@ -207,6 +206,18 @@
 	  <li> <b>Transitive</b> $(\forall x, y \in A)~(x \sim y \Rightarrow y \sim x)$
 	  <li> <b>Symmetric</b> $(\forall x, y, z \in A)~(x \sim y ~\&~ y \sim z \Rightarrow x \sim z)$
 	</ul>
+</section>
+
+<section>
+	<h3>Theorem 1</h3>
+	A partition of a set $A$ is the same thing as an equivalence relation on $A$.<br><br>
+
+	In other words: Let $A$ be a set. Then
+	<ol>
+	  <li> A partition $A_1 \sqcup A_2 \sqcup \ldots$ of the set $A$ is defined by an equivalence relation on $A$.
+	  <li> An equivalence relation $\sim$ on the set $A$ defines a partition on $A$.
+	</ol>
+	<b>Proof:</b> Exercise for those who skipped the lecture.
 </section>
 
 
