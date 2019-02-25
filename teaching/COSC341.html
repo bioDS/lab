@@ -1,0 +1,472 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<title>COSC341 Theory of Computing - Alex Gavryushkin</title>
+	<meta name="author" content="Alex Gavryushkin">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+	<meta name="apple-mobile-web-app-capable" content="yes" />
+	<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+	<link rel="stylesheet" href="../talks/css/reveal.css">
+	<link rel="stylesheet" href="../talks/css/theme/simple_gavruskin.css" id="theme">
+	<link rel="stylesheet" href="../talks/lib/css/zenburn.css">
+	<link rel="icon" href="../favicon.ico" />
+	<!--[if lt IE 9]>
+	<script src="../talks/lib/js/html5shiv.js"></script>
+	<![endif]-->
+</head>
+
+<body>
+<div class="reveal">
+<div class="slides">
+
+<section>
+	<h4>
+	  COSC341
+	</h4>
+	<h3>
+	  Theory of Computing
+	</h3>
+	<br>
+	<h4>
+	  Alex Gavryushkin<br>
+	  <br>
+	  <img data-src="../talks/images/otago_university_logo.svg" width=30%>
+	</h4>
+	<br>
+	<font size="5">
+	  2019 Semester 1<br>
+	  <a href="#/ToC">ToC</a>
+	</font>
+</section>
+
+<section>
+	<h3>Handouts</h3>
+	<ul>
+	  <li> <a href="COSC341.html">These slides</a>
+	  <li> <a href="cosc341_lecture_notes_part1.pdf">Complementary lecture notes</a><br><br>
+	</ul>
+
+	<h3>
+	  Information
+	</h3>
+	<ul>
+	  <li> <a href="http://www.cs.otago.ac.nz/cosc341/">COSC341 website</a>
+	  <li> Assessment
+		<ul>
+		  <li> Assignment 1: 10% due Thursday <b>28 March</b>
+		  <li> Assignment 2: 10% due Friday <b>19 April</b>
+		  <li> Assignment 3: 10% due Friday <b>24 May</b>
+		  <li> Final exam: 70% on <b>TBA</b>
+		</ul>
+	  <li> <a href="#/data-science">What is data science</a>?
+	</ul>
+</section>
+
+<section>
+	<h3>Lecturer</h3>
+	<img data-src="images/bioDS_lab_2019_COSC341.svg">
+</section>
+
+<section id="ToC">
+	<h3>Table of contents</h3>
+
+	<ul>
+	  <li> <a href="#/L1">Lecture 1: Introduction</a>
+	  <li> <a href="#/L2">Lecture 2</a>
+	  <li> <a href="#/L3">Lecture 3</a>
+	  <li> <a href="#/L4">Lecture 4</a>
+	  <li> <a href="#/L5">Lecture 5</a>
+	  <li> <a href="#/L6">Lecture 6</a>
+	  <li> <a href="#/L7">Lecture 7</a>
+	  <li> <a href="#/L8">Lecture 8</a>
+	  <li> <a href="#/L9">Lecture 9</a>
+	  <li> <a href="#/L10">Lecture 10</a>
+	  <li> <a href="#/L11">Lecture 11</a>
+	  <li> <a href="#/L12">Lecture 12</a>
+	  <li> <a href="#/L13">Lecture 13</a>
+	</ul>
+</section>
+
+<section id="L1">
+	<h2>Lecture 1</h2>
+	<h2>Introduction</h2>
+</section>
+
+<section>
+	<h4>
+	  Who cares about theory of computing?<br>
+	  I do!
+	</h4>
+	<img class="stretch" data-src="images/DS_diagramme.svg"><br>
+	<p style="font-size:13pt">
+	  ML = Machine Learning<br>
+	  CoSt = Computational Statistics<br>
+	  AS = Applied Statistics
+	</p>
+</section>
+
+<section>
+	<h4>
+	  Who cares about theory of computing?<br>
+	  You do!
+	</h4>
+	<img class="stretch" data-src="images/why_ToC.svg"><br>
+	<p style="font-size:11pt">
+	  Garey and Johnson. <i>Computers and Intractability.</i>
+	</p>
+</section>
+
+
+<section id="molecular-biology">
+	<h4>
+	  2. Molecular biology: crash course
+	</h4>
+	<img class="stretch" data-src="images/central_dogma.svg">
+</section>
+
+<section>
+	<h3>
+	  Does this matter?
+	</h3>
+	<ul>
+	  <li class="fragment" data-fragment-index="1"> Genetics diseases, e.g. cancer
+	  <li class="fragment" data-fragment-index="2"> Antibiotic resistance
+	  <li class="fragment" data-fragment-index="3"> Virus outbreaks
+	  <li class="fragment" data-fragment-index="3"> Food
+	  <li class="fragment" data-fragment-index="3"> Ecology
+	  <li class="fragment" data-fragment-index="3"> Information storage?
+	  <li class="fragment" data-fragment-index="3"> . . .
+	</ul>
+</section>
+
+<section>
+	<h3>
+	  Why is it suddenly a thing?
+	</h3>
+	<img class="stretch" data-src="images/costpergenome_2017.jpg">
+</section>
+
+<section>
+	<h3>
+	  Why biological data science?
+	</h3>
+	<p class="fragment" data-fragment-index="1">
+	  Because the skills are highly transferable:
+	  <ul>
+	    <li class="fragment" data-fragment-index="2"> Nosy data
+	    <li class="fragment" data-fragment-index="3"> Visualisation
+	    <li class="fragment" data-fragment-index="4"> Communication
+	    <li class="fragment" data-fragment-index="5"> High-performance computing
+	  <ul>
+	</p>
+</section>
+
+<section>
+	<h3>
+	  Formalising biology
+	</h3>
+	<ul>
+	  <li> Let $G$ be the set of binary (quaternary in reality) strings of length $n$.
+	  <li> Elements of $G$ are called <i>genotypes</i>.
+	  <li class="fragment" data-fragment-index="1"> A function $w: G \to \mathbb R^+$ is called a <i>fitness landscape</i>.
+	  <li class="fragment" data-fragment-index="1"> For $g \in G$, $w(g)$ is called <i>fitness of the genotype</i> $g$.
+	</ul>
+	<img data-fragment-index="2" data-src="../talks/images/fitness_shapes_2_loci_BPS_axis.png">
+</section>
+
+<section>
+	<h3>
+	  Reality
+	</h3>
+	<img class="stretch" data-src="images/GWAS_diagramme.svg">
+</section>
+
+<section data-markdown id="how-big-is-big">
+<script type="text/template">
+	### 3. How big is big in biology
+	#### The number of possible rankings of all possible genotypes with $n$ genes is?
+	|    Genes|       Number of rankings |
+	|:-------:|:------------------------:|
+	|    2    |          24              |
+	|    3    |          40,320          |
+	|    4    |  20,922,789,890,000      |
+	|    5    |  $2.6 \times 10^{35}$    |
+	|    6    |  $1.3 \times 10^{89}$    |
+</script>
+</section>
+
+<section data-markdown>
+<script type="text/template">
+	|    Genes|       Number of rankings |
+	|:-------:|:------------------------:|
+	|    2    |          24              |
+	|    3    |          40,320          |
+	|    4    |  20,922,789,890,000      |
+	|    5    |  $2.6 \times 10^{35}$    |
+	|    6    |  $1.3 \times 10^{89}$    |
+	<p>
+	  The number of "particles in the observable universe" is estimated between $10^{78}$ and $10^{81}$.
+	</p>
+	<p class="fragment" data-fragment-index="1">
+	  Our genome has over 20,000 protein-coding genes, which is $<2\%$ of the whole genome.
+	  The total number of base pairs is over 3,000,000,000, with over 150,000,000 variants.
+	</p>
+</script>
+</section>
+
+<section id="scalability">
+	<h3>
+	  Scalability<font class="fragment" data-fragment-index="1">: synthetic lethal pairs</font>
+	</h3>
+	<img class="fragment" data-fragment-index="1" data-src="../talks/images/synthetic_lethality_grey.svg">
+	<h3 class="fragment" data-fragment-index="1">
+	  How many pairs of genes are there in the human genome?
+	</h3>
+</section>
+
+<section>
+	<h3>
+	  Gene-gene interactions
+	</h3>
+	<img data-src="../talks/images/fitness_shapes_2_loci_BPS_axis.png">
+	<h3>
+	Epistasis
+	</h3>
+	is defined as the deviation from the additive expectation of allelic effects:
+	$$u_{11} = w_{00} + w_{11} - (w_{01} + w_{10})$$
+
+	<aside class="notes">
+	  Mention shapes
+	</aside>
+</section>
+
+<section>
+	<h3>Understanding three-way interactions</h3>
+
+	<h4>
+	<p class="fragment" data-fragment-index="1">
+	Marginal epistasis?
+	</p>
+	</h4>
+	<p class="fragment" data-fragment-index="1">
+	$\small u_{\color{blue}{0}11} = w_{\color{blue}{0}00} + w_{\color{blue}{1}00} + w_{\color{blue}{0}11} + w_{\color{blue}{1}11} − (w_{\color{blue}{0}01} + w_{\color{blue}{1}01}) − (w_{\color{blue}{0}10} + w_{\color{blue}{1}10})$
+	</p>
+
+	<h4>
+	<p class="fragment" data-fragment-index="2">
+	Total three-way interaction?
+	</p>
+	</h4>
+	 <p class="fragment" data-fragment-index="2">
+	$\small u_{111} = w_{000} + w_{011} + w_{101} + w_{110} - (w_{001} + w_{010} + w_{100} + w_{111})$
+	</p>
+
+	<h4>
+	<p class="fragment" data-fragment-index="3">
+	Conditional epistasis?
+	<p>
+	</h4>
+	<p class="fragment" data-fragment-index="3">
+	$\small e = w_{\color{blue}{0}00} − w_{\color{blue}{0}01} − w_{\color{blue}{0}10} + w_{\color{blue}{0}11}$
+	</p>
+</section>
+
+<section>
+	<h4>What if no (credible) fitness measurements are available?</h4>
+	<img data-src="../talks/images/disc_diffusion.png"><br>
+	<font size="2">Image: <a href="https://en.wikipedia.org/wiki/Agar_diffusion_test">Wikipedia</a></font>
+</section>
+
+<section>
+	<h4>Mutation fitness graph</h4>
+	<img class="stretch" data-src="../talks/images/tem.svg">
+	<br>
+	<font size="3">Ogbunugafor et al. <i>Malar. J.</i> 2016</font>
+	</p>
+</section>
+
+<section id="rank-orders">
+	<h4>Rank orders. The simplest case.</h4>
+	$\small u_{11} = w_{00} + w_{11} - (w_{01} + w_{10})$<br>
+	<img class="stretch" data-src="../talks/images/all_24_rankings_two_loci.svg">
+
+	<aside class="notes">
+	  Ask what colour means.
+	</aside>
+</section>
+
+<section>
+	<h3>Exercise: Dyck word algorithm</h3>
+	<p>
+	$$
+	  \begin{align}
+	    \small u_{011} =~
+	    & w_{000} + w_{100} + w_{011} + w_{111} − \\
+	    & w_{001} - w_{101} − w_{010} - w_{110}
+	  \end{align}
+	$$
+	</p>
+
+	<p>
+	$$
+	  w_{111} > w_{011} > w_{101} > w_{010} > w_{000} > w_{110} > w_{100} > w_{001}
+	$$
+	</p>
+	<p class="fragment" data-fragment-index="1">
+	$$
+	  w_{111} > w_{011} > w_{100} > w_{000} > w_{001} > w_{101} > w_{010} > w_{110}
+	$$
+	</p>
+	<p class="fragment" data-fragment-index="2">
+	  A way to quantify uncertainties!
+	</p>
+	<p style="font-size:10pt">
+	  Crona, Gavryushkin, Greene, and Beerenwinkel. Inferring genetic interactions from comparative fitness data. <i>eLife,</i> 2017.
+	</p>
+
+	<aside class="notes">
+	  Game time: how do we get those rankings?
+	</aside>
+</section>
+
+<section data-markdown>
+<script type="text/template">
+	### Numbers at a glance
+	|    Loci | Imply epistasis |       Number of orders | Fraction |
+	|:-------:|:---------------:|:----------------------:|:--------:|
+	|    2    |      16         |          24            |   2/3    |
+	|    3    |      16,128     |          40,320        |   2/5    |
+	|    4    |4,649,508,864,000|  20,922,789,890,000    |   2/9    |
+</script>
+</section>
+
+<section>
+	<h4>Connection between rank orders and mutation graphs</h4>
+	$\small u_{11} = w_{00} + w_{11} - (w_{01} + w_{10})$<br>
+	<img class=stretch data-src="../talks/images/all_total_extensions_of_p_o.svg">
+	<p class="fragment" data-fragment-index="1">
+	  <b>Theorem.</b> A partial order (e.g. fitness graph) implies epistasis if and only if all linear extensions compatible with the partial order do.
+	</p>
+</section>
+
+<section data-transition="slide-in fade-out" id="mutation-graph">
+	<h4>Mutation graph</h4>
+	<img class=stretch data-src="../talks/images/tem_for_Niko.svg">
+
+	<aside class="notes">
+	  Example of data science. A modern one :)
+	</aside>
+</section>
+
+<section data-transition="fade-in fade-out">
+	<h4>Mutation graph</h4>
+	<img class=stretch data-src="../talks/images/tem_highlight_for_Niko.svg">
+</section>
+
+<section data-transition="fade-in slide-out">
+	<h4>Mutation graph</h4>
+	<img class=stretch data-src="../talks/images/tem_highlight_shaded.svg">
+</section>
+
+<section>
+	<h4>Mutation graph</h4>
+	<img class=stretch data-src="../talks/images/tem_order.svg">
+</section>
+
+<section>
+	<h4>Mutation graph</h4>
+	<img class=stretch data-src="../talks/images/tem_order_extension.svg"><br>
+	<p style="font-size:10pt">
+	  Lienkaemper, Lamberti, Drain, Beerenwinkel, and Gavryushkin. The geometry of partial fitness orders and an efficient method for detecting genetic interactions. <i>Journal of Mathematical Biology,</i> 2018.
+	</p>
+</section>
+
+<section id="online-algorithms">
+	<h3>4. Online algorithms to improve computational performance</h3>
+	<br>
+	<ul>
+	  <li class="fragment" data-fragment-index="1"> The traditional way is to make the algorithm more efficient</li><br>
+	  <li class="fragment" data-fragment-index="2"> When the same algorithm has to be re-run routinely, we can economise by making the algorithm slower and doing more!</li><br>
+	  <li class="fragment" data-fragment-index="3"> This approach is known as online</li><br>
+	</ul>
+</section>
+
+<section data-transition="slide-in fade-out">
+	<h3>Online algorithms</h3>
+	<img class="stretch" data-src="../talks/images/Coffee_2.svg" width="100%">
+</section>
+
+<section data-transition="fade-in fade-out">
+	<h3>Online algorithms</h3>
+	<img class="stretch" data-src="../talks/images/Coffee_3.svg" width="100%">
+</section>
+
+<section data-transition="fade-in fade-out">
+	<h3>Online algorithms</h3>
+	<img class="stretch" data-src="../talks/images/Coffee_4.svg" width="100%">
+</section>
+
+<section data-transition="fade-in slide-out">
+	<h3>Online algorithms</h3>
+	<img class="stretch" data-src="../talks/images/Coffee_5.svg" width="100%">
+</section>
+
+<section data-transition="slide-in fade-out">
+	<h3>Online algorithms</h3>
+	<img class="stretch" data-src="../talks/images/Coffee_online_1.svg" width="100%">
+</section>
+
+<section data-transition="fade-in fade-out">
+	<h3>Online algorithms</h3>
+	<img class="stretch" data-src="../talks/images/Coffee_online_2.svg" width="100%">
+</section>
+
+<section data-transition="fade-in fade-out">
+	<h3>Online algorithms</h3>
+	<img class="stretch" data-src="../talks/images/Coffee_online_3.svg" width="100%">
+</section>
+
+<section data-transition="fade-in fade-out">
+	<h3>Online algorithms</h3>
+	<img class="stretch" data-src="../talks/images/Coffee_online_4.svg" width="100%">
+</section>
+
+<section data-transition="fade-in slide-out">
+	<h3>Online algorithms</h3>
+	<img class="stretch" data-src="../talks/images/Coffee_online_5.svg" width="100%">
+</section>
+
+<section>
+	<h3>Homework:</h3>
+	<p style="font-size=16pm">
+	  Find an efficient online algorithm to detect genetic interactions from
+	<ul>
+	  <li> <a href="#/rank-orders">rank orders of genotypes</a>
+	  <li> <a href="#/mutation-graph">partial orders of genotypes</a>
+	</ul>
+	</p>
+</section>
+
+</div>
+</div>
+
+<script src="../talks/lib/js/head.min.js"></script>
+<script src="../talks/js/reveal.js"></script>
+<script>
+  Reveal.initialize({
+    dependencies: [
+	// Speaker notes
+	{ src: '../talks/plugin/notes/notes.js', async: true },
+        // Interpret Markdown in <section> elements
+        { src: '../talks/plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+        { src: '../talks/plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+        // MathJax
+        { src: '../talks/plugin/math/math.js', async: true }
+    ]
+  });
+  Reveal.configure({ slideNumber: true });
+</script>
+</body>
+</html>
