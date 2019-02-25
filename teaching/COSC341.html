@@ -41,6 +41,7 @@
 </section>
 
 <section>
+<section>
 	<h3>Table of contents</h3>
 
 	<ul>
@@ -60,7 +61,7 @@
 	</ul>
 </section>
 
-<section>
+  <section>
 	<h3>Handouts</h3>
 	<ul>
 	  <li> <a href="COSC341.html">These slides</a>
@@ -80,11 +81,12 @@
 		  <li> Final exam: 70% on <b>TBA</b>
 		</ul>
 	</ul>
-</section>
+  </section>
 
-<section>
+  <section>
 	<h3><a href="https://biods.org/alex">Lecturer</a></h3>
 	<img data-src="images/bioDS_lab_2019_COSC341.svg">
+  </section>
 </section>
 
 <section id="L1">
@@ -545,6 +547,14 @@
     ]
   });
   Reveal.configure({ slideNumber: true });
+</script>
+
+<script>
+	var link = document.createElement( 'link' );
+	link.rel = 'stylesheet';
+	link.type = 'text/css';
+	link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+	document.getElementsByTagName( 'head' )[0].appendChild( link );
 </script>
 </body>
 </html>
