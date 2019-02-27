@@ -72,7 +72,7 @@
 	  Information
 	</h3>
 	<ul>
-	  <li> <a href="http://www.cs.otago.ac.nz/cosc341/">COSC341 website</a>
+	  <li> <a href="#/dept-website">COSC341 website</a>
 	  <li> Assessment
 		<ul>
 		  <li> Assignment 1: 10% due Thursday <b>28 March</b>
@@ -83,9 +83,14 @@
 	</ul>
   </section>
 
+  <section id="dept-website" data-background-iframe="http://www.cs.otago.ac.nz/cosc341/" data-background-interactive>
+  </section>
+
   <section>
 	<h3><a href="https://biods.org/alex">Lecturer</a></h3>
 	<img data-src="images/bioDS_lab_2019_COSC341.svg">
+	GitHub: <a href="https://github.com/bioDS">@bioDS</a><br><br>
+	Twitter: <a href="https://twitter.com/bioDS_lab">@bioDS_lab</a>
   </section>
 </section>
 
@@ -176,21 +181,56 @@
 
 <section>
 	<h4>Subsets, ordered tuples, relations, and functions</h4>
-	$A \subseteq B \iff (\forall x) (x \in A \Rightarrow x \in B)$<br><br>
-	$\mathcal P(A) = \{X \mid X \subseteq A\}$<br><br>
-	$(a, b) = (c, d) \iff (a = c~\&~b = d)$<br><br>
-	$A \times B = \{(a, b) \mid a \in A, b \in B\}$<br><br>
-	$P \subseteq A \times B$ is a <b>relation</b> (from $A$ to $B$, or <b>on</b> $A$ if $A = B$)<br><br>
-	$f \subseteq A \times B$ is a <b>function</b> if $(f(a) = b ~\&~ f(a) = c) \Rightarrow b = c$
+	<p>
+	  $A \subseteq B \iff (\forall x) (x \in A \Rightarrow x \in B)$<br><br>
+	</p>
+
+	<p class="fragment" data-fragment-index="1">
+	  $\mathcal P(A) = \{X \mid X \subseteq A\}$<br><br>
+	</p>
+
+	<p class="fragment" data-fragment-index="2">
+	  $(a, b) = (c, d) \iff (a = c~\&~b = d)$<br><br>
+	</p>
+
+	<p class="fragment" data-fragment-index="3">
+	  $A \times B = \{(a, b) \mid a \in A, b \in B\}$<br><br>
+	</p>
+
+	<p class="fragment" data-fragment-index="4">
+	  $P \subseteq A \times B$ is a <b>relation</b> (from $A$ to $B$, or <b>on</b> $A$ if $A = B$)<br><br>
+	</p>
+
+	<p class="fragment" data-fragment-index="5">
+	  $f \subseteq A \times B$ is a <b>function</b> if $(f(a) = b ~\&~ f(a) = c) \Rightarrow b = c$
+	</p>
 </section>
 
 <section>
 	<h3>Types of functions</h3><br><br>
 	Let $f : A \to B$.
 	The function $f$ is called<br><br>
-	<b>injective</b> if $f(a) = f(b) \Rightarrow a = b$<br><br>
-	<b>surjective</b> if $(\forall y \in B)(\exists x \in A)f(x) = y$<br><br>
-	<b>bijective</b> if $f$ is injective and surjective.
+	<p>
+	  <b>injective</b> if $f(a) = f(b) \Rightarrow a = b$<br><br>
+	</p>
+
+	<p class="fragment" data-fragment-index="1">
+	  <b>surjective</b> if $(\forall y \in B)(\exists x \in A)f(x) = y$<br><br>
+	</p>
+
+	<p class="fragment" data-fragment-index="2">
+	  <b>bijective</b> if $f$ is injective and surjective.
+	</p>
+</section>
+
+<section>
+	<h4>
+	  Molecular biology: crash course
+	</h4>
+	<img class="stretch" data-src="images/central_dogma.svg">
+</section>
+
+<section data-background-video="http://content.dnalc.org/content/c16/16933/3d-central-dogma-audio-title.mp4">
 </section>
 
 <section>
@@ -216,20 +256,25 @@
 
 <section>
 	<h3>Partitions and equivalence relations</h3><br><br>
+	<p>
 	$A = B \sqcup C$ is a <b>partition</b> if $A = B \cup C$ and $B \cap C = \varnothing$<br><br>
-	A relation $\sim$ on $A$ is called an <b>equivalence relations</b> if $\sim$ is:<br>
-	<ul>
-	  <li> <b>Reflexive</b> $(\forall x \in A)~x \sim x$
-	  <li> <b>Transitive</b> $(\forall x, y \in A)~(x \sim y \Rightarrow y \sim x)$
-	  <li> <b>Symmetric</b> $(\forall x, y, z \in A)~(x \sim y ~\&~ y \sim z \Rightarrow x \sim z)$
-	</ul>
+	</p>
+
+	<p class="fragment" data-fragment-index="1">
+	  A relation $\sim$ on $A$ is called an <b>equivalence relations</b> if $\sim$ is:<br>
+	  <ul class="fragment" data-fragment-index="1">
+	    <li> <b>Reflexive</b> $(\forall x \in A)~x \sim x$
+	    <li> <b>Transitive</b> $(\forall x, y \in A)~(x \sim y \Rightarrow y \sim x)$
+	    <li> <b>Symmetric</b> $(\forall x, y, z \in A)~(x \sim y ~\&~ y \sim z \Rightarrow x \sim z)$
+	  </ul>
+	</p>
 </section>
 
 <section>
 	<h3>Theorem 1</h3>
 	A partition of a set $A$ is the same thing as an equivalence relation on $A$.<br><br>
 
-	In other words: Let $A$ be a set. Then
+	<i>In other words:</i> Let $A$ be a set. Then
 	<ol>
 	  <li> A partition $A_1 \sqcup A_2 \sqcup \ldots$ of the set $A$ is defined by an equivalence relation on $A$.
 	  <li> An equivalence relation $\sim$ on the set $A$ defines a partition on $A$.
@@ -237,17 +282,31 @@
 	<b>Proof:</b> Exercise for those who skipped the lecture.
 </section>
 
+<section>
+	<h3>Cardinality</h3>
+	Two sets $A$ and $B$ <b>have the same cardinality</b> if there exists a bijection $f : A \to B$, written $|A| = |B|$.<br><br>
+	<p class="fragment" data-fragment-index="1">
+	  Set $A$ has <b>smaller cardinality</b> than $B$ if there exists a (total) injection $f : A \to B$, written $|A| \leqslant |B|$.<br><br>
+	</p>
+
+	<p class="fragment" data-fragment-index="2">
+	  <b>Theorem:</b> $|A| = |B| \iff (|A| \leqslant |B| ~\&~ |B| \leqslant |A|)$.<br><br>
+	</p>
+
+	<p class="fragment" data-fragment-index="3">
+	  $|\mathbb N| \stackrel{?}{=} |\mathbb Z| \stackrel{?}{=} |\mathbb Q| \stackrel{?}{=} |\mathbb R|$
+	</p>
+</section>
+
+<section>
+	<h3>Theorem 2</h3>
+	$\mathbb N < \mathbb R$
+</section>
+
 
 <section>
 	<h3>Danger zone!</h3>
 	<h3>We recommend that you don't scroll past this slide.</h3>
-</section>
-
-<section id="molecular-biology">
-	<h4>
-	  Molecular biology: crash course
-	</h4>
-	<img class="stretch" data-src="images/central_dogma.svg">
 </section>
 
 <section>
