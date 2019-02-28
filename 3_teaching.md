@@ -34,6 +34,7 @@ Tutorials:
 - [Tutorial 1](/teaching/COSC341_tutorials/T01.pdf)
 - [Tutorial 2](/teaching/COSC341_tutorials/T02.pdf)
 
+
 ## 2018 Guest Lectures
 
 - [COSC241 Lecture 22: Biological Data Science](COSC241_L22)
