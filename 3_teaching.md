@@ -30,6 +30,9 @@ Individual lectures:
 - [Lecture 12:](COSC341#/L12)
 - [Lecture 13:](COSC341#/L13)
 
+Tutorials:
+- [Tutorial 1](/teaching/COSC341_tutorials/T01.pdf)
+- [Tutorial 2](/teaching/COSC341_tutorials/T02.pdf)
 
 ## 2018 Guest Lectures
 
