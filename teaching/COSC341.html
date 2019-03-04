@@ -50,10 +50,10 @@
 	  <li> <a href="#/L3">Lecture 3: Cardinality</a>
 	  <li> <a href="#/L4">Lecture 4: Finite state automata</a>
 	  <li> <a href="#/L5">Lecture 5: Non-deterministic automata</a>
-	  <li> <a href="#/L6">Lecture 6: Context free grammars</a>
+	  <li> <a href="#/L6">Lecture 6: Pushdown automata</a>
 	  <li> <a href="#/L7">Lecture 7: Regular languages</a>
 	  <li> <a href="#/L8">Lecture 8: Irregular languages, pumping lemma</a>
-	  <li> <a href="#/L9">Lecture 9: Pushdown automata</a>
+	  <li> <a href="#/L9">Lecture 9: Context free grammars</a>
 	  <li> <a href="#/L10">Lecture 10: Turing Machines</a>
 	  <li> <a href="#/L11">Lecture 11: Turing Machines</a>
 	  <li> <a href="#/L12">Lecture 12: Turing Machines</a>
@@ -281,11 +281,10 @@
 
 <section id="L3">
 	<h2>Lecture 3</h2>
-	<h2>Cardinality, recursion, induction</h2>
+	<h2>Cardinality</h2>
 </section>
 
 <section>
-	<h3>Cardinality</h3>
 	Two sets $A$ and $B$ <b>have the same cardinality</b> if there exists a bijection $f : A \to B$, written $|A| = |B|$.<br><br>
 	<p class="fragment" data-fragment-index="1">
 	  Set $A$ has <b>smaller cardinality</b> than $B$ if there exists a (total) injection $f : A \to B$, written $|A| \leqslant |B|$.<br><br>
@@ -305,25 +304,70 @@
 	$\mathbb N < \mathbb R$
 </section>
 
+<section id="L4">
+	<h2>Lecture 4</h2>
+	<h2>Finite state automata</h2>
+</section>
+
+<section>
+	<img data-src="images/FSA1.png">
+</section>
+
+<section>
+	<img data-src="images/FSA2.png">
+</section>
+
+<section>
+	<img data-src="images/FSA3.png">
+</section>
+
+<section>
+	<img data-src="images/FSA3.png"><br>
+	A <b>deterministic finite state automaton</b>, $M$, consists of:
+	<ul>
+	  <li> A finite set, $Q$, of <b>states</b>
+	  <li> A finite set $\Sigma$ called the <b>alphabet</b>
+	  <li> A total function $\delta: Q \times \Sigma \to Q$ called the <b>transition function</b>
+	  <li> A distinguished state $q_0 \in Q$ called the <b>initial state</b>
+	  <li> A subset $F \subseteq Q$ called the <b>final</b> or <b>accepting states</b>.
+	</ul>
+</section>
+
+<section>
+	<img data-src="images/FSA3.png"><br>
+	Given a word $w = w_0 w_1 \dots w_{n-1} \in \Sigma^*$ the <b>computation</b> carried out by $M$ on input $w$ is a sequence of states $q_0, q_1, q_2, \dots, q_n$ defined as follows:
+	\[
+	  q_1 = \delta(q_0, w_0), \: q_2 = \delta(q_1, w_1), \: \dots ,\: q_n = \delta(q_{n-1}, w_{n-1})
+	\]
+	<p class="fragment" data-fragment-index="1">
+	  We say that $M$ <b>accepts</b> or <b>recognises</b> $w$ if $q_n \in F$ and otherwise it <b>rejects</b> $w$.<br><br>
+
+	  The <b>language of $M$</b>, $L(M)$ is just the set of strings in $\Sigma^*$ that $M$ accepts.
+	</p>
+</section>
+
+<section id="L5">
+	<h2>Lecture 5</h2>
+	<h2>Non-deterministic automata</h2>
+</section>
+
+<section>
+	Relax the definition of the transition function to become a <b>transition relation</b>.
+	\[
+	  \delta \subseteq Q \times \Sigma \cup \{\lambda\} \times Q
+	\]<br>
+	<img class="fragment" data-fragment-index="1" data-src="images/FSA3.png">
+</section>
+
+<section>
+	<h3>Theorem 3</h3>
+	The classes of languages recognised by DFA and NFA coincide.
+</section>
+
 
 <section>
 	<h3>Danger zone!</h3>
 	<h3>We recommend that you don't scroll past this slide.</h3>
-</section>
-
-<section>
-	<h3>
-	  Does this matter?
-	</h3>
-	<ul>
-	  <li class="fragment" data-fragment-index="1"> Genetics diseases, e.g. cancer
-	  <li class="fragment" data-fragment-index="2"> Antibiotic resistance
-	  <li class="fragment" data-fragment-index="3"> Virus outbreaks
-	  <li class="fragment" data-fragment-index="3"> Food
-	  <li class="fragment" data-fragment-index="3"> Ecology
-	  <li class="fragment" data-fragment-index="3"> Information storage?
-	  <li class="fragment" data-fragment-index="3"> . . .
-	</ul>
 </section>
 
 <section>
