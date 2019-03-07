@@ -30,11 +30,12 @@ Individual lectures:
 - [Lecture 12: Turing Machines](COSC341#/L12)
 - [Lecture 13: Turing Machines](COSC341#/L13)
 
-Tutorials:
-- [Tutorial 1](/teaching/COSC341_tutorials/T01.pdf) [Solutions](/teaching/COSC341_tutorials/T01_solutions.pdf)
-- [Tutorial 2](/teaching/COSC341_tutorials/T02.pdf) [Solutions](/teaching/COSC341_tutorials/T02_solutions.pdf)
-- [Tutorial 3](/teaching/COSC341_tutorials/T03.pdf)
-- [Tutorial 4](/teaching/COSC341_tutorials/T04.pdf)
+|Tutorials									| Solutions
+|---										| ---
+| [Tutorial 1: Sets and functions](/teaching/COSC341_tutorials/T01.pdf)		| [Solutions 1](/teaching/COSC341_tutorials/T01_solutions.pdf)
+| [Tutorial 2: Equivalence relations](/teaching/COSC341_tutorials/T02.pdf)	| [Solutions 2](/teaching/COSC341_tutorials/T02_solutions.pdf)
+| [Tutorial 3: Cardinality](/teaching/COSC341_tutorials/T03.pdf)		|
+| [Tutorial 4: Automata](/teaching/COSC341_tutorials/T04.pdf)			|
 
 
 ## 2018 Guest Lectures
