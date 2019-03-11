@@ -347,14 +347,6 @@
 	</p>
 </section>
 
-<section>
-	<h3>Genome phasing</h3>
-	<img data-src="images/NFA_Schwartz.png">
-	<p style="font-size:9pt">
-	Schwarz, Roland F., Anne Trinh, Botond Sipos, James D. Brenton, Nick Goldman, and Florian Markowetz. 2014. “Phylogenetic Quantification of Intra-Tumour Heterogeneity.” <i>PLoS Computational Biology</i> 10 (4): e1003535.<br>
-	[Corrected]
-</section>
-
 <section id="L5">
 	<h2>Lecture 5</h2>
 	<h2>Non-deterministic automata</h2>
@@ -367,12 +359,42 @@
 	  \delta \subseteq Q \times \Sigma \cup \{\lambda\} \times Q
 	\]<br>
 	<img class="fragment" data-fragment-index="1" data-src="images/FSA3.png">
+	<p class="fragment" data-fragment-index="2" >
+	  $\{ab\}$ in English alphabet
+	</p>
+</section>
+
+<section>
+	<h3>Examples</h3>
+	<p>
+	  Design an automaton that recognises the following languages in alphabet $\{a,b\}$
+	</p>
+
+	<p class="fragment" data-fragment-index="1">
+	  $L_1 = \{w | w = xaaybbbz, \mbox{ where } x,y,z \in\{a,b\}^*\}$
+	</p>
+
+	<p class="fragment" data-fragment-index="2">
+	  $L_2 = \{w | w \mbox{ contains $aa$ or $bbb$}\}$
+	</p>
+
+	<p class="fragment" data-fragment-index="3">
+	  $L_3 = \{w | w \mbox{ contains $aa$ and $bbb$}\}$
+	</p>
 </section>
 
 <section>
 	<h3>Theorem 3</h3>
 	The classes of languages recognised by DFA and NFA coincide.<br><br>
 	<b>Proof:</b> Go to the lecture (or read in the notes).
+</section>
+
+<section>
+	<h3>Genome phasing</h3>
+	<img data-src="images/NFA_Schwartz.png">
+	<p style="font-size:9pt">
+	Schwarz, Roland F., Anne Trinh, Botond Sipos, James D. Brenton, Nick Goldman, and Florian Markowetz. 2014. “Phylogenetic Quantification of Intra-Tumour Heterogeneity.” <i>PLoS Computational Biology</i> 10 (4): e1003535.<br>
+	[Corrected]
 </section>
 
 
