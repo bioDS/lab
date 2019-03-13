@@ -408,11 +408,24 @@
 </section>
 
 <section>
-	$L = \{a^nb^n \mid n \in \mathbb{N}\}$
+	$L = \{a^nb^n \mid n \in \mathbb{N}\}$<br><br>
+	<h4 class="fragment" data-fragment-index="1"><b>Pumping lemma</b></h4>
 	<p class="fragment" data-fragment-index="1">
-	  <b>Pumping lemma:</b> Let $L$ be a regular language...
+	  Let $L$ be a regular language.
+	  Then there exists a positive integer $k$ such that if $z \in L$, $|z| \geq k$ then for some $u$, $v$ and $w$:<br>
+	$
+	  \begin{eqnarray*}
+	    z &=& u \cdot v \cdot w \\
+	    |u| + |v| &\leq& k \\
+	    |v| &>& 0 \\
+	    uv^iw &\in& L \quad \mbox{for all $i \geq 0$}.
+	  \end{eqnarray*}
+	$
 	</p>
 	<p class="fragment" data-fragment-index="2">
+	  <b>Proof:</b> Haven't we just proven it?
+	</p>
+	<p class="fragment" data-fragment-index="3">
 	  $L = \{w \in \{a, b\} \mid \mbox{$w$ contains an odd number of $a$'s}$<br>
 	  $\mbox{and an even number of $b$'s}\}$
 	</p>
