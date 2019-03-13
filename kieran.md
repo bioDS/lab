@@ -19,4 +19,4 @@ Tutoring [COSC243](https://www.cs.otago.ac.nz/cosc243) Computer Architecture and
 
 ### Contact
 
-|**Email**	|[kieran.elmes@kolabnow.com](mailto:kieran.elmes@kolabnow.com)	|
+|**Email**	|[kelmes@cs.otago.ac.nz](mailto:kelmes@cs.otago.ac.nz)	|
