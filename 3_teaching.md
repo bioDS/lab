@@ -34,9 +34,10 @@ Individual lectures:
 |---										| ---
 | [Tutorial 1: Sets and functions](/teaching/COSC341_tutorials/T01.pdf)		| [Solutions 1](/teaching/COSC341_tutorials/T01_solutions.pdf)
 | [Tutorial 2: Equivalence relations](/teaching/COSC341_tutorials/T02.pdf)	| [Solutions 2](/teaching/COSC341_tutorials/T02_solutions.pdf)
-| [Tutorial 3: Cardinality](/teaching/COSC341_tutorials/T03.pdf)		|
-| [Tutorial 4: Automata](/teaching/COSC341_tutorials/T04.pdf)			|
+| [Tutorial 3: Cardinality](/teaching/COSC341_tutorials/T03.pdf)		| [Solutions 3](/teaching/COSC341_tutorials/T03_solutions.pdf)
+| [Tutorial 4: Automata](/teaching/COSC341_tutorials/T04.pdf)			| [Solutions 4](/teaching/COSC341_tutorials/T04_solutions.pdf)
 | [Tutorial 5: Deterministic and non-deterministic automata](/teaching/COSC341_tutorials/T05.pdf)			|
+| [Tutorial 5: NFA=DFA, pumping lemma](/teaching/COSC341_tutorials/T06.pdf)			|
 
 
 ## 2018 Guest Lectures
