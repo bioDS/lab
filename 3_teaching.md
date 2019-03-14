@@ -30,14 +30,15 @@ Individual lectures:
 - [Lecture 12: Turing Machines](COSC341#/L12)
 - [Lecture 13: Turing Machines](COSC341#/L13)
 
-|Tutorials									| Solutions
+| Exercises									| Solutions
 |---										| ---
-| [Tutorial 1: Sets and functions](/teaching/COSC341_tutorials/T01.pdf)		| [Solutions 1](/teaching/COSC341_tutorials/T01_solutions.pdf)
-| [Tutorial 2: Equivalence relations](/teaching/COSC341_tutorials/T02.pdf)	| [Solutions 2](/teaching/COSC341_tutorials/T02_solutions.pdf)
-| [Tutorial 3: Cardinality](/teaching/COSC341_tutorials/T03.pdf)		| [Solutions 3](/teaching/COSC341_tutorials/T03_solutions.pdf)
-| [Tutorial 4: Automata](/teaching/COSC341_tutorials/T04.pdf)			| [Solutions 4](/teaching/COSC341_tutorials/T04_solutions.pdf)
-| [Tutorial 5: Deterministic and non-deterministic automata](/teaching/COSC341_tutorials/T05.pdf)			|
-| [Tutorial 6: NFA=DFA, pumping lemma](/teaching/COSC341_tutorials/T06.pdf)			|
+| [Tutorial 1: Sets and functions](COSC341_tutorials/T01.pdf)			| [Solutions 1](COSC341_tutorials/T01_solutions.pdf)
+| [Tutorial 2: Equivalence relations](COSC341_tutorials/T02.pdf)		| [Solutions 2](COSC341_tutorials/T02_solutions.pdf)
+| [Tutorial 3: Cardinality](COSC341_tutorials/T03.pdf)				| [Solutions 3](COSC341_tutorials/T03_solutions.pdf)
+| [Tutorial 4: Automata](COSC341_tutorials/T04.pdf)				| [Solutions 4](COSC341_tutorials/T04_solutions.pdf)
+| [Tutorial 5: Deterministic and non-deterministic automata](COSC341_tutorials/T05.pdf)|
+| [Tutorial 6: NFA=DFA, pumping lemma](COSC341_tutorials/T06.pdf)		|
+| Assignment 1 (link will appear here)						| **Thu 28 Mar, 4pm**
 
 
 ## 2018 Guest Lectures
