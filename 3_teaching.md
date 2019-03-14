@@ -38,7 +38,7 @@ Individual lectures:
 | [Tutorial 4: Automata](COSC341_tutorials/T04.pdf)				| [Solutions 4](COSC341_tutorials/T04_solutions.pdf)
 | [Tutorial 5: Deterministic and non-deterministic automata](COSC341_tutorials/T05.pdf)|
 | [Tutorial 6: NFA=DFA, pumping lemma](COSC341_tutorials/T06.pdf)		|
-| Assignment 1 (link will appear here)						| **Thu 28 Mar, 4pm**
+| [Assignment 1](cosc341_assignment1.pdf)					| **Thu 28 Mar, 4pm**
 
 
 ## 2018 Guest Lectures
