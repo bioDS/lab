@@ -1,0 +1,69 @@
+\documentclass{article}
+
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage{amsthm}
+
+\setlength{\textwidth}{15cm}
+\setlength{\textheight}{21cm}
+\setlength{\topmargin}{0cm}
+\setlength{\headsep}{0.5cm}
+\setlength{\headheight}{0.5cm}
+\setlength{\oddsidemargin}{0.25pt}
+\setlength{\evensidemargin}{0.25pt}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{5pt}
+
+\makeatletter
+\newfont{\footsc}{cmcsc10 at 8truept}
+\newfont{\footbf}{cmbx10 at 8truept}
+\newfont{\footrm}{cmr10 at 10truept}
+
+\renewcommand{\footrulewidth}{0.4pt}
+
+\pagestyle{fancy}
+\fancyhead[LO, LE]{{\sc COSC} 341: Assignment 1}
+
+\begin{document}
+
+
+\noindent {\bf Due Date: Thursday 28 March, 4pm}
+
+Please submit a {\bf PDF} by email to: \href{mailto:teaching@biods.org}{teaching@biods.org} with subject ``341 Assignment 1''. Make sure that your name and ID number are on the PDF called: YourName\_assignment1.pdf
+
+What you hand in should be all your own work.
+
+Please note the following
+\begin{itemize}
+\item There are 22 marks in this assignment but the \textbf{maximum} you can get is \textbf{10}.
+\item Marks outside the set $\{0, 10\}$ are very uncommon for question 3.
+\item Unless we receive a correct solution to question 3, the solution will not be made available within this course.
+\end{itemize}
+
+\section*{Questions}
+\begin{enumerate}
+\item
+\begin{enumerate}
+\item Assume that a gene is a word over the alphabet $\{A, T, C, G\}$.
+	Assume also that a protein is unambiguously defined by a finite set of genes and different sets of genes define different proteins.
+	Is the set of all proteins finite or infinite?
+	If infinite, is the set countable or uncountable?
+	Justify your answers formally (with proofs). (\textbf{3 marks})
+\item Consider $F$, the set of all functions $f: \{0,1,2\}^* \to \{0,1,2\}^*$ mapping from ternary numbers to ternary numbers.
+	Is $F$ countable or uncountable?
+	Justify your answer formally. (\textbf{3 marks})
+\end{enumerate}
+
+\item Design an automaton for each of the following languages over the alphabet $\Sigma = \{a, b, c\}$.
+	If your automaton is non-deterministic, provide a DFA for the same language.
+	Explain why your DFA recognises the same language.
+	If you decide to use the automaton determinisation algorithm, list all steps of the algorithm you make. (\textbf{2 marks each}):
+	\begin{enumerate}
+	  \item The set of strings in which every $ab$ is immediately followed by a $ac$.
+	  \item The set of strings that contain $aba$ or $bab$ (or both) as a substring.
+	  \item The set of strings that begin with $a$, contain exactly two $b$'s and end with $cc$.
+	\end{enumerate}
+
+\item Prove that the Pumping Lemma is not a sufficient condition for a language to be automatic, that is, the Pumping Lemma is not an ``if and only if'' statement. (\textbf{10 marks})
+\end{enumerate}
+\end{document}
