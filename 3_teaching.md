@@ -37,7 +37,7 @@ Individual lectures:
 | [Tutorial 3: Cardinality](/teaching/COSC341_tutorials/T03.pdf)		| [Solutions 3](/teaching/COSC341_tutorials/T03_solutions.pdf)
 | [Tutorial 4: Automata](/teaching/COSC341_tutorials/T04.pdf)			| [Solutions 4](/teaching/COSC341_tutorials/T04_solutions.pdf)
 | [Tutorial 5: Deterministic and non-deterministic automata](/teaching/COSC341_tutorials/T05.pdf)			|
-| [Tutorial 5: NFA=DFA, pumping lemma](/teaching/COSC341_tutorials/T06.pdf)			|
+| [Tutorial 6: NFA=DFA, pumping lemma](/teaching/COSC341_tutorials/T06.pdf)			|
 
 
 ## 2018 Guest Lectures
