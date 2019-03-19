@@ -52,9 +52,9 @@
 	  <li> <a href="#/L5">Lecture 5: Non-deterministic automata</a>
 	  <li> <a href="#/L6">Lecture 6: NFA = DFA</a>
 	  <li> <a href="#/L7">Lecture 7: Pumping lemma</a>
-	  <li> <a href="#/L8">Lecture 8: Pushdown automata, regular languages, context free grammars</a>
-	  <li> <a href="#/L9">Lecture 9: Pumping lemma 2, classification of languages</a>
-	  <li> <a href="#/L10">Lecture 10: Turing Machines</a>
+	  <li> <a href="#/L8">Lecture 8: Pushdown automata and context free grammars</a>
+	  <li> <a href="#/L9">Lecture 9: Regular languages, classification of languages</a>
+	  <li> <a href="#/L10">Lecture 10: Pumping Lemma 2</a>
 	  <li> <a href="#/L11">Lecture 11: Turing Machines</a>
 	  <li> <a href="#/L12">Lecture 12: Turing Machines</a>
 	  <li> <a href="#/L13">Lecture 13: Turing Machines</a>
@@ -438,7 +438,7 @@
 
 <section id="L8">
 	<h2>Lecture 8</h2>
-	<h2>Pushdown automata, regular languages, context free grammars</h2>
+	<h2>Pushdown automata and context free grammars</h2>
 </section>
 
 <section>
@@ -447,7 +447,7 @@
 	  <li> A finite set, $Q$, of <b>states</b>
 	  <li> A finite set $\Sigma$ called the <b>input alphabet</b> (lower case letters)
 	  <li> A finite set $\Gamma$ called the <b>stack alphabet</b> (upper case letters)
-	  <li> A relation $\delta \subseteq Q \times \Sigma \cup \{\lambda\} \times \Gamma \cup \{\lambda\} \times Q \times \Gamma \cup \{\lambda\}$<br>
+	  <li> A relation $\delta \subseteq Q \times \Sigma \cup \{\lambda\} \times \color{blue}{\Gamma \cup \{\lambda\}} \times Q \times \color{blue}{\Gamma \cup \{\lambda\}}$<br>
 		called the <b>transition relation</b>
 	  <li> A distinguished state $q_0 \in Q$ called the <b>initial state</b>
 	  <li> A subset $F \subseteq Q$ called the <b>final</b> or <b>accepting states</b>.
