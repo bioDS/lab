@@ -36,9 +36,10 @@ Individual lectures:
 | [Tutorial 2: Equivalence relations](COSC341_tutorials/T02.pdf)		| [Solutions 2](COSC341_tutorials/T02_solutions.pdf)
 | [Tutorial 3: Cardinality](COSC341_tutorials/T03.pdf)				| [Solutions 3](COSC341_tutorials/T03_solutions.pdf)
 | [Tutorial 4: Automata](COSC341_tutorials/T04.pdf)				| [Solutions 4](COSC341_tutorials/T04_solutions.pdf)
-| [Tutorial 5: Deterministic and non-deterministic automata](COSC341_tutorials/T05.pdf)|
-| [Tutorial 6: NFA = DFA](COSC341_tutorials/T06.pdf)				|
+| [Tutorial 5: Deterministic and non-deterministic automata](COSC341_tutorials/T05.pdf)| [Solutions 5](COSC341_tutorials/T05_solutions.pdf)
+| [Tutorial 6: NFA = DFA](COSC341_tutorials/T06.pdf)				| [Solutions 6](COSC341_tutorials/T06_solutions.pdf)
 | [Tutorial 7: Pumping Lemma](COSC341_tutorials/T07.pdf)			|
+| [Tutorial 8: Pumping Lemma, Pushdown automata](COSC341_tutorials/T08.pdf)			|
 | [Assignment 1](cosc341_assignment1.pdf)					| **Thu 28 Mar, 4pm**
 
 
