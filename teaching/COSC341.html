@@ -485,6 +485,44 @@
 	</p>
 </section>
 
+<section id="L9">
+	<h2>Lecture 9</h2>
+	<h2>Regular languages, classification of languages</h2>
+</section>
+
+<section>
+	The following are <b>regular expressions</b> over the alphabet $\Sigma$:<br>
+	$\varnothing$; $\lambda$; $x$ for every $x \in \Sigma$.
+
+	<p class="fragment" data-fragment-index="1">
+	  If $\alpha$ and $\beta$ are <b>regular expressions</b> then so are the following:<br>
+	  $\alpha\beta$; $\alpha \cup \beta$; $\alpha^*$
+	</p>
+
+	<p class="fragment" data-fragment-index="2">
+	  The language $L_\alpha$ <b>described</b> by the regular expression $\alpha$ is defined in the following way:<br>
+	  $L_\alpha = \varnothing$ if $\alpha = \varnothing$<br>
+	  $L_\alpha = \{\lambda\}$ if $\alpha = \lambda$<br>
+	  $L_\alpha = \{x\}$ if $\alpha = x$
+	</p>
+
+	<p class="fragment" data-fragment-index="3">
+	  $L_{\alpha\beta} = \{uv \mid u \in L_\alpha \mbox{ and } v \in L_\beta\}$<br>
+	  $L_{\alpha\cup\beta} = L_\alpha \cup L_\beta$<br>
+	  $L_{\alpha^*} = \{w_1 \ldots w_k \mid w_1, \ldots, w_k \in L_\alpha \mbox{ and } k \in \mathbb N\}$<br>
+	</p>
+
+	<p class="fragment" data-fragment-index="4">
+	  Language $L$ is called <b>regular</b> if it can be described by a regular expression $\alpha$, that is, there exists $\alpha$ such that $L = L_\alpha$.
+	</p>
+</section>
+
+<section>
+	<h3>Classification of languages</h3>
+	(so far)<br><br><br>
+	$\mathcal L_{DFA} = \mathcal L_{NFA} = \mathcal L_{reg} \subset \mathcal L_{PDA} = \mathcal L_{CFG}$
+</section>
+
 
 <section>
 	<h3>Danger zone!</h3>
