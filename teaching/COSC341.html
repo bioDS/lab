@@ -417,7 +417,7 @@
 	<h4 class="fragment" data-fragment-index="1"><b>Pumping lemma</b></h4>
 	<p class="fragment" data-fragment-index="1">
 	  Let $L$ be an automatic language.
-	  Then there exists a positive integer $k$ such that if $z \in L$, $|z| \geq k$ then for some $u$, $v$ and $w$:<br>
+	  Then there exists a positive integer $k$ such that if $z \in L$, $|z| \geq k$ then for some $u$, $v$, and $w$:<br>
 	$
 	  \begin{eqnarray*}
 	    z &=& u \cdot v \cdot w \\
@@ -446,7 +446,7 @@
 	<ul>
 	  <li> A finite set $Q$ of <b>states</b>
 	  <li> A finite set $\Sigma$ called the <b>input alphabet</b> (lower case letters)
-	  <li> A finite set $\Gamma$ called the <b>stack alphabet</b> (upper case letters)
+	  <li> A finite set $\color{blue}{\Gamma}$ called the <b>stack alphabet</b> (upper case letters)
 	  <li> A relation $\delta \subseteq Q \times \Sigma \cup \{\lambda\} \times \color{blue}{\Gamma \cup \{\lambda\}} \times Q \times \color{blue}{\Gamma \cup \{\lambda\}}$<br>
 		called the <b>transition relation</b>
 	  <li> A distinguished state $q_0 \in Q$ called the <b>initial state</b>
@@ -485,6 +485,11 @@
 	</p>
 </section>
 
+<section>
+	<h3>Theorem</h3>
+	$\mathcal L_{PDA} = \mathcal L_{CFG}$
+</section>
+
 <section id="L9">
 	<h2>Lecture 9</h2>
 	<h2>Regular languages, classification of languages</h2>
@@ -511,10 +516,22 @@
 	  $L_{\alpha\cup\beta} = L_\alpha \cup L_\beta$<br>
 	  $L_{\alpha^*} = \{w_1 \ldots w_k \mid w_1, \ldots, w_k \in L_\alpha \mbox{ and } k \in \mathbb N\}$<br>
 	</p>
+</section>
 
-	<p class="fragment" data-fragment-index="4">
+<section>
+	<p>
 	  Language $L$ is called <b>regular</b> if it can be described by a regular expression $\alpha$, that is, there exists $\alpha$ such that $L = L_\alpha$.
 	</p>
+	<h3>Examples</h3>
+	\begin{align*}
+	  L_a		&= a(a \cup b)^*\\
+	  \\
+	  L_e 		&= ((a \cup b)(a \cup b))^*\\
+	  \\
+	  L_{bb}	&= (a \cup b)^*bb(a\cup b)^*\\
+	  \\
+	  L_{2b}	&= a^*ba^*ba^*
+\end{align*}
 </section>
 
 <section>
