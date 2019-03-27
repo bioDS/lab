@@ -53,8 +53,8 @@
 	  <li> <a href="#/L6">Lecture 6: NFA = DFA</a>
 	  <li> <a href="#/L7">Lecture 7: Pumping lemma</a>
 	  <li> <a href="#/L8">Lecture 8: Pushdown automata and context free grammars</a>
-	  <li> <a href="#/L9">Lecture 9: Regular languages, classification of languages</a>
-	  <li> <a href="#/L10">Lecture 10: Pumping Lemma 2</a>
+	  <li> <a href="#/L9">Lecture 9: Regular languages</a>
+	  <li> <a href="#/L10">Lecture 10: Classification of languages, pumping Lemma 2</a>
 	  <li> <a href="#/L11">Lecture 11: Turing Machines</a>
 	  <li> <a href="#/L12">Lecture 12: Turing Machines</a>
 	  <li> <a href="#/L13">Lecture 13: Turing Machines</a>
@@ -508,7 +508,7 @@
 
 <section id="L9">
 	<h2>Lecture 9</h2>
-	<h2>Regular languages, classification of languages</h2>
+	<h2>Regular languages</h2>
 </section>
 
 <section>
@@ -517,7 +517,7 @@
 
 	<p class="fragment" data-fragment-index="1">
 	  If $\alpha$ and $\beta$ are <b>regular expressions</b> then so are the following:<br>
-	  $\alpha\beta$; $\alpha \cup \beta$; $\alpha^*$
+	  $(\alpha\beta)$; $(\alpha \cup \beta)$; $\alpha^*$
 	</p>
 
 	<p class="fragment" data-fragment-index="2">
@@ -550,10 +550,65 @@
 \end{align*}
 </section>
 
+<section id="L10">
+	<h2>Lecture 10</h2>
+	<h2>Classification of languages, Pumping Lemma 2</h2>
+</section>
+
+<section>
+	<b>Theorem (i):</b> $\mathcal L_{DFA} = \mathcal L_{reg}$
+	<p class="fragment" data-fragment-index="1">
+	  <i>Proof:</i> Easy.
+	</p>
+
+	<p class="fragment" data-fragment-index="2">
+	  <b>Theorem (ii):</b> Automatic languages are closed under<br>
+	  $\cdot$ (concatenation), $\cup$ (union), $\cap$ (intersection),<br>
+	  and $\overline{\phantom a}$ complement.
+	</p>
+	<p class="fragment" data-fragment-index="3">
+	  <i>Proof:</i> Even easier.
+	</p>
+
+	<p class="fragment" data-fragment-index="4">
+	  <b>Theorem (iii):</b> Context-free languages are closed under<br>
+	  $\cdot$ (concatenation) and $\cup$ (union),<br>
+	  but not $\cap$ (intersection) or $\overline{\phantom a}$ complement.
+	</p>
+	<p class="fragment" data-fragment-index="5">
+	  <i>Proof:</i> Not yet possible &mdash; we need a version of the pumping lemma.
+	</p>
+</section>
+
 <section>
 	<h3>Classification of languages</h3>
 	(so far)<br><br><br>
 	$\mathcal L_{DFA} = \mathcal L_{NFA} = \mathcal L_{reg} \subset \mathcal L_{PDA} = \mathcal L_{CFG}$
+</section>
+
+<section>
+	<h3>Pumping Lemma 2</h3>
+	  Let $L$ be a context free language. There is a positive integer $k$ such that for all $z \in L$ with $|z| \geq k$ we can write $z = uvwxy$ such that:
+	  \[
+	    \begin{array}{c}
+		|vwx| \leq k \\
+		|v| + |x| > 0 \\
+		uv^iwx^iy \in L \quad \mbox{for all $i \geq 0$}.
+	    \end{array}
+	  \]
+</section>
+
+<section>
+	  <b>Theorem (iii):</b> Context-free languages are closed under<br>
+	  $\cdot$ (concatenation) and $\cup$ (union),<br>
+	  but not $\cap$ (intersection) or $\overline{\phantom a}$ complement.
+	<p class="fragment" data-fragment-index="1">
+	  <i>Proof:</i> Super easy now.
+	</p>
+
+	<p class="fragment" data-fragment-index="2">
+	  <b>Note:</b> However, if $L$ is a context-free language and $R$ a regular language then $L \cap R$ is context-free!
+	</p>
 </section>
 
 
