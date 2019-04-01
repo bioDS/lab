@@ -617,9 +617,35 @@
 </section>
 
 <section>
-<h3>Turing machine</h3>
+	<h3>Turing machine</h3>
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/E3keLeMwfHY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+	<iframe width="560" height="315" src="https://www.youtube.com/embed/E3keLeMwfHY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</section>
+
+<section>
+	A <b>Turing machine</b>, $M$, consists of:
+	<ul>
+	  <li> A finite set $\Gamma$ called the <b>alphabet</b><br>
+	  <li> A finite set $Q$ of <b>states</b><br>
+	  <li> A partial function $F: Q \times \Gamma \to Q \times \Gamma \times \{L, R, \varnothing\}$ called the <b>program</b><br>
+	  <li> A distinguished state $q_0 \in Q$ called the <b>starting state</b><br>
+	  <li> A subset $F \subseteq Q$ of <b>halting states</b><br>
+	  <li> A distinguished symbol $\beta \in V$ called the <b>blank symbol</b> (or the empty cell)
+	</ul>
+
+	<p class="fragment" data-fragment-index="1">
+	  Turing machines can be used to formalise all kinds of algorithmic problems, including language recognition, generation, etc.<br>
+	<img data-src="images/noBS.svg" width="10%">
+	</p>
+</section>
+
+<section>
+	<p>
+	  $a^* b^*$
+	</p>
+	<p class="fragment" data-fragment-index="1">
+	  $\{a^n b^n \mid n \in \mathbb N\}$
+	</p>
 </section>
 
 
