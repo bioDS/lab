@@ -41,6 +41,7 @@ Individual lectures:
 | [Tutorial 7: Pumping Lemma](COSC341_tutorials/T07.pdf)			| [Solutions 7](COSC341_tutorials/T07_solutions.pdf)
 | [Tutorial 8+9: more Pumping Lemma](COSC341_tutorials/T08_09.pdf)			|
 | [Tutorial 10: Pushdown automata and context free grammars](COSC341_tutorials/T10.pdf)			|
+| [Tutorial 11: Regular Languages, Pumping Lemma 2](COSC341_tutorials/T11.pdf)			|
 | [Assignment 1](cosc341_assignment1.pdf)					| **Thu 28 Mar, 4pm**
 
 
