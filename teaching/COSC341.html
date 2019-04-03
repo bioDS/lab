@@ -623,13 +623,13 @@
 <section>
 	A <b>Turing machine</b>, $M$, consists of:
 	<ul>
-	  <li> A finite set $\Gamma$ called the <b>alphabet</b>
+	  <li> A finite set $\Gamma$ called the <b>alphabet</b> (or tape symbols)
 	  <li> A finite set $Q$ of <b>states</b>
 	  <li> A distinguished state $q_0 \in Q$ called the <b>starting state</b>
 	  <li> A subset $F \subseteq Q$ of <b>halting states</b>
 	  <li> A distinguished symbol $\beta \in \Gamma$ called the <b>blank symbol</b> (or the empty cell)
 	  <li> A partial function $F: (Q \setminus F) \times \Gamma \to Q \times \Gamma \times \{L, R, \varnothing\}$<br>
-	    called the <b>program</b>
+	    called the <b>programme</b>
 	</ul>
 
 	<p class="fragment" data-fragment-index="1">
@@ -639,6 +639,112 @@
 </section>
 
 <section>
+	The programme of a Turing machine $M$ <b>terminates</b> if $M$ reaches a state $q \in F$.<br>
+	The program does not terminate otherwise.
+
+	<p class="fragment" data-fragment-index="1">
+	  Hence a non-terminating programme either <i>hangs</i> (infinite loop) or <i>crashes</i> (reaches a state and tape symbol with no command to execute).
+	</p>
+
+	<p style="color:red" class="fragment" data-fragment-index="2">
+	  We will be starting Turing machines on
+	  $$
+	    \beta\underset{\Delta}{a_1} a_2 \ldots a_n \beta
+	  $$
+	</p>
+</section>
+
+<section>
+	$$
+	  \begin{align}
+	    \mbox{Example 1} &\\
+	    & q_0 \beta \to \mathrm{accept} \beta
+	  \end{align}
+	$$
+
+	<p class="fragment" data-fragment-index="1">
+	$$
+	  \begin{align}
+	    \mbox{Example 2} &\\
+	    & q_0 \beta \to \mathrm{accept} \beta\\
+	    & q_0 0 \to q_0 \beta R\\
+	    & q_0 1 \to q_0 \beta R
+	  \end{align}
+	$$
+
+	<p class="fragment" data-fragment-index="2">
+	$$
+	  \begin{align}
+	    \mbox{Example 3} &\\
+	    & q_0 \beta \to \mathrm{accept} \beta\\
+	    & q_0 0 \to q_0 1 R\\
+	    & q_0 1 \to q_0 0 R
+	  \end{align}
+	$$
+	</p>
+</section>
+
+<section>
+	A Turing Machine $M$ <b>computes a function</b> $f: \mathbb N \to \mathbb N$ if<br>
+	for all $x$ and $y$:
+	$$
+	  f(x) = y
+	$$
+	$$
+	  \Updownarrow
+	$$
+	$$
+	  \beta \underbrace{1 \ldots 1}_{x \mbox{ times}} \beta \Rightarrow_M \beta \underbrace{1 \ldots 1}_{y \mbox{ times}} \beta \mbox{ and $M$ halts}
+	$$
+
+	<p class="fragment" data-fragment-index="1">
+	  We denote the latter by $M(x) = y$.<br>
+	  We write $M(x)\downarrow$ for $M$ halts on $\beta \underbrace{1 \ldots 1}_{x \mbox{ times}} \beta$
+	</p>
+</section>
+
+<section>
+	A Turing Machine $M$ <b>computes a function</b> $f: \mathbb N^2 \to \mathbb N$ if<br>
+	for all $x_1, x_2$, and $y$:
+	$$
+	  f(x_1, x_2) = y
+	$$
+	$$
+	  \Updownarrow
+	$$
+	$$
+	  \beta \underbrace{1 \ldots 1}_{x_1 \mbox{ times}} 0 \underbrace{1 \ldots 1}_{x_2 \mbox{ times}} \beta \Rightarrow_M \beta \underbrace{1 \ldots 1}_{y \mbox{ times}} \beta \mbox{ and $M$ halts}
+	$$
+	Similarly for more than two variables $x_1, x_2, \ldots, x_n$.
+</section>
+
+<section>
+	<b>Example 1:</b> compute the following functions.
+	$$
+	  \begin{align}
+	    & f(x) = 0\\
+	    & g(x) = x + 1\\
+	    & h(x, y) = x + y
+	  \end{align}
+	$$
+
+	<p class="fragment" data-fragment-index="1">
+	  <b>Example 2:</b> implement the following module COPY.
+	    $$
+	      \beta \underbrace{1 \ldots 1}_{x \mbox{ times}} \beta \Rightarrow_M \beta \underbrace{1 \ldots 1}_{x \mbox{ times}} 0 \underbrace{1 \ldots 1}_{x \mbox{ times}} \beta
+	    $$
+	</p>
+
+	<p class="fragment" data-fragment-index="2">
+	  <b>Example 3:</b> compute:
+	    $$
+	      f(x, y) = xy
+	    $$
+	</p>
+</section>
+
+<section>
+	<b>Example 4:</b> recognise the following languages.
 	<p>
 	  $a^* b^*$
 	</p>
@@ -647,290 +753,26 @@
 	</p>
 </section>
 
-
 <section>
-	<h3>Danger zone!</h3>
-	<h3>We recommend that you don't scroll past this slide.</h3>
-</section>
-
-<section>
-	<h3>
-	  Formalising biology
-	</h3>
-	<ul>
-	  <li> Let $G$ be the set of binary (quaternary in reality) strings of length $n$.
-	  <li> Elements of $G$ are called <i>genotypes</i>.
-	  <li class="fragment" data-fragment-index="1"> A function $w: G \to \mathbb R^+$ is called a <i>fitness landscape</i>.
-	  <li class="fragment" data-fragment-index="1"> For $g \in G$, $w(g)$ is called <i>fitness of the genotype</i> $g$.
-	</ul>
-	<img data-fragment-index="2" data-src="../talks/images/fitness_shapes_2_loci_BPS_axis.png">
-</section>
-
-<section data-markdown id="how-big-is-big">
-<script type="text/template">
-	### 3. How big is big in biology
-	#### The number of possible rankings of all possible genotypes with $n$ genes is?
-	|    Genes|       Number of rankings |
-	|:-------:|:------------------------:|
-	|    2    |          24              |
-	|    3    |          40,320          |
-	|    4    |  20,922,789,890,000      |
-	|    5    |  $2.6 \times 10^{35}$    |
-	|    6    |  $1.3 \times 10^{89}$    |
-</script>
-</section>
-
-<section data-markdown>
-<script type="text/template">
-	|    Genes|       Number of rankings |
-	|:-------:|:------------------------:|
-	|    2    |          24              |
-	|    3    |          40,320          |
-	|    4    |  20,922,789,890,000      |
-	|    5    |  $2.6 \times 10^{35}$    |
-	|    6    |  $1.3 \times 10^{89}$    |
-	<p>
-	  The number of "particles in the observable universe" is estimated between $10^{78}$ and $10^{81}$.
-	</p>
-	<p class="fragment" data-fragment-index="1">
-	  Our genome has over 20,000 protein-coding genes, which is $<2\%$ of the whole genome.
-	  The total number of base pairs is over 3,000,000,000, with over 150,000,000 variants.
-	</p>
-</script>
-</section>
-
-<section id="scalability">
-	<h3>
-	  Scalability<font class="fragment" data-fragment-index="1">: synthetic lethal pairs</font>
-	</h3>
-	<img class="fragment" data-fragment-index="1" data-src="../talks/images/synthetic_lethality_grey.svg">
-	<h3 class="fragment" data-fragment-index="1">
-	  How many pairs of genes are there in the human genome?
-	</h3>
+	<h3>Universal Turing Machine</h3>
+	<b>Theorem:</b> There exists a Turing Machine $U$ which computes all computable functions.<br>
+	That is, for every computable function $f(x)$ there exists a number $s$ such that $U(s, x) = y$ if and only if $f(x) = y$.
+	<img class="fragment" data-fragment-index="1" data-src="images/hooray.svg">
 </section>
 
 <section>
-	<h3>
-	  Gene-gene interactions
-	</h3>
-	<img data-src="../talks/images/fitness_shapes_2_loci_BPS_axis.png">
-	<h3>
-	Epistasis
-	</h3>
-	is defined as the deviation from the additive expectation of allelic effects:
-	$$u_{11} = w_{00} + w_{11} - (w_{01} + w_{10})$$
-
-	<aside class="notes">
-	  Mention shapes
-	</aside>
-</section>
-
-<section>
-	<h3>Understanding three-way interactions</h3>
-
-	<h4>
-	<p class="fragment" data-fragment-index="1">
-	Marginal epistasis?
-	</p>
-	</h4>
-	<p class="fragment" data-fragment-index="1">
-	$\small u_{\color{blue}{0}11} = w_{\color{blue}{0}00} + w_{\color{blue}{1}00} + w_{\color{blue}{0}11} + w_{\color{blue}{1}11} − (w_{\color{blue}{0}01} + w_{\color{blue}{1}01}) − (w_{\color{blue}{0}10} + w_{\color{blue}{1}10})$
-	</p>
-
-	<h4>
-	<p class="fragment" data-fragment-index="2">
-	Total three-way interaction?
-	</p>
-	</h4>
-	 <p class="fragment" data-fragment-index="2">
-	$\small u_{111} = w_{000} + w_{011} + w_{101} + w_{110} - (w_{001} + w_{010} + w_{100} + w_{111})$
-	</p>
-
-	<h4>
-	<p class="fragment" data-fragment-index="3">
-	Conditional epistasis?
-	<p>
-	</h4>
-	<p class="fragment" data-fragment-index="3">
-	$\small e = w_{\color{blue}{0}00} − w_{\color{blue}{0}01} − w_{\color{blue}{0}10} + w_{\color{blue}{0}11}$
-	</p>
-</section>
-
-<section>
-	<h4>What if no (credible) fitness measurements are available?</h4>
-	<img data-src="../talks/images/disc_diffusion.png"><br>
-	<font size="2">Image: <a href="https://en.wikipedia.org/wiki/Agar_diffusion_test">Wikipedia</a></font>
-</section>
-
-<section>
-	<h4>Mutation fitness graph</h4>
-	<img class="stretch" data-src="../talks/images/tem.svg">
-	<br>
-	<font size="3">Ogbunugafor et al. <i>Malar. J.</i> 2016</font>
-	</p>
-</section>
-
-<section id="rank-orders">
-	<h4>Rank orders. The simplest case.</h4>
-	$\small u_{11} = w_{00} + w_{11} - (w_{01} + w_{10})$<br>
-	<img class="stretch" data-src="../talks/images/all_24_rankings_two_loci.svg">
-
-	<aside class="notes">
-	  Ask what colour means.
-	</aside>
-</section>
-
-<section>
-	<h3>Exercise: Dyck word algorithm</h3>
-	<p>
+	<h3>Halting problem</h3>
+	<b>Theorem:</b> Not everything is computable.<br>
+	For example, the following function is not computable
 	$$
-	  \begin{align}
-	    \small u_{011} =~
-	    & w_{000} + w_{100} + w_{011} + w_{111} − \\
-	    & w_{001} - w_{101} − w_{010} - w_{110}
-	  \end{align}
+	  h(x) = \begin{cases}
+		  U(x, x),	& \mbox{ if } U(x, x) \downarrow\\
+		  0,		& \mbox{ otherwise}
+		\end{cases}
 	$$
-	</p>
-
-	<p>
-	$$
-	  w_{111} > w_{011} > w_{101} > w_{010} > w_{000} > w_{110} > w_{100} > w_{001}
-	$$
-	</p>
-	<p class="fragment" data-fragment-index="1">
-	$$
-	  w_{111} > w_{011} > w_{100} > w_{000} > w_{001} > w_{101} > w_{010} > w_{110}
-	$$
-	</p>
-	<p class="fragment" data-fragment-index="2">
-	  A way to quantify uncertainties!
-	</p>
-	<p style="font-size:10pt">
-	  Crona, Gavryushkin, Greene, and Beerenwinkel. Inferring genetic interactions from comparative fitness data. <i>eLife,</i> 2017.
-	</p>
-
-	<aside class="notes">
-	  Game time: how do we get those rankings?
-	</aside>
+	<img class="fragment" data-fragment-index="1" data-src="images/oh_no.svg" width="30%">
 </section>
 
-<section data-markdown>
-<script type="text/template">
-	### Numbers at a glance
-	|    Loci | Imply epistasis |       Number of orders | Fraction |
-	|:-------:|:---------------:|:----------------------:|:--------:|
-	|    2    |      16         |          24            |   2/3    |
-	|    3    |      16,128     |          40,320        |   2/5    |
-	|    4    |4,649,508,864,000|  20,922,789,890,000    |   2/9    |
-</script>
-</section>
-
-<section>
-	<h4>Connection between rank orders and mutation graphs</h4>
-	$\small u_{11} = w_{00} + w_{11} - (w_{01} + w_{10})$<br>
-	<img class=stretch data-src="../talks/images/all_total_extensions_of_p_o.svg">
-	<p class="fragment" data-fragment-index="1">
-	  <b>Theorem.</b> A partial order (e.g. fitness graph) implies epistasis if and only if all linear extensions compatible with the partial order do.
-	</p>
-</section>
-
-<section data-transition="slide-in fade-out" id="mutation-graph">
-	<h4>Mutation graph</h4>
-	<img class=stretch data-src="../talks/images/tem_for_Niko.svg">
-
-	<aside class="notes">
-	  Example of data science. A modern one :)
-	</aside>
-</section>
-
-<section data-transition="fade-in fade-out">
-	<h4>Mutation graph</h4>
-	<img class=stretch data-src="../talks/images/tem_highlight_for_Niko.svg">
-</section>
-
-<section data-transition="fade-in slide-out">
-	<h4>Mutation graph</h4>
-	<img class=stretch data-src="../talks/images/tem_highlight_shaded.svg">
-</section>
-
-<section>
-	<h4>Mutation graph</h4>
-	<img class=stretch data-src="../talks/images/tem_order.svg">
-</section>
-
-<section>
-	<h4>Mutation graph</h4>
-	<img class=stretch data-src="../talks/images/tem_order_extension.svg"><br>
-	<p style="font-size:10pt">
-	  Lienkaemper, Lamberti, Drain, Beerenwinkel, and Gavryushkin. The geometry of partial fitness orders and an efficient method for detecting genetic interactions. <i>Journal of Mathematical Biology,</i> 2018.
-	</p>
-</section>
-
-<section id="online-algorithms">
-	<h3>4. Online algorithms to improve computational performance</h3>
-	<br>
-	<ul>
-	  <li class="fragment" data-fragment-index="1"> The traditional way is to make the algorithm more efficient</li><br>
-	  <li class="fragment" data-fragment-index="2"> When the same algorithm has to be re-run routinely, we can economise by making the algorithm slower and doing more!</li><br>
-	  <li class="fragment" data-fragment-index="3"> This approach is known as online</li><br>
-	</ul>
-</section>
-
-<section data-transition="slide-in fade-out">
-	<h3>Online algorithms</h3>
-	<img class="stretch" data-src="../talks/images/Coffee_2.svg" width="100%">
-</section>
-
-<section data-transition="fade-in fade-out">
-	<h3>Online algorithms</h3>
-	<img class="stretch" data-src="../talks/images/Coffee_3.svg" width="100%">
-</section>
-
-<section data-transition="fade-in fade-out">
-	<h3>Online algorithms</h3>
-	<img class="stretch" data-src="../talks/images/Coffee_4.svg" width="100%">
-</section>
-
-<section data-transition="fade-in slide-out">
-	<h3>Online algorithms</h3>
-	<img class="stretch" data-src="../talks/images/Coffee_5.svg" width="100%">
-</section>
-
-<section data-transition="slide-in fade-out">
-	<h3>Online algorithms</h3>
-	<img class="stretch" data-src="../talks/images/Coffee_online_1.svg" width="100%">
-</section>
-
-<section data-transition="fade-in fade-out">
-	<h3>Online algorithms</h3>
-	<img class="stretch" data-src="../talks/images/Coffee_online_2.svg" width="100%">
-</section>
-
-<section data-transition="fade-in fade-out">
-	<h3>Online algorithms</h3>
-	<img class="stretch" data-src="../talks/images/Coffee_online_3.svg" width="100%">
-</section>
-
-<section data-transition="fade-in fade-out">
-	<h3>Online algorithms</h3>
-	<img class="stretch" data-src="../talks/images/Coffee_online_4.svg" width="100%">
-</section>
-
-<section data-transition="fade-in slide-out">
-	<h3>Online algorithms</h3>
-	<img class="stretch" data-src="../talks/images/Coffee_online_5.svg" width="100%">
-</section>
-
-<section>
-	<h3>Homework:</h3>
-	<p style="font-size=16pm">
-	  Find an efficient online algorithm to detect genetic interactions from
-	<ul>
-	  <li> <a href="#/rank-orders">rank orders of genotypes</a>
-	  <li> <a href="#/mutation-graph">partial orders of genotypes</a>
-	</ul>
-	</p>
-</section>
 
 </div>
 </div>
