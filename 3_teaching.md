@@ -26,9 +26,7 @@ Individual lectures:
 - [Lecture 8: Pushdown automata and context free grammars](COSC341#/L8)
 - [Lecture 9: Regular languages](COSC341#/L9)
 - [Lecture 10: Classification of languages, Pumping Lemma 2](COSC341#/L10)
-- [Lecture 11: Turing Machines](COSC341#/L11)
-- [Lecture 12: Turing Machines](COSC341#/L11)
-- [Lecture 13: Turing Machines](COSC341#/L11)
+- [Lectures 11-13: Turing Machines](COSC341#/L11)
 
 | Exercises									| Solutions
 |---										| ---
