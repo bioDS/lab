@@ -37,9 +37,9 @@ Individual lectures:
 | [Tutorial 5: Deterministic and non-deterministic automata](COSC341_tutorials/T05.pdf)| [Solutions 5](COSC341_tutorials/T05_solutions.pdf)
 | [Tutorial 6: NFA = DFA](COSC341_tutorials/T06.pdf)				| [Solutions 6](COSC341_tutorials/T06_solutions.pdf)
 | [Tutorial 7: Pumping Lemma](COSC341_tutorials/T07.pdf)			| [Solutions 7](COSC341_tutorials/T07_solutions.pdf)
-| [Tutorial 8+9: more Pumping Lemma](COSC341_tutorials/T08_09.pdf)			|
-| [Tutorial 10: Pushdown automata and context free grammars](COSC341_tutorials/T10.pdf)			|
-| [Tutorial 11: Regular Languages, Pumping Lemma 2](COSC341_tutorials/T11.pdf)			|
+| [Tutorial 8+9: more Pumping Lemma](COSC341_tutorials/T08_09.pdf)			| [Solutions 8+9](COSC341_tutorials/T08_09_solutions.pdf)
+| [Tutorial 10: Pushdown automata and context free grammars](COSC341_tutorials/T10.pdf)			| [Solutions 10](COSC341_tutorials/T10_solutions.pdf)
+| [Tutorial 11: Regular Languages, Pumping Lemma 2](COSC341_tutorials/T11.pdf)			| [Solutions 11](COSC341_tutorials/T11_solutions.pdf)
 | [Assignment 1](cosc341_assignment1.pdf)					| **Thu 28 Mar, 4pm**
 
 
