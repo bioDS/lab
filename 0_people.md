@@ -5,7 +5,13 @@ permalink: /people/
 title: People
 ---
 
-[Alex Gavryushkin](/alex/)
+
+#### bioDS lab is located in [room 256](https://goo.gl/maps/5Rt1CD9KAqP2), [Owheo Building](https://goo.gl/maps/tCyUmHrfBE72)
+
+
+### Faculty
+
+- [Alex Gavryushkin](/alex/)
 
 
 ### Postdocs
