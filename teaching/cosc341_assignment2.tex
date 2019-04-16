@@ -1,0 +1,57 @@
+\documentclass{article}
+
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage{amsthm}
+
+\setlength{\textwidth}{15cm}
+\setlength{\textheight}{21cm}
+\setlength{\topmargin}{0cm}
+\setlength{\headsep}{0.5cm}
+\setlength{\headheight}{0.5cm}
+\setlength{\oddsidemargin}{0.25pt}
+\setlength{\evensidemargin}{0.25pt}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{5pt}
+
+\makeatletter
+\newfont{\footsc}{cmcsc10 at 8truept}
+\newfont{\footbf}{cmbx10 at 8truept}
+\newfont{\footrm}{cmr10 at 10truept}
+
+\renewcommand{\footrulewidth}{0.4pt}
+
+\pagestyle{fancy}
+\fancyhead[LO, LE]{{\sc COSC} 341: Assignment 2}
+
+\begin{document}
+
+
+\noindent {\bf Due Date: Friday 29 April, 4pm}
+
+Please submit a {\bf PDF} by email to: \href{mailto:teaching@biods.org}{teaching@biods.org} with subject ``341 Assignment 2''.
+Make sure that your name and ID number are on the PDF called: YourName\_assignment2.pdf
+
+What you hand in should be all your own work.
+
+Note that \textbf{marks might be deduced} if you fail to follow the above instructions.
+Do let us know if you find them challenging.
+
+\section*{Questions}
+
+\begin{enumerate}
+\item Let $\Sigma = \{0, 1\}$, and for a word $w \in \Sigma^*$ define $\bar{w}$ to be the word obtained by exchanging $0$'s and $1$'s in $w$ (so if $w = 101$ then $\bar{w} = 010$).
+Consider the language $L$ over the alphabet $\{0, 1, 2\}$ consisting of all words of the form $w 2 \bar{w}$, where $w \in
+\Sigma^*$.
+\begin{enumerate}
+\item Is $L$ regular? Prove it. (\textbf{2 marks})
+\item Is $L$ context-free? Prove it. (\textbf{2 mark})
+\end{enumerate}
+
+\item Design a Turing machine to compute $f(x) = 2^x$.
+Use comments (or self-explanatory state names, or both) in your code to make it readable.
+Both correctness and readability of your code will be marked. (\textbf{3 marks})
+
+\item Show that, if there is a language $Q$ that is both in $\mathcal P$ and $\mathcal NP$-complete, then $\mathcal P = \mathcal{NP}$. (\textbf{3 marks})
+\end{enumerate}
+\end{document}
