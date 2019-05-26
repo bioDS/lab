@@ -41,7 +41,7 @@ Individual lectures:
 | [Tutorial 10: Pushdown automata and context free grammars](COSC341_tutorials/T10.pdf)| [Solutions 10](COSC341_tutorials/T10_solutions.pdf)
 | [Tutorial 11: Regular Languages, Pumping Lemma 2](COSC341_tutorials/T11.pdf)	| [Solutions 11](COSC341_tutorials/T11_solutions.pdf)
 | [Assignment 1](cosc341_assignment1.pdf)					| [Solutions](cosc341_assignment1_solutions.pdf)
-| [Assignment 2](cosc341_assignment2.pdf)					| **Fri 10 May, 4pm**
+| [Assignment 2](cosc341_assignment2.pdf)					| [Solutions](cosc341_assignment2_solutions.pdf)
 
 
 ## 2018 Guest Lectures
