@@ -15,4 +15,4 @@ title: Alex Gavryushkin
 |**Email**&nbsp;&nbsp;&nbsp;&nbsp;	|[alex@biods.org](mailto:alex@biods.org)											|
 |**Phone**&nbsp;&nbsp;&nbsp;&nbsp;	|[+64 3 479 8494](tel:+64-3-479-8494) (no caller identification)								|
 |**Google**&nbsp;&nbsp;&nbsp;&nbsp;	|[Scholar profile](https://scholar.google.co.nz/citations?hl=en&user=coK1R-kAAAAJ&view_op=list_works&sortby=pubdate)		|
-|**Calendar**				|[Schedule an appointment with Alex](https://doodle.com/gavruskin/)								|
+|**Calendar**				|[Schedule an appointment with Alex](https://biods.doodle.com/gavruskin/)								|
