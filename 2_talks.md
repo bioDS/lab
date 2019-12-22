@@ -5,6 +5,7 @@ permalink: /talks/
 title: Talks & Slides
 ---
 
+
 - [September 2019](https://www.queenstownresearchweek.org/), Queenstown Research Week 2019, Queenstown. Regular talk [Inferring within patient cancer cell population history from single-cell sequencing data](MoravecQRW2019.pdf)
 
 - [February 2019](https://www.canterbury.ac.nz/engineering/schools/mathematics-statistics/research/bio/events/deco-2019/), Deco 2019, The 23rd Annual New Zealand Phylogenomics Meeting, Napier. Regular talk [The Ranked Nearest Neighbour Interchange
