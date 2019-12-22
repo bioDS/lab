@@ -6,16 +6,17 @@ title: Pictures
 ---
 
 
-### [bioDS lab](/) in December 2019
+### [bioDS lab](/) in December 2019:
 ![December 2019](assets/2019-12-02-bioDS_lab.jpeg)
+[Tom](/people/), [Jiří](/people/), [Lena](/people/), [Alex](/alex/), [Surayo](/people/), [Moizle](/people/), [Astra](/people/), [Kieran](/kieran/)
 
-### Anna and Moizle are graduating
+### Anna and Moizle are graduating:
 ![December 2019](assets/2019-12-11-anna_moizle_graduating.jpg)
 
-### Lena and Kieran are served Best Presentation award at Otago CS-IS postgrad symposium
+### Lena and Kieran are served Best Presentation award at Otago CS-IS postgrad symposium:
 ![October 2019](assets/2019-10-15-lena_kieran_talk_prise.svg)
 
-### Joint retreat [bioDS](/) and [Gardner Binf](http://www.gardner-binflab.org/) labs
+### Joint retreat [bioDS](/) and [Gardner Binf](http://www.gardner-binflab.org/) labs in Pounawea:
 ![August 2019](/assets/2019-08-26-bioDS_binf_retreat.jpg)
 ![August 2019](/assets/2019-08-27-bioDS_binf_retreat.jpg)
 
@@ -29,5 +30,5 @@ title: Pictures
 ### At [Networks of Life 2015](http://www.math.canterbury.ac.nz/bio/events/kaikoura2015/) in Kaikoura:
 ![Kaikoura](/assets/Kaikoura_201504.jpg)
 
-### With [Anil Nerode](http://www.math.cornell.edu/~anil/) and Sally Sievers:
+### With Sally Sievers and [Anil Nerode](http://www.math.cornell.edu/~anil/):
 ![Anil](/assets/anil.jpg)
