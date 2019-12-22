@@ -5,6 +5,17 @@ permalink: /pictures/
 title: Pictures
 ---
 
+
+### [bioDS lab](/) in December 2019
+![December 2019](assets/2019-12-02-bioDS_lab.jpeg)
+
+### Anna and Moizle are graduating
+![December 2019](assets/2019-12-11-anna_moizle_graduating.jpg)
+
+### Joint retreat [bioDS](/) and [Gardner Binf](http://www.gardner-binflab.org/) labs
+![August 2019](/assets/2019-08-26-bioDS_binf_retreat.jpg)
+![August 2019](/assets/2019-08-27-bioDS_binf_retreat.jpg)
+
 ### [bioDS lab](/) in January 2019:
 ![January 2019](/assets/bioDS_lab_2019_summer.jpeg)
 [Alex](/alex/), [Astra](/people/), [Lena](/people/), [Moizle](/people/), [Jiří](/people/), [Anna](/people/), [Tom](/people/), [Kieran](/kieran/)
