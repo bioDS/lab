@@ -12,6 +12,9 @@ title: Pictures
 ### Anna and Moizle are graduating
 ![December 2019](assets/2019-12-11-anna_moizle_graduating.jpg)
 
+### Lena and Kieran are served Best Presentation award at Otago CS-IS postgrad symposium
+![October 2019](assets/2019-10-15-lena_kieran_talk_prise.svg)
+
 ### Joint retreat [bioDS](/) and [Gardner Binf](http://www.gardner-binflab.org/) labs
 ![August 2019](/assets/2019-08-26-bioDS_binf_retreat.jpg)
 ![August 2019](/assets/2019-08-27-bioDS_binf_retreat.jpg)
