@@ -34,6 +34,7 @@ title: People
 
 ### Project students
 
+- Lars Berling: Phylogenetic tree spaces, co-supervised by [Alexei Drummond](https://alexeidrummond.org/)
 - Surayo Akramkhanova: Fitness Landscapes
 - Jada Mataroa: Fitness Landscapes
 - Moizle Ocariza: Tumour evolution
