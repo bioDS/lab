@@ -5,6 +5,12 @@ permalink: /publications/
 title: Publications
 ---
 
+
+- **Geometry of Ranked Nearest Neighbour Interchange Space of Phylogenetic Trees**<br>
+  Lena Collienne, Kieran Elmes, Mareike Fischer, David Bryant, and Alex Gavryushkin<br>
+  *bioRxiv* 2019<br>
+  [<i class="ai ai-biorxiv-square ai-3x"></i>](https://doi.org/10.1101/2019.12.19.883603)
+
 - **High-dimensional microbiome interactions shape host fitness**<br>
   Alison Gould, Vivian Zhang, Lisa Lamberti, Eric Jones, Benjamin Obadia, Nikolaos Korasidis, Alex Gavryushkin, Jean Carlson, Niko Beerenwinkel, and Will Ludington<br>
   *PNAS* 2018<br>
@@ -29,7 +35,6 @@ title: Publications
   [<i class="ai ai-open-access-square ai-3x"></i>](https://doi.org/10.1007/s00285-017-1167-9)
   [<i class="ai ai-biorxiv-square ai-3x"></i>](https://doi.org/10.1101/063362)
   [<i class="ai ai-3x">blog</i>](http://matsen.fredhutch.org/general/2016/07/11/discrete-time-tree.html) post by Erick
-  
 
 - **The space of ultrametric phylogenetic trees**<br>
   Alex Gavryushkin and Alexei Drummond<br>
