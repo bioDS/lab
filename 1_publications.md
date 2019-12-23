@@ -10,6 +10,7 @@ title: Publications
   Lena Collienne, Kieran Elmes, Mareike Fischer, David Bryant, and Alex Gavryushkin<br>
   *bioRxiv* 2019<br>
   [<i class="ai ai-biorxiv-square ai-3x"></i>](https://doi.org/10.1101/2019.12.19.883603)
+  [<i class="ai ai-3x">blog</i>]({% post_url 2019-12-23-lenas-rnni-convextiy-paper %})
 
 - **High-dimensional microbiome interactions shape host fitness**<br>
   Alison Gould, Vivian Zhang, Lisa Lamberti, Eric Jones, Benjamin Obadia, Nikolaos Korasidis, Alex Gavryushkin, Jean Carlson, Niko Beerenwinkel, and Will Ludington<br>
