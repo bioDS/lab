@@ -6,6 +6,8 @@ title: Talks & Slides
 ---
 
 
+- [February 2020](https://uoaevents.eventsair.com/annual-nz-phylogenomics-meeting-2020/standard-reg/Site/Register), 24th Annual New Zealand Phylogenomics Meeting, Waiheke Island. Regular talk [Is it hard to update trees when data change?](2020_phyloNZ_Waiheke)
+
 - [September 2019](https://www.queenstownresearchweek.org/), Queenstown Research Week 2019, Queenstown. Regular talk [Inferring within patient cancer cell population history from single-cell sequencing data](MoravecQRW2019.pdf)
 
 - [February 2019](https://www.canterbury.ac.nz/engineering/schools/mathematics-statistics/research/bio/events/deco-2019/), Deco 2019, The 23rd Annual New Zealand Phylogenomics Meeting, Napier. Regular talk [The Ranked Nearest Neighbour Interchange
