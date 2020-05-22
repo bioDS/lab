@@ -21,6 +21,9 @@ Regular talk [Online Algorithms in Computational Biology](2020_Postgrad_Symposiu
 - [September 2019](https://www.queenstownresearchweek.org/), Queenstown Research Week 2019, Queenstown
 Regular talk [Inferring within patient cancer cell population history from single-cell sequencing data](MoravecQRW2019.pdf)
 
+- [September 2019](https://www.queenstownresearchweek.org/), Queenstown Research Week 2019, Queenstown
+Poster presentation [Investigation of gene-gene interactions in the context of antibiotic resistance](2019_QRW_Astra.pdf)
+
 - [July 2019](https://www.mis.mpg.de/nlalg/research.html), MPI, Leipzig, Germany
 Seminar talk [The Ranked Nearest Neighbour Interchange space of phylogenetic trees](2019_Leipzig_MPI_Lena.pdf)
 
