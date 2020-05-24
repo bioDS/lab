@@ -15,7 +15,7 @@ I have an interest in parallel computing, operating systems, and computer archit
 - Phylogenetic trees
 
 ### Teaching
-Tutoring [COSC243](https://www.cs.otago.ac.nz/cosc243) Computer Architecture and Operating Systems, semester 1 2019.
+Tutoring [COSC243](https://www.cs.otago.ac.nz/cosc243) Computer Architecture and Operating Systems, Semester 1 2019 & Semester 1 2020.
 
 ### Contact
 
