@@ -13,7 +13,6 @@ title: Teaching
 [Complete set of lectures (first half of the semester)](COSC341) is being continuously updated and will be finalised before the final exam.
 **These slides do not have all the material delivered during the lectures.**
 Yes, you are supposed to attend them.
-No, they are not recorded.
 
 Individual lectures:
 - [Lecture 1: Introduction](COSC341#/L1)
