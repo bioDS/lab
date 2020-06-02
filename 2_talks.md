@@ -9,6 +9,9 @@ title: Talks & Slides
 - [April 2020](https://www.cs.otago.ac.nz/seminars/home.html), Department of Computer Science, University of Otago.
 Seminar talk [The complexity of computing nearest neighbour interchange distances between ranked phylogenetic trees](2020_CS_Otago_Lena.pdf)
 
+- [March 2020](https://conferences.cirm-math.fr/2305.html) Networks and Molecular Biology Research School, Centre International de Rencontres Mathématiques.
+Poster [Detecting Associated Changes in Functional Modules](2020_Marseille_Kieran.pdf)
+
 - [February 2020](https://uoaevents.eventsair.com/annual-nz-phylogenomics-meeting-2020/standard-reg/Site/Register), 24th Annual New Zealand Phylogenomics Meeting, Waiheke Island.
 Regular talk [Is it hard to update trees when data change?](2020_phyloNZ_Waiheke)
 
@@ -23,6 +26,9 @@ Regular talk [Inferring within patient cancer cell population history from singl
 
 - [September 2019](https://www.queenstownresearchweek.org/), Queenstown Research Week 2019, Queenstown.
 Poster presentation [Investigation of gene-gene interactions in the context of antibiotic resistance](2019_QRW_Astra.pdf)
+
+- [September 2019](https://www.queenstownresearchweek.org/), Queenstown Research Week 2019, Queenstown.
+Poster presentation [Pairwise gene-gene interactions from RNAi perturbation screens: scalability and accuracy of recent machine learning tools](2019_QRW_Kieran.pdf)
 
 - [July 2019](https://www.mis.mpg.de/nlalg/research.html), Max Planck Institute for Mathematics in the Sciences, Leipzig, Germany.
 Workshop talk [The Ranked Nearest Neighbour Interchange space of phylogenetic trees](2019_Leipzig_MPI_Lena.pdf)
