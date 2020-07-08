@@ -6,6 +6,9 @@ title: Talks & Slides
 ---
 
 
+- [July 2020](https://www.auckland.ac.nz/en/news/2020/04/21/AI-for-every-day-and-the-end-of-work.html), Broad AI lab, University of Auckland.
+Seminar talk [Somatic Phylogenomics](2020_Auckland_Broad_AI)
+
 - [April 2020](https://www.cs.otago.ac.nz/seminars/home.html), Department of Computer Science, University of Otago.
 Seminar talk [The complexity of computing nearest neighbour interchange distances between ranked phylogenetic trees](2020_CS_Otago_Lena.pdf)
 
