@@ -4,7 +4,7 @@ permalink: /alex/
 title: Alex Gavryushkin
 ---
 
-![Alex Gavryushkin](/assets/Gavryushkin_20150318_cropped.svg){:height="200px"}
+![Alex Gavryushkin](/assets/2018-alex.jpg){:height="300px"}
 
 ### Alex Gavryushkin
 
