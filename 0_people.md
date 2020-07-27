@@ -22,19 +22,19 @@ title: People
 
 ### PhD students
 
-- [Lena Collienne](mailto:lena.collienne@postgrad.otago.ac.nz): Online algorithms in phylogenetics, co-supervised by [David Bryant](http://www.maths.otago.ac.nz/~dbryant/) at [Maths and Stats](http://www.maths.otago.ac.nz/)
+- [Lena Collienne](https://github.com/lenacoll): Online algorithms in phylogenetics, co-supervised by [David Bryant](http://www.maths.otago.ac.nz/~dbryant/) at [Maths and Stats](http://www.maths.otago.ac.nz/)
 - [You!](/opportunities/)
 
 
 ### Masters students
 
 - [Kieran Elmes](/kieran/): Fitness landscapes and gene-gene interactions
+- [Lars Berling](https://github.com/Lars-B): Phylogenetic tree spaces, co-supervised by [Mareike Fischer](https://math-inf.uni-greifswald.de/institut/ueber-uns/mitarbeitende/fischer/) at the [University of Greifswald](https://math-inf.uni-greifswald.de/)
 - [You!](/opportunities/)
 
 
 ### Project students
 
-- Lars Berling: Phylogenetic tree spaces, co-supervised by [Alexei Drummond](https://alexeidrummond.org/)
 - Surayo Akramkhanova: Fitness Landscapes
 - Jada Mataroa: Fitness Landscapes
 - Moizle Ocariza: Tumour evolution
