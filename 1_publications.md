@@ -6,6 +6,11 @@ title: Publications
 ---
 
 
+- **Learning epistatic gene interactions from perturbation screens**<br>
+  Kieran Elmes, Fabian Schmich, Ewa Szczurek, Jeremy Jenkins, Niko Beerenwinkel, and Alex Gavryushkin<br>
+  *bioRxiv* 2020<br>
+  [<i class="ai ai-biorxiv-square ai-3x"></i>](https://doi.org/10.1101/2020.08.24.264713)
+
 - **Computing nearest neighbour interchange distances between ranked phylogenetic trees**<br>
   Lena Collienne and Alex Gavryushkin<br>
   *arXiv* 2020<br>
