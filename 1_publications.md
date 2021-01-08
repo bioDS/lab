@@ -18,7 +18,7 @@ title: Publications
 
 - **Computing nearest neighbour interchange distances between ranked phylogenetic trees**<br>
   Lena Collienne and Alex Gavryushkin<br>
-  *arXiv* 2020<br>
+  *arXiv* 2020, to appear in *Journal of Mathematical Biology*<br>
   [<i class="ai ai-arxiv-square ai-3x"></i>](https://arxiv.org/abs/2007.12307)
 
 - **Geometry of Ranked Nearest Neighbour Interchange Space of Phylogenetic Trees**<br>
