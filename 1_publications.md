@@ -9,7 +9,7 @@ title: Publications
 - **Cancer phylogenetics using single-cell RNA-seq data**<br>
   Jiří Moravec, Rob Lanfear, David Spector, Sarah Diermeier, and Alex Gavryushkin<br>
   *bioRxiv* 2021<br>
-  [<i class="ai ai-biorxiv-square ai-3x"></i>](https://doi.org/10.1101/2021.01.07.425804)
+  [<i class="ai ai-biorxiv-square ai-3x"></i>](https://www.biorxiv.org/content/10.1101/2021.01.07.425804v1)
 
 - **Learning epistatic gene interactions from perturbation screens**<br>
   Kieran Elmes, Fabian Schmich, Ewa Szczurek, Jeremy Jenkins, Niko Beerenwinkel, and Alex Gavryushkin<br>
