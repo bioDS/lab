@@ -6,15 +6,15 @@ title: Publications
 ---
 
 
-- **The geometry of the space of Discrete Coalescent Trees**<br>
-  Lena Collienne, Kieran Elmes, Mareike Fischer, David Bryant, and Alex Gavryushkin<br>
-  *arXiv* 2021<br>
-  [<i class="ai ai-arxiv-square ai-3x"></i>](https://arxiv.org/abs/2101.02751)
-
 - **Cancer phylogenetics using single-cell RNA-seq data**<br>
   Jiří Moravec, Rob Lanfear, David Spector, Sarah Diermeier, and Alex Gavryushkin<br>
   *bioRxiv* 2021<br>
   [<i class="ai ai-biorxiv-square ai-3x"></i>](https://doi.org/10.1101/2021.01.07.425804)
+
+- **The geometry of the space of Discrete Coalescent Trees**<br>
+  Lena Collienne, Kieran Elmes, Mareike Fischer, David Bryant, and Alex Gavryushkin<br>
+  *arXiv* 2021<br>
+  [<i class="ai ai-arxiv-square ai-3x"></i>](https://arxiv.org/abs/2101.02751)
 
 - **Learning epistatic gene interactions from perturbation screens**<br>
   Kieran Elmes, Fabian Schmich, Ewa Szczurek, Jeremy Jenkins, Niko Beerenwinkel, and Alex Gavryushkin<br>
