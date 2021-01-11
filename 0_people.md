@@ -22,7 +22,7 @@ title: People
 ### PhD students
 
 - [Lena Collienne](https://github.com/lenacoll): Phylogenetic time trees, co-supervised by [David Bryant](http://www.maths.otago.ac.nz/~dbryant/) at [Maths and Stats](http://www.maths.otago.ac.nz/)
-- [Kieran Elmes](/kieran/): Deep learning fitness landscapes, co-supervised by [Michael Witbrock](http://www.science.auckland.ac.nz/people/profile/m-witbrock)
+- [Kieran Elmes](/kieran/): Deep learning fitness landscapes, co-supervised by [Michael Witbrock](http://www.science.auckland.ac.nz/people/profile/m-witbrock) at the [University of Auckland](https://www.auckland.ac.nz/en/science/about-the-faculty/school-of-computer-science.html)
 
 
 ### Masters students
