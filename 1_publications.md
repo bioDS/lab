@@ -16,15 +16,16 @@ title: Publications
   *arXiv* 2021<br>
   [<i class="ai ai-arxiv-square ai-3x"></i>](https://arxiv.org/abs/2101.02751)
 
+- **Computing nearest neighbour interchange distances between ranked phylogenetic trees**<br>
+  Lena Collienne and Alex Gavryushkin<br>
+  *Journal of Mathematical Biology,* 82(8), 2021<br>
+  [<i class="ai ai-open-access-square ai-3x"></i>](https://doi.org/10.1007/s00285-021-01567-5)
+  [<i class="ai ai-arxiv-square ai-3x"></i>](https://arxiv.org/abs/2007.12307)
+
 - **Learning epistatic gene interactions from perturbation screens**<br>
   Kieran Elmes, Fabian Schmich, Ewa Szczurek, Jeremy Jenkins, Niko Beerenwinkel, and Alex Gavryushkin<br>
   *bioRxiv* 2020<br>
   [<i class="ai ai-biorxiv-square ai-3x"></i>](https://doi.org/10.1101/2020.08.24.264713)
-
-- **Computing nearest neighbour interchange distances between ranked phylogenetic trees**<br>
-  Lena Collienne and Alex Gavryushkin<br>
-  *arXiv* 2020, to appear in *Journal of Mathematical Biology*<br>
-  [<i class="ai ai-arxiv-square ai-3x"></i>](https://arxiv.org/abs/2007.12307)
 
 - **Geometry of Ranked Nearest Neighbour Interchange Space of Phylogenetic Trees**<br>
   Lena Collienne, Kieran Elmes, Mareike Fischer, David Bryant, and Alex Gavryushkin<br>
