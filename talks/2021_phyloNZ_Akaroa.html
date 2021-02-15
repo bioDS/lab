@@ -11,6 +11,7 @@
 	<link rel="stylesheet" href="css/reveal.css">
 	<link rel="stylesheet" href="css/theme/simple_gavruskin.css" id="theme">
 	<link rel="stylesheet" href="lib/css/zenburn.css">
+	<link rel="stylesheet" href="css/print/pdf.css">
 	<link rel="icon" href="../favicon.ico" />
 	<!--[if lt IE 9]>
 	<script src="lib/js/html5shiv.js"></script>
@@ -136,9 +137,7 @@
         { src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
         { src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
         // MathJax
-        { src: 'plugin/math/math.js', async: true },
-	// Print to PDF
-	{ src: 'plugin/print-pdf/print-pdf.js' }
+        { src: 'plugin/math/math.js', async: true }
     ]
   });
   Reveal.configure({ slideNumber: true });
