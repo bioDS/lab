@@ -32,6 +32,8 @@ title: People
 
 ### Project students
 
+- Max Edwards: Fitness landscapes of antibiotic resistance
+- Julius Staufenberg: Fitness landscapes
 - Jordan Kettles: Summarizing discrete coalescent trees
 
 
