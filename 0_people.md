@@ -33,6 +33,7 @@ title: People
 ### Project students
 
 - Max Edwards: Fitness landscapes of antibiotic resistance
+- Theo Molteno: Online algorithms in phylogenetics
 - Julius Staufenberg: Fitness landscapes
 - Jordan Kettles: Summarizing discrete coalescent trees
 
