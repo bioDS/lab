@@ -6,7 +6,7 @@ title: People
 ---
 
 
-#### bioDS lab is currently located in [room 256](https://goo.gl/maps/5Rt1CD9KAqP2), [Owheo Building](https://goo.gl/maps/tCyUmHrfBE72) and we are in the process of relocating to the [School of Mathematics and Statistics](https://www.canterbury.ac.nz/engineering/schools/mathematics-statistics/) at [University of Canterbury](https://www.canterbury.ac.nz/) in beautiful [Christchurch](https://www.christchurchnz.com/)
+#### bioDS lab is currently located in [room 256](https://goo.gl/maps/5Rt1CD9KAqP2), [Owheo Building](https://goo.gl/maps/tCyUmHrfBE72), and we are in the process of relocating to the [School of Mathematics and Statistics](https://www.canterbury.ac.nz/engineering/schools/mathematics-statistics/) at [University of Canterbury](https://www.canterbury.ac.nz/) in beautiful [Christchurch](https://www.christchurchnz.com/)
 
 
 ### Faculty
