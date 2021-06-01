@@ -7,7 +7,7 @@ title: Opportunities
 
 Are you interested in developing algorithms and scalable statistical methods for molecular data analysis, including phylogenomic methods, fitness landscape inference and analysis, genetic interactions, and other computationally demanding areas of genomics and related fields?
 Or working on mathematical foundations of these methods?
-Want to live in New Zealand's most magnificent region of Otago?
+Want to live in New Zealand's most spectacular region of Canterbury?
 Get [in touch](/alex/) with us to express your interest in joining the lab.
 
 We are currently accepting applications for MSc, PhD, and postdoc positions and scholarships.
