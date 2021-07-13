@@ -17,6 +17,7 @@ title: People
 ### Postdocs
 
 - [Jiří Moravec](https://www.linkedin.com/in/ji%C5%99%C3%AD-moravec-2a104815b/): Cancer phylogenetics using single-cell RNA-seq data
+- [Sasha Gavryushkina](http://alexandra.gavruskin.com/): Phylodynamics of cancer using single cells and spatial transcriptomics
 
 
 ### PhD students
