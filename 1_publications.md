@@ -28,7 +28,8 @@ title: Publications
 
 - **Learning epistatic gene interactions from perturbation screens**<br>
   Kieran Elmes, Fabian Schmich, Ewa Szczurek, Jeremy Jenkins, Niko Beerenwinkel, and Alex Gavryushkin<br>
-  To appear in *PLOS ONE* 2021<br>
+  *PLoS ONE* 16(7): e0254491, 2021<br>
+  [<i class="ai ai-open-access-square ai-3x"></i>](https://doi.org/10.1371/journal.pone.0254491)
   [<i class="ai ai-biorxiv-square ai-3x"></i>](https://doi.org/10.1101/2020.08.24.264713)
 
 - **Computing nearest neighbour interchange distances between ranked phylogenetic trees**<br>
