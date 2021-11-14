@@ -21,9 +21,10 @@ title: Publications
   *bioRxiv* 2021<br>
   [<i class="ai ai-biorxiv-square ai-3x"></i>](https://doi.org/10.1101/2021.01.07.425804)
 
-- **The geometry of the space of Discrete Coalescent Trees**<br>
+- **Discrete Coalescent Trees**<br>
   Lena Collienne, Kieran Elmes, Mareike Fischer, David Bryant, and Alex Gavryushkin<br>
-  *arXiv* 2021<br>
+  *Journal of Mathematical Biology,* 83(60), 2021<br>
+  [<i class="ai ai-open-access-square ai-3x"></i>](https://doi.org/10.1007/s00285-021-01685-0)
   [<i class="ai ai-arxiv-square ai-3x"></i>](https://arxiv.org/abs/2101.02751)
 
 - **Learning epistatic gene interactions from perturbation screens**<br>
