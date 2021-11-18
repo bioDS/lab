@@ -6,4 +6,4 @@ title: Sasha Gavryushkina
 
 ### Sasha Gavryushkin
 
-A research fellow 	|
+A research fellow
