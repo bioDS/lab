@@ -4,6 +4,8 @@ permalink: /sasha/
 title: Sasha Gavryushkina
 ---
 
-### Sasha Gavryushkin
+### Alexandra "Sasha" Gavryushkina
 
-A research fellow
+I am a research fellow working on developing methods for analysis of single cell spatial data. 
+
+
