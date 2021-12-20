@@ -14,7 +14,7 @@ title: Publications
 - **A Fast Lasso-based Method for Inferring Pairwise Interactions**<br>
   Kieran Elmes, Astra Heywood, Zhiyi Huang, and Alex Gavryushkin<br>
   *bioRxiv* 2021<br>
-  [<i class="ai ai-biorxiv-square ai-3x"></i>](https://doi.org/10.1101/2021.01.28.428698)
+  [<i class="ai ai-biorxiv-square ai-3x"></i>](https://doi.org/10.1101/2021.12.13.471844)
 
 - **Cancer phylogenetics using single-cell RNA-seq data**<br>
   Jiří Moravec, Rob Lanfear, David Spector, Sarah Diermeier, and Alex Gavryushkin<br>
