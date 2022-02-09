@@ -6,16 +6,17 @@ title: Kieran Elmes
 
 <h3>Kieran Elmes</h3>
 
-MSc student - Discovering pairwise genetic interactions.
+PhD student - Understanding fitness functions and landscapes.
 
 ### Research Interests
-I have an interest in parallel computing, operating systems, and computer architecture. Particularly focusing on applications to:
+I have an interest in parallel computing, computer architecture, and machine learning. Particularly focusing on applications to:
 
+- Fitness Landscapes
 - Genetic interaction detection
 - Phylogenetic trees
 
 ### Teaching
-Tutoring [COSC243](https://www.cs.otago.ac.nz/cosc243) Computer Architecture and Operating Systems, Semester 1 2019 & Semester 1 2020.
+Tutoring [COSC243](https://www.cs.otago.ac.nz/cosc243) Computer Architecture and Operating Systems, Semester 1 2019, 2020, 2021.
 
 ### Contact
 
