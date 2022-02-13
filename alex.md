@@ -15,4 +15,4 @@ Associate Professor and [Rutherford Discovery Fellow](https://royalsociety.org.n
 |**Email**&nbsp;&nbsp;&nbsp;&nbsp;	|[alex@biods.org](mailto:alex@biods.org)											|
 |**Phone**&nbsp;&nbsp;&nbsp;&nbsp;	|[+64 3 369 0212](tel:+64-3-369-0212) (no caller identifier)									|
 |**Google**&nbsp;&nbsp;&nbsp;&nbsp;	|[Scholar profile](https://scholar.google.co.nz/citations?hl=en&user=coK1R-kAAAAJ&view_op=list_works&sortby=pubdate)		|
-|**Calendar**				|[Schedule an appointment with Alex](https://doodle.com/mm/alexgavryushkin/mm/)							|
+|**Calendar**				|[Schedule an appointment with Alex](https://calendar.google.com)							|
