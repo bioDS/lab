@@ -23,8 +23,8 @@ title: Publications
 
 - **Sustained software development, not number of citations or journal choice, is indicative of accurate bioinformatic software**<br>
    Paul Gardner, James Paterson, Stephanie McGimpsey, Fatemeh Ashari-Ghomi, Sinan Umu, Aleksandra Pawlik, Alex Gavryushkin, and Michael Black<br>
-  *Genome Biology,* to appear in 2022<br>
-  *bioRxiv* 2021<br>
+  *Genome Biology,* 23(56), 2022<br>
+  [<i class="ai ai-open-access-square ai-3x"></i>](https://doi.org/10.1186/s13059-022-02625-x)
   [<i class="ai ai-biorxiv-square ai-3x"></i>](https://doi.org/10.1101/092205)
 
 - **Discrete Coalescent Trees**<br>
@@ -35,7 +35,7 @@ title: Publications
 
 - **Learning epistatic gene interactions from perturbation screens**<br>
   Kieran Elmes, Fabian Schmich, Ewa Szczurek, Jeremy Jenkins, Niko Beerenwinkel, and Alex Gavryushkin<br>
-  *PLoS ONE* 16(7): e0254491, 2021<br>
+  *PLoS ONE,* 16(7), e0254491, 2021<br>
   [<i class="ai ai-open-access-square ai-3x"></i>](https://doi.org/10.1371/journal.pone.0254491)
   [<i class="ai ai-biorxiv-square ai-3x"></i>](https://doi.org/10.1101/2020.08.24.264713)
 
@@ -53,7 +53,7 @@ title: Publications
 
 - **High-dimensional microbiome interactions shape host fitness**<br>
   Alison Gould, Vivian Zhang, Lisa Lamberti, Eric Jones, Benjamin Obadia, Nikolaos Korasidis, Alex Gavryushkin, Jean Carlson, Niko Beerenwinkel, and Will Ludington<br>
-  *PNAS* 2018<br>
+  *PNAS,* 115(51), E11951-E11960, 2018<br>
   [<i class="ai ai-open-access-square ai-3x"></i>](https://doi.org/10.1073/pnas.1809349115)
   [<i class="ai ai-biorxiv-square ai-3x"></i>](https://doi.org/10.1101/232959)
 
@@ -65,7 +65,7 @@ title: Publications
 
 - **Inferring genetic interactions from comparative fitness data**<br>
   Kristina Crona, Alex Gavryushkin, Devin Greene, and Niko Beerenwinkel<br>
-  *eLife* 2017;6:e28629<br>
+  *eLife,* 6:e28629, 2017<br>
   [<i class="ai ai-open-access-square ai-3x"></i>](https://doi.org/10.7554/eLife.28629)
   [<i class="ai ai-biorxiv-square ai-3x"></i>](https://doi.org/10.1101/137372)
 
