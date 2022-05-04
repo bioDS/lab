@@ -7,7 +7,7 @@ title: Publications
 
 
 - **Accounting for errors in data improves timing in single-cell cancer evolution**<br>
-   Kylie Chen, Jiří Moravec, Alex Gavryushkin, David Welch,  and Alexei Drummond<br>
+   Kylie Chen, Jiří Moravec, Alex Gavryushkin, David Welch, and Alexei Drummond<br>
   *bioRxiv* 2021<br>
   [<i class="ai ai-biorxiv-square ai-3x"></i>](https://doi.org/10.1101/2021.03.17.435906)
 
@@ -20,6 +20,11 @@ title: Publications
   Jiří Moravec, Rob Lanfear, David Spector, Sarah Diermeier, and Alex Gavryushkin<br>
   *bioRxiv* 2021<br>
   [<i class="ai ai-biorxiv-square ai-3x"></i>](https://doi.org/10.1101/2021.01.07.425804)
+
+- **Tuberous sclerosis complex: a complex case**<br>
+  Ryan Powell, Sharon Pattison, Jiri Moravec, Basharat Bhat, Nada Guirguis, David Markie, Greg Jones, Jason Copedo, Ian Morison, Alex Gavryushkin, Bronwyn Gray, Lisa Wyeth, Mike Eccles, and Erin Macaulay<br>
+  *Cold Spring Harbor Molecular Case Studies,* 8: a006182, 2022<br>
+  [<i class="ai ai-open-access-square ai-3x"></i>](https://doi.org/10.1101/mcs.a006182)
 
 - **Sustained software development, not number of citations or journal choice, is indicative of accurate bioinformatic software**<br>
    Paul Gardner, James Paterson, Stephanie McGimpsey, Fatemeh Ashari-Ghomi, Sinan Umu, Aleksandra Pawlik, Alex Gavryushkin, and Michael Black<br>
