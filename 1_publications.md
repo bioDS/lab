@@ -6,6 +6,11 @@ title: Publications
 ---
 
 
+- **Online Bayesian Analysis with BEAST 2**<br>
+   Remco Bouckaert, Lena Collienne, and Alex Gavryushkin<br>
+  *bioRxiv* 2022<br>
+  [<i class="ai ai-biorxiv-square ai-3x"></i>](https://doi.org/10.1101/2022.05.03.490538)
+
 - **Accounting for errors in data improves timing in single-cell cancer evolution**<br>
    Kylie Chen, Jiří Moravec, Alex Gavryushkin, David Welch, and Alexei Drummond<br>
   *bioRxiv* 2021<br>
