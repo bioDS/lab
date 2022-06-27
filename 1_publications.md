@@ -19,12 +19,12 @@ title: Publications
 - **Cancer phylogenetics using single-cell RNA-seq data**<br>
   Jiří Moravec, Rob Lanfear, David Spector, Sarah Diermeier, and Alex Gavryushkin<br>
   *Molecular Biology and Evolution* 2022<br>
-  [<i class="ai ai-open-access-square ai-3x"></i>](https://doi.org/10.1093/molbev/msac143)
   [<i class="ai ai-biorxiv-square ai-3x"></i>](https://doi.org/10.1101/2021.01.07.425804)
 
 - **Accounting for errors in data improves timing in single-cell cancer evolution**<br>
    Kylie Chen, Jiří Moravec, Alex Gavryushkin, David Welch, and Alexei Drummond<br>
   *bioRxiv* 2021<br>
+  [<i class="ai ai-open-access-square ai-3x"></i>](https://doi.org/10.1093/molbev/msac143)
   [<i class="ai ai-biorxiv-square ai-3x"></i>](https://doi.org/10.1101/2021.03.17.435906)
 
 - **Tuberous sclerosis complex: a complex case**<br>
