@@ -30,7 +30,7 @@ title: Publications
 - **Tuberous sclerosis complex: a complex case**<br>
   Ryan Powell, Sharon Pattison, Jiri Moravec, Basharat Bhat, Nada Guirguis, David Markie, Greg Jones, Jason Copedo, Ian Morison, Alex Gavryushkin, Bronwyn Gray, Lisa Wyeth, Mike Eccles, and Erin Macaulay<br>
   *Cold Spring Harbor Molecular Case Studies,* 8: a006182, 2022<br>
-  [<i class="ai ai-open-access-square ai-3x"></i>](http://www.ncbi.nlm.nih.gov/pmc/articles/pmc9059781/)
+  [<i class="ai ai-open-access-square ai-3x"></i>](https://www.ncbi.nlm.nih.gov/pmc/articles/pmc9059781/)
 
 - **Sustained software development, not number of citations or journal choice, is indicative of accurate bioinformatic software**<br>
    Paul Gardner, James Paterson, Stephanie McGimpsey, Fatemeh Ashari-Ghomi, Sinan Umu, Aleksandra Pawlik, Alex Gavryushkin, and Michael Black<br>
@@ -85,10 +85,10 @@ title: Publications
   *Journal of Mathematical Biology,* 76(5), 1101–1121, 2017<br>
   [<i class="ai ai-open-access-square ai-3x"></i>](https://doi.org/10.1007/s00285-017-1167-9)
   [<i class="ai ai-biorxiv-square ai-3x"></i>](https://doi.org/10.1101/063362)
-  [<i class="ai ai-3x">blog</i>](http://matsen.fredhutch.org/general/2016/07/11/discrete-time-tree.html) post by Erick
+  [<i class="ai ai-3x">blog</i>](https://matsen.fredhutch.org/general/2016/07/11/discrete-time-tree.html) post by Erick
 
 - **The space of ultrametric phylogenetic trees**<br>
   Alex Gavryushkin and Alexei Drummond<br>
   *Journal of Theoretical Biology,* 403, 197–208, 2016<br>
   [<i class="ai ai-open-access-square ai-3x"></i>](https://doi.org/10.1016/j.jtbi.2016.05.001)
-  [<i class="ai ai-arxiv-square ai-3x"></i>](http://arxiv.org/abs/1410.3544)
+  [<i class="ai ai-arxiv-square ai-3x"></i>](https://arxiv.org/abs/1410.3544)
