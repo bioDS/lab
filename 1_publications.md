@@ -30,7 +30,7 @@ title: Publications
 - **Tuberous sclerosis complex: a complex case**<br>
   Ryan Powell, Sharon Pattison, Jiri Moravec, Basharat Bhat, Nada Guirguis, David Markie, Greg Jones, Jason Copedo, Ian Morison, Alex Gavryushkin, Bronwyn Gray, Lisa Wyeth, Mike Eccles, and Erin Macaulay<br>
   *Cold Spring Harbor Molecular Case Studies,* 8: a006182, 2022<br>
-  [<i class="ai ai-open-access-square ai-3x"></i>](https://pubmed.ncbi.nlm.nih.gov/35483879/)
+  [<i class="ai ai-open-access-square ai-3x"></i>](http://www.ncbi.nlm.nih.gov/pmc/articles/pmc9059781/)
 
 - **Sustained software development, not number of citations or journal choice, is indicative of accurate bioinformatic software**<br>
    Paul Gardner, James Paterson, Stephanie McGimpsey, Fatemeh Ashari-Ghomi, Sinan Umu, Aleksandra Pawlik, Alex Gavryushkin, and Michael Black<br>
