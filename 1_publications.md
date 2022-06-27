@@ -11,11 +11,6 @@ title: Publications
   *bioRxiv* 2022<br>
   [<i class="ai ai-biorxiv-square ai-3x"></i>](https://doi.org/10.1101/2022.05.03.490538)
 
-- **Accounting for errors in data improves timing in single-cell cancer evolution**<br>
-   Kylie Chen, Jiří Moravec, Alex Gavryushkin, David Welch, and Alexei Drummond<br>
-  *bioRxiv* 2021<br>
-  [<i class="ai ai-biorxiv-square ai-3x"></i>](https://doi.org/10.1101/2021.03.17.435906)
-
 - **A Fast Lasso-based Method for Inferring Pairwise Interactions**<br>
   Kieran Elmes, Astra Heywood, Zhiyi Huang, and Alex Gavryushkin<br>
   *bioRxiv* 2021<br>
@@ -23,8 +18,14 @@ title: Publications
 
 - **Cancer phylogenetics using single-cell RNA-seq data**<br>
   Jiří Moravec, Rob Lanfear, David Spector, Sarah Diermeier, and Alex Gavryushkin<br>
-  *bioRxiv* 2021<br>
+  *Molecular Biology and Evolution* 2022<br>
+  [<i class="ai ai-open-access-square ai-3x"></i>](https://doi.org/10.1093/molbev/msac143)
   [<i class="ai ai-biorxiv-square ai-3x"></i>](https://doi.org/10.1101/2021.01.07.425804)
+
+- **Accounting for errors in data improves timing in single-cell cancer evolution**<br>
+   Kylie Chen, Jiří Moravec, Alex Gavryushkin, David Welch, and Alexei Drummond<br>
+  *bioRxiv* 2021<br>
+  [<i class="ai ai-biorxiv-square ai-3x"></i>](https://doi.org/10.1101/2021.03.17.435906)
 
 - **Tuberous sclerosis complex: a complex case**<br>
   Ryan Powell, Sharon Pattison, Jiri Moravec, Basharat Bhat, Nada Guirguis, David Markie, Greg Jones, Jason Copedo, Ian Morison, Alex Gavryushkin, Bronwyn Gray, Lisa Wyeth, Mike Eccles, and Erin Macaulay<br>
