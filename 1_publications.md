@@ -18,12 +18,17 @@ title: Publications
 
 - **Cancer phylogenetics using single-cell RNA-seq data**<br>
   Jiří Moravec, Rob Lanfear, David Spector, Sarah Diermeier, and Alex Gavryushkin<br>
-  *Molecular Biology and Evolution* 2022<br>
+  *bioRxiv* 2021<br>
   [<i class="ai ai-biorxiv-square ai-3x"></i>](https://doi.org/10.1101/2021.01.07.425804)
+
+- **SNVformer: An Attention-based Deep Neural Network for GWAS Data**<br>
+   Kieran Elmes, Diana Benavides-Prado, Neset Ozkan Tan, Trung Bao Nguyen, Nicholas Sumpter, Megan Leask, Michael Witbrock, and Alex Gavryushkin<br>
+  *ICML Workshop on Computational Biology* 2022<br>
+  [<i class="ai ai-biorxiv-square ai-3x"></i>](https://doi.org/10.1101/2022.07.07.499217)
 
 - **Accounting for errors in data improves timing in single-cell cancer evolution**<br>
    Kylie Chen, Jiří Moravec, Alex Gavryushkin, David Welch, and Alexei Drummond<br>
-  *bioRxiv* 2021<br>
+  *Molecular Biology and Evolution* 2022<br>
   [<i class="ai ai-open-access-square ai-3x"></i>](https://doi.org/10.1093/molbev/msac143)
   [<i class="ai ai-biorxiv-square ai-3x"></i>](https://doi.org/10.1101/2021.03.17.435906)
 
