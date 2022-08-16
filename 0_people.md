@@ -29,4 +29,4 @@ title: People
 
 ### Alumni
 
-- [Astra Heywood](https://www.linkedin.com/in/astra-heywood-a43229163/) (postdoc, currently Bioinformatician at [Plant and Food Research](https://careers.sciencenewzealand.org/plant-and-food-research/about-us)
+- [Astra Heywood](https://www.linkedin.com/in/astra-heywood-a43229163/) (postdoc, currently Bioinformatician at [Plant and Food Research](https://careers.sciencenewzealand.org/plant-and-food-research/about-us))
