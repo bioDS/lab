@@ -15,4 +15,4 @@ Associate Professor and [Rutherford Discovery Fellow](https://royalsociety.org.n
 |**Email**&nbsp;&nbsp;&nbsp;&nbsp;	|[alex@biods.org](mailto:alex@biods.org)											|
 |**Google**&nbsp;&nbsp;&nbsp;&nbsp;	|[Scholar profile](https://scholar.google.co.nz/citations?hl=en&user=coK1R-kAAAAJ&view_op=list_works&sortby=pubdate)		|
 |**Calendar**				|[Schedule a meeting with Alex on Google Calendar](https://calendar.google.com)							|
-|					|[Schedule a meeting with Alex on Calendly](https://calendly.com/gavryushkin/)							|
+|**Calendly**				|[Schedule a meeting with Alex on Calendly](https://calendly.com/gavryushkin/)							|
