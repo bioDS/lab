@@ -6,6 +6,11 @@ title: Publications
 ---
 
 
+- **Estimating the mean in the space of ranked phylogenetic trees**<br>
+   Lars Berling, Lena Collienne, and Alex Gavryushkin<br>
+  *bioRxiv* 2023<br>
+  [<i class="ai ai-biorxiv-square ai-3x"></i>](https://doi.org/10.1101/2023.05.08.539790)
+
 - **Online Bayesian Analysis with BEAST 2**<br>
    Remco Bouckaert, Lena Collienne, and Alex Gavryushkin<br>
   *bioRxiv* 2022<br>
