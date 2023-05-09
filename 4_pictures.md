@@ -6,6 +6,9 @@ title: Pictures
 ---
 
 
+### [bioDS lab](/) in February 2023:
+![February 2023](assets/2023-02-17-bioDS_lab.jpg)
+
 ### [bioDS lab](/) in December 2019:
 ![December 2019](assets/2019-12-02-bioDS_lab.jpeg)
 [Tom](/people/), [Jiří](/people/), [Lena](/people/), [Alex](/alex/), [Surayo](/people/), [Moizle](/people/), [Astra](/people/), [Kieran](/kieran/)
