@@ -21,17 +21,17 @@ title: Publications
   *bioRxiv* 2022<br>
   [<i class="ai ai-biorxiv-square ai-3x"></i>](https://doi.org/10.1101/2022.05.03.490538)
 
+- **Testing for phylogenetic signal in single-cell RNA-seq data**<br>
+  Jiří Moravec, Rob Lanfear, David Spector, Sarah Diermeier, and Alex Gavryushkin<br>
+  *Journal of Computational Biology* 2023<br>
+  [<i class="ai ai-open-access-square ai-3x"></i>](http://doi.org/10.1089/cmb.2022.0357)
+  [<i class="ai ai-biorxiv-square ai-3x"></i>](https://doi.org/10.1101/2021.01.07.425804)
+
 - **A fast lasso-based method for inferring higher-order interactions**<br>
   Kieran Elmes, Astra Heywood, Zhiyi Huang, and Alex Gavryushkin<br>
   *PLOS Computational Biology* 2022<br>
   [<i class="ai ai-open-access-square ai-3x"></i>](https://doi.org/10.1371/journal.pcbi.1010730)
   [<i class="ai ai-biorxiv-square ai-3x"></i>](https://doi.org/10.1101/2021.12.13.471844)
-
-- **Testing for phylogenetic signal in single-cell RNA-seq data**<br>
-  Jiří Moravec, Rob Lanfear, David Spector, Sarah Diermeier, and Alex Gavryushkin<br>
-  *Journal of Computational Biology* 2022<br>
-  [<i class="ai ai-open-access-square ai-3x"></i>](http://doi.org/10.1089/cmb.2022.0357)
-  [<i class="ai ai-biorxiv-square ai-3x"></i>](https://doi.org/10.1101/2021.01.07.425804)
 
 - **SNVformer: an attention-based deep neural network for GWAS data**<br>
    Kieran Elmes, Diana Benavides-Prado, Neset Ozkan Tan, Trung Bao Nguyen, Nicholas Sumpter, Megan Leask, Michael Witbrock, and Alex Gavryushkin<br>
