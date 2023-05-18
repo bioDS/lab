@@ -11,7 +11,12 @@ title: Publications
   *bioRxiv* 2023<br>
   [<i class="ai ai-biorxiv-square ai-3x"></i>](https://doi.org/10.1101/2023.05.08.539790)
 
-- **Online Bayesian Analysis with BEAST 2**<br>
+- **Ranked subtree prune and regraft**<br>
+  Lena Collienne, Chris Whidden, and Alex Gavryushkin<br>
+  *bioRxiv* 2023<br>
+  [<i class="ai ai-biorxiv-square ai-3x"></i>](https://doi.org/10.1101/2023.05.16.541039)
+
+- **Online Bayesian analysis with BEAST 2**<br>
    Remco Bouckaert, Lena Collienne, and Alex Gavryushkin<br>
   *bioRxiv* 2022<br>
   [<i class="ai ai-biorxiv-square ai-3x"></i>](https://doi.org/10.1101/2022.05.03.490538)
@@ -22,13 +27,13 @@ title: Publications
   [<i class="ai ai-open-access-square ai-3x"></i>](https://doi.org/10.1371/journal.pcbi.1010730)
   [<i class="ai ai-biorxiv-square ai-3x"></i>](https://doi.org/10.1101/2021.12.13.471844)
 
-- **Testing for Phylogenetic Signal in Single-Cell RNA-Seq Data**<br>
+- **Testing for phylogenetic signal in single-cell RNA-seq data**<br>
   Jiří Moravec, Rob Lanfear, David Spector, Sarah Diermeier, and Alex Gavryushkin<br>
   *Journal of Computational Biology* 2022<br>
   [<i class="ai ai-open-access-square ai-3x"></i>](http://doi.org/10.1089/cmb.2022.0357)
   [<i class="ai ai-biorxiv-square ai-3x"></i>](https://doi.org/10.1101/2021.01.07.425804)
 
-- **SNVformer: An Attention-based Deep Neural Network for GWAS Data**<br>
+- **SNVformer: an attention-based deep neural network for GWAS data**<br>
    Kieran Elmes, Diana Benavides-Prado, Neset Ozkan Tan, Trung Bao Nguyen, Nicholas Sumpter, Megan Leask, Michael Witbrock, and Alex Gavryushkin<br>
   *ICML Workshop on Computational Biology* 2022<br>
   [<i class="ai ai-open-access-square ai-3x"></i>](https://icml-compbio.github.io/2022/papers/WCBICML2022_paper_58.pdf)
@@ -51,7 +56,7 @@ title: Publications
   [<i class="ai ai-open-access-square ai-3x"></i>](https://doi.org/10.1186/s13059-022-02625-x)
   [<i class="ai ai-biorxiv-square ai-3x"></i>](https://doi.org/10.1101/092205)
 
-- **Discrete Coalescent Trees**<br>
+- **Discrete coalescent trees**<br>
   Lena Collienne, Kieran Elmes, Mareike Fischer, David Bryant, and Alex Gavryushkin<br>
   *Journal of Mathematical Biology* 2021<br>
   [<i class="ai ai-open-access-square ai-3x"></i>](https://doi.org/10.1007/s00285-021-01685-0)
@@ -69,7 +74,7 @@ title: Publications
   [<i class="ai ai-open-access-square ai-3x"></i>](https://doi.org/10.1007/s00285-021-01567-5)
   [<i class="ai ai-arxiv-square ai-3x"></i>](https://arxiv.org/abs/2007.12307)
 
-- **Geometry of Ranked Nearest Neighbour Interchange Space of Phylogenetic Trees**<br>
+- **Geometry of ranked nearest neighbour interchange space of phylogenetic trees**<br>
   Lena Collienne, Kieran Elmes, Mareike Fischer, David Bryant, and Alex Gavryushkin<br>
   *bioRxiv* 2019<br>
   [<i class="ai ai-biorxiv-square ai-3x"></i>](https://doi.org/10.1101/2019.12.19.883603)
