@@ -23,7 +23,7 @@ title: People
 
 - [Lars Berling](https://github.com/Lars-B): Statistics in the time-tree space
 - [Kieran Elmes](/kieran/): Deep learning fitness landscapes, co-supervised by [Michael Witbrock](http://www.science.auckland.ac.nz/people/profile/m-witbrock) at the [University of Auckland](https://www.auckland.ac.nz/en/science/about-the-faculty/school-of-computer-science.html)
-- [Kate Truman](/kate/): Identifiability of phylogenetic models
+- [Kate Truman](/kate/): Identifiability of phylogenetic models, supervised by [Sasha Gavryushkina](http://alexandra.gavruskin.com/)
 
 
 ### MSc students
