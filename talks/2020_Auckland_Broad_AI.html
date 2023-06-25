@@ -8,9 +8,9 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 	<meta name="apple-mobile-web-app-capable" content="yes" />
 	<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
-	<link rel="stylesheet" href="css/reveal.css">
-	<link rel="stylesheet" href="css/theme/simple_gavruskin.css" id="theme">
-	<link rel="stylesheet" href="lib/css/zenburn.css">
+	<link rel="stylesheet" href="revealjs/css/reveal.scss">
+	<link rel="stylesheet" href="revealjs/css/theme/simple_gavruskin.css" id="theme">
+	<link rel="stylesheet" href="revealjs/plugin/highlight/zenburn.css">
 	<link rel="icon" href="../favicon.ico" />
 	<!--[if lt IE 9]>
 	<script src="lib/js/html5shiv.js"></script>
@@ -313,18 +313,17 @@
 </div>
 </div>
 
-<script src="lib/js/head.min.js"></script>
-<script src="js/reveal.js"></script>
+<script src="revealjs/js/reveal.js"></script>
 <script>
   Reveal.initialize({
     dependencies: [
 	// Speaker notes
-	{ src: 'plugin/notes/notes.js', async: true },
+	{ src: 'revealjs/plugin/notes/notes.js', async: true },
         // Interpret Markdown in <section> elements
-        { src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
-        { src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+        { src: 'revealjs/plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+        { src: 'revealjs/plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
         // MathJax
-        { src: 'plugin/math/math.js', async: true }
+        { src: 'revealjs/plugin/math/math.js', async: true }
     ]
   });
   Reveal.configure({ slideNumber: true });
