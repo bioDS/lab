@@ -320,7 +320,7 @@
 	// Speaker notes
 	{ src: 'revealjs/plugin/notes/notes.js', async: true },
         // Interpret Markdown in <section> elements
-        { src: 'revealjs/plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+        { src: 'revealjs/plugin/markdown/plugin.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
         { src: 'revealjs/plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
         // MathJax
         { src: 'revealjs/plugin/math/math.js', async: true }
