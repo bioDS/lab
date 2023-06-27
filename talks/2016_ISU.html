@@ -8,12 +8,9 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 	<meta name="apple-mobile-web-app-capable" content="yes" />
 	<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
-	<link rel="stylesheet" href="css/reveal.css">
-	<link rel="stylesheet" href="css/theme/simple_gavruskin.css" id="theme">
-	<link rel="stylesheet" href="lib/css/zenburn.css">
-	<!--[if lt IE 9]>
-	<script src="lib/js/html5shiv.js"></script>
-	<![endif]-->
+	<link rel="stylesheet" href="revealjs/dist/reveal.css">
+	<link rel="stylesheet" href="revealjs_themes_biods/simple_gavruskin.css" id="theme">
+	<link rel="stylesheet" href="revealjs/plugin/highlight/zenburn.css">
 </head>
 
 <body>
@@ -78,7 +75,7 @@
 	<p class="fragment" data-fragment-index="1">
 	$u_{\color{blue}{0}11} = w_{\color{blue}{0}00} + w_{\color{blue}{1}00} + w_{\color{blue}{0}11} + w_{\color{blue}{1}11} − (w_{\color{blue}{0}01} + w_{\color{blue}{1}01}) − (w_{\color{blue}{0}10} + w_{\color{blue}{1}10})$
 	</p>
-	
+
 	<h4>
 	<p class="fragment" data-fragment-index="2">
 	Total three-way interaction?
@@ -300,19 +297,19 @@
 </section>
 </div>
 </div>
-<script src="lib/js/head.min.js"></script>
-<script src="js/reveal.js"></script>
+<script src="revealjs/dist/reveal.js"></script>
+<script src="revealjs/plugin/markdown/markdown.js"></script>
+<script src="revealjs/plugin/highlight/highlight.js"></script>
+<script src="revealjs/plugin/notes/notes.js"></script>
+<script src="revealjs/plugin/math/math.js"></script>
 <script>
-  Reveal.initialize({
-    dependencies: [
-        // Interpret Markdown in <section> elements
-        { src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
-        { src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
-        // MathJax
-        { src: 'plugin/math/math.js', async: true }
-    ]
-  });
+	Reveal.initialize({
+		controls: true,
+		progress: true,
+		history: true,
+		center: true,
+		plugins: [ RevealMarkdown, RevealHighlight, RevealNotes, RevealMath.KaTeX ]
+			});
 </script>
 </body>
 </html>
-

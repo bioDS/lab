@@ -8,12 +8,9 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 	<meta name="apple-mobile-web-app-capable" content="yes" />
 	<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
-	<link rel="stylesheet" href="css/reveal.css">
-	<link rel="stylesheet" href="css/theme/simple_gavruskin.css" id="theme">
-	<link rel="stylesheet" href="lib/css/zenburn.css">
-	<!--[if lt IE 9]>
-	<script src="lib/js/html5shiv.js"></script>
-	<![endif]-->
+	<link rel="stylesheet" href="revealjs/dist/reveal.css">
+	<link rel="stylesheet" href="revealjs_themes_biods/simple_gavruskin.css" id="theme">
+	<link rel="stylesheet" href="revealjs/plugin/highlight/zenburn.css">
 </head>
 
 <body>
@@ -172,7 +169,7 @@
   <section>
 	<h3>Graph grammars</h3>
 	A graph grammar consists of a finite set of productions $\{L_i \to_i R_i\}$, where $L_i$ and $R_i$ are connected undirected edge-end labeled graphs and $\to_i$ is a one-to-one map between half-edges of $L_i$ and those of $R_i$.<br><br>
-	The productions are then applied to the starting tree $T$ to derive all possible trees at $\mathrm{RNNI}$ distance up to $r$ from $T$.<br><br> 
+	The productions are then applied to the starting tree $T$ to derive all possible trees at $\mathrm{RNNI}$ distance up to $r$ from $T$.<br><br>
 	A production is said to be <i>ready</i> at a stage $s$ of the derivation if the running tree at stage $s$ has a subgraph isomorphic to the left side $L_i$ of the production.
   </section>
   <section>
@@ -187,7 +184,7 @@
   <section>
 	<b>Theorem</b> (Sleator, Tarjan, and Thurston). Let $\mathcal{G}$ be a graph grammar and $G$ a graph on $n$ vertices.
 	Then the number of trees at distance $r$ from $G$ is $(c+1)^{n+rm}$.<br><br>
-	
+
 	<b>Theorem</b> (Gavryushkin, Whidden, and Matsen). The number of trees within distance $r$ from any given tree is at most
 	<br>
 	$3^{n+2r−1}$ in $\mathrm{RNNIu}$&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
@@ -272,19 +269,19 @@
 </section>
 </div>
 </div>
-<script src="lib/js/head.min.js"></script>
-<script src="js/reveal.js"></script>
+<script src="revealjs/dist/reveal.js"></script>
+<script src="revealjs/plugin/markdown/markdown.js"></script>
+<script src="revealjs/plugin/highlight/highlight.js"></script>
+<script src="revealjs/plugin/notes/notes.js"></script>
+<script src="revealjs/plugin/math/math.js"></script>
 <script>
-  Reveal.initialize({
-    dependencies: [
-        // Interpret Markdown in <section> elements
-        { src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
-        { src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
-        // MathJax
-        { src: 'plugin/math/math.js', async: true }
-    ]
-  });
+	Reveal.initialize({
+		controls: true,
+		progress: true,
+		history: true,
+		center: true,
+		plugins: [ RevealMarkdown, RevealHighlight, RevealNotes, RevealMath.KaTeX ]
+			});
 </script>
 </body>
 </html>
-

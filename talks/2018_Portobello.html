@@ -8,13 +8,10 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 	<meta name="apple-mobile-web-app-capable" content="yes" />
 	<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
-	<link rel="stylesheet" href="css/reveal.css">
-	<link rel="stylesheet" href="css/theme/simple_gavruskin.css" id="theme">
-	<link rel="stylesheet" href="lib/css/zenburn.css">
 	<link rel="icon" href="../favicon.ico" />
-	<!--[if lt IE 9]>
-	<script src="lib/js/html5shiv.js"></script>
-	<![endif]-->
+	<link rel="stylesheet" href="revealjs/dist/reveal.css">
+	<link rel="stylesheet" href="revealjs_themes_biods/simple_gavruskin.css" id="theme">
+	<link rel="stylesheet" href="revealjs/plugin/highlight/zenburn.css">
 </head>
 
 <body>
@@ -84,7 +81,7 @@
 <section>
 	<h3>Characterization of epistatic rank orders</h3>
 	<p class="fragment shrink" data-fragment-index="1">
-	<b>Theorem 1.</b> Consider a biallelic $n$-locus system. 
+	<b>Theorem 1.</b> Consider a biallelic $n$-locus system.
 	The number of rank orders which imply $n$-way epistasis is:
 	\[
 	\frac{(2^n)! \times 2}{2^{n-1}+1}
@@ -119,7 +116,7 @@ among all rank orders is:
 </section>
 
 <section>
-	<p class="fragment shrink" data-fragment-index="1"> 
+	<p class="fragment shrink" data-fragment-index="1">
 	  Let $f$ be a linear form with integer coefficients.
 	  Assume that the sum of the coefficients of $f$ is zero.
 	  A partial fitness order of genotypes $\prec$ implies positive $f$-interaction if $f(w) > 0$ whenever $w$ satisfy $\prec$.
@@ -219,7 +216,7 @@ among all rank orders is:
 	<p class="fragment" data-fragment-index="2">
 	  $\small u_{\color{blue}{0}11} = w_{\color{blue}{0}00} + w_{\color{blue}{1}00} + w_{\color{blue}{0}11} + w_{\color{blue}{1}11} − (w_{\color{blue}{0}01} + w_{\color{blue}{1}01}) − (w_{\color{blue}{0}10} + w_{\color{blue}{1}10})$
 	</p>
-	
+
 	<p class="fragment" data-fragment-index="3">
 	  Conditional epistasis?
 	</p>
@@ -325,21 +322,19 @@ among all rank orders is:
 </div>
 </div>
 
-<script src="lib/js/head.min.js"></script>
-<script src="js/reveal.js"></script>
+<script src="revealjs/dist/reveal.js"></script>
+<script src="revealjs/plugin/markdown/markdown.js"></script>
+<script src="revealjs/plugin/highlight/highlight.js"></script>
+<script src="revealjs/plugin/notes/notes.js"></script>
+<script src="revealjs/plugin/math/math.js"></script>
 <script>
-  Reveal.initialize({
-    dependencies: [
-	// Speaker notes
-	{ src: 'plugin/notes/notes.js', async: true },
-        // Interpret Markdown in <section> elements
-        { src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
-        { src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
-        // MathJax
-        { src: 'plugin/math/math.js', async: true }
-    ]
-  });
-  Reveal.configure({ slideNumber: true });
+	Reveal.initialize({
+		controls: true,
+		progress: true,
+		history: true,
+		center: true,
+		plugins: [ RevealMarkdown, RevealHighlight, RevealNotes, RevealMath.KaTeX ]
+			});
 </script>
 </body>
 </html>
