@@ -3,6 +3,7 @@ _site
 .sass-cache
 .jekyll-metadata
 .bundle
+vendor
 
 ## Core latex/pdflatex auxiliary files:
 *.aux
