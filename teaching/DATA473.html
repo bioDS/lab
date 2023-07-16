@@ -141,18 +141,28 @@
 	<h3>Pumping Lemma</h3>
 </section>
 
-
-<section id="L2">
-	<h2>Lecture 2: How to read papers</h3>
+<section>
+	<h3>Universal Turing Machine</h3>
+	<b>Theorem:</b> There exists a Turing Machine $U$ which computes all computable functions.<br>
+	That is, for every computable function $f(x)$ there exists a number $s$ such that $U(s, x) = y$ if and only if $f(x) = y$.
+	<img class="fragment" data-fragment-index="1" data-src="images/hooray.svg">
 </section>
 
 <section>
-	<h3>How to choose a paper to read</h3>
-	<ol>
-	  <li>Read many papers &#128512;</li>
-	  <li>Choose the one that is relevant &#x1F483;</li>
-	  <li>Just don't read them cover to cover!</li>
-	</ol>
+	<h3>Halting problem</h3>
+	<b>Theorem:</b> Not everything is computable.<br>
+	For example, the following function is not computable
+	$$
+	  h(x) = \begin{cases}
+		  U(x, x) + 1,	& \mbox{ if } U(x, x) \downarrow\\
+		  0,		& \mbox{ otherwise}
+		\end{cases}
+	$$
+	<img class="fragment" data-fragment-index="1" data-src="images/oh_no.svg" width="30%">
+</section>
+
+<section id="L2">
+	<h2>Lecture 2: <a href="https://youtu.be/733m6qBH-jI?t=57">How to read papers</a></h3>
 </section>
 
 <section id="L3">
@@ -181,7 +191,7 @@
 		history: true,
 		center: true,
 		slideNumber: 'h.v',
-		plugins: [ RevealMarkdown, RevealHighlight, RevealNotes, RevealMath.KaTeX ]
+		plugins: [ RevealMarkdown, RevealHighlight, RevealNotes, RevealMath.KaTeX, RevealMath.MathJax2 ]
 			});
 </script>
 
