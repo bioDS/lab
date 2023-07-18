@@ -142,6 +142,73 @@
 </section>
 
 <section>
+	A <b>pushdown automaton</b>, $M$, consists of:
+	<ul>
+	  <li> A finite set $Q$ of <b>states</b>
+	  <li> A finite set $\Sigma$ called the <b>input alphabet</b> (lower case letters)
+	  <li> A finite set $\color{blue}{\Gamma}$ called the <b>stack alphabet</b> (upper case letters)
+	  <li> A relation $\delta \subseteq Q \times \Sigma \cup \{\lambda\} \times \color{blue}{\Gamma \cup \{\lambda\}} \times Q \times \color{blue}{\Gamma \cup \{\lambda\}}$<br>
+		called the <b>transition relation</b>
+	  <li> A distinguished state $q_0 \in Q$ called the <b>initial state</b>
+	  <li> A subset $F \subseteq Q$ called the <b>final</b> or <b>accepting states</b>.
+	</ul>
+
+	<p class="fragment" data-fragment-index="1">
+	  <b>The stack should be empty to accept a string!</b>
+	</p>
+	<img class="fragment" data-fragment-index="2" data-src="images/PDA.png" width="50%">
+</section>
+
+<section>
+	A <b>context-free grammar</b>, $G$, consists of:
+	<ul>
+	  <li> A finite set $V$ of <b>nonterminals</b> (or variables)<br>
+		(upper case letters)
+	  <li> A finite set $\Sigma$ called the <b>alphabet</b> (or terminals)<br>
+		(lower case letters), $\Sigma \cap V = \varnothing$
+	  <li> A finite set $P$ of <b>production rules</b>,<br>
+		which is a subset of $V \times (V \cup \Sigma)^*$
+	  <li> A distinguished $S \in V$ called the <b>start symbol</b>
+	</ul>
+
+	<p class="fragment" data-fragment-index="1">
+	  <b>Examples</b><br>
+	  $S \to aS, S \to bS, S \to \lambda$
+	</p>
+
+	<p class="fragment" data-fragment-index="2">
+	  $S \to aS, S \to bT, T \to bT, T \to \lambda$
+	</p>
+
+	<p class="fragment" data-fragment-index="3">
+	  $\{a^nb^n \mid n \in \mathbb{N}\}$
+	</p>
+</section>
+
+<section>
+<section>
+	<h3>Theorem</h3>
+	$\mathcal L_{PDA} = \mathcal L_{CFG}$
+</section>
+
+<section data-background="images/human_male_karyotype.svg" data-background-size="900px">
+</section>
+
+<section>
+	<h3>Genome phasing</h3>
+	<img class="stretch" data-src="images/NFA_Schwartz.svg">
+	<p style="font-size:9pt">
+	Schwarz, Roland F., Anne Trinh, Botond Sipos, James D. Brenton, Nick Goldman, and Florian Markowetz. 2014. “Phylogenetic Quantification of Intra-Tumour Heterogeneity.” <i>PLoS Computational Biology</i> 10 (4): e1003535.<br>
+</section>
+
+<section>
+	<img data-src="images/CFG_Schwartz.png">
+	<p style="font-size:9pt">
+	Schwarz, Roland F., Anne Trinh, Botond Sipos, James D. Brenton, Nick Goldman, and Florian Markowetz. 2014. “Phylogenetic Quantification of Intra-Tumour Heterogeneity.” <i>PLoS Computational Biology</i> 10 (4): e1003535.<br>
+</section>
+</section>
+
+<section>
 	<h3>Church–Turing thesis</h3>
 	A problem can be solved by an algorithm if and only if it can be solved by a Turing machine.
 </section>
