@@ -44,6 +44,10 @@
 
 	<ul>
 	  <li> <a href="#/P0">Part 0: Introduction</a>
+		<ul>
+		  <li> <a href="#/L1">Lecture 1: Background</a>
+		  <li> <a href="#/L2">Lecture 2: Turing machines</a>
+		</ul>
 	  <li> <a href="#/P1">Part 1: Classical approaches to scalability</a>
 	  <li> <a href="#/P2">Part 2: Scalability in statistical learning</a>
 	  <li> <a href="#/P3">Part 3: Scalability in modern machine learning</a>
@@ -141,6 +145,168 @@
 	<h3>Pumping Lemma</h3>
 </section>
 
+<section id="L2">
+	<h2>Lecture 2: Turing machines</h2>
+</section>
+
+<section>
+	A <b>Turing machine</b>, $M$, consists of:
+	<ul>
+	  <li> A finite set $\Gamma$ called the <b>alphabet</b> (or tape symbols)
+	  <li> A finite set $Q$ of <b>states</b>
+	  <li> A distinguished state $q_0 \in Q$ called the <b>starting state</b>
+	  <li> A subset $F \subseteq Q$ of <b>halting states</b>
+	  <li> A distinguished symbol $\beta \in \Gamma$ called the <b>blank symbol</b> (or the empty cell)
+	  <li> A partial function $F: (Q \setminus F) \times \Gamma \to Q \times \Gamma \times \{L, R, \varnothing\}$<br>
+	    called the <b>programme</b>
+	</ul>
+</section>
+
+<section>
+	The programme of a Turing machine $M$ <b>terminates</b> if $M$ reaches a state $q \in F$.<br>
+	The program does not terminate otherwise.
+
+	<p class="fragment" data-fragment-index="1">
+	  Hence a non-terminating programme either <i>hangs</i> (infinite loop) or <i>crashes</i> (reaches a state and tape symbol with no command to execute).
+	</p>
+
+	<p style="color:red" class="fragment" data-fragment-index="2">
+	  We will be starting Turing machines on
+	  $$
+	    \beta\underset{\Delta}{a_1} a_2 \ldots a_n \beta
+	  $$
+	</p>
+</section>
+
+<section>
+	$$
+	  \begin{align}
+	    \mbox{Example 1} &\\
+	    & q_0 \beta \to \mathrm{accept} \beta
+	  \end{align}
+	$$
+
+	<p class="fragment" data-fragment-index="1">
+	$$
+	  \begin{align}
+	    \mbox{Example 2} &\\
+	    & q_0 \beta \to \mathrm{accept} \beta\\
+	    & q_0 0 \to q_0 \beta R\\
+	    & q_0 1 \to q_0 \beta R
+	  \end{align}
+	$$
+
+	<p class="fragment" data-fragment-index="2">
+	$$
+	  \begin{align}
+	    \mbox{Example 3} &\\
+	    & q_0 \beta \to \mathrm{accept} \beta\\
+	    & q_0 0 \to q_0 1 R\\
+	    & q_0 1 \to q_0 0 R
+	  \end{align}
+	$$
+	</p>
+</section>
+
+<section>
+	A Turing Machine $M$ <b>computes a function</b> $f: \mathbb N \to \mathbb N$ if<br>
+	for all $x$ and $y$:
+	$$
+	  f(x) = y
+	$$
+	$$
+	  \Updownarrow
+	$$
+	$$
+	  \beta \underbrace{1 \ldots 1}_{x \mbox{ times}} \beta \Rightarrow_M \beta \underbrace{1 \ldots 1}_{y \mbox{ times}} \beta \mbox{ and $M$ halts}
+	$$
+
+	<p class="fragment" data-fragment-index="1">
+	  We denote the latter by $M(x) = y$.<br>
+	  We write $M(x)\downarrow$ for $M$ halts on $\beta \underbrace{1 \ldots 1}_{x \mbox{ times}} \beta$
+	</p>
+</section>
+
+<section>
+	A Turing Machine $M$ <b>computes a function</b> $f: \mathbb N^2 \to \mathbb N$ if<br>
+	for all $x_1, x_2$, and $y$:
+	$$
+	  f(x_1, x_2) = y
+	$$
+	$$
+	  \Updownarrow
+	$$
+	$$
+	  \beta \underbrace{1 \ldots 1}_{x_1 \mbox{ times}} 0 \underbrace{1 \ldots 1}_{x_2 \mbox{ times}} \beta \Rightarrow_M \beta \underbrace{1 \ldots 1}_{y \mbox{ times}} \beta \mbox{ and $M$ halts}
+	$$
+	Similarly for more than two variables $x_1, x_2, \ldots, x_n$.
+</section>
+
+<section>
+	<b>Example 1:</b> compute the following functions.
+	$$
+	  \begin{align}
+	    & f(x) = 0\\
+	    & g(x) = x + 1\\
+	    & h(x, y) = x + y
+	  \end{align}
+	$$
+
+	<p class="fragment" data-fragment-index="1">
+	  <b>Example 2:</b> implement the following module COPY.
+	    $$
+	      \beta \underbrace{1 \ldots 1}_{x \mbox{ times}} \beta \Rightarrow_M \beta \underbrace{1 \ldots 1}_{x \mbox{ times}} 0 \underbrace{1 \ldots 1}_{x \mbox{ times}} \beta
+	    $$
+	</p>
+
+	<p class="fragment" data-fragment-index="2">
+	  <b>Example 3:</b> compute:
+	    $$
+	      f(x, y) = xy
+	    $$
+	</p>
+</section>
+
+<section>
+	<b>Example 4:</b> recognise the following languages.
+	<p>
+	  $a^* b^*$
+	</p>
+	<p class="fragment" data-fragment-index="1">
+	  $\{a^n b^n \mid n \in \mathbb N\}$
+	</p>
+</section>
+
+<section>
+	<h3>Universal Turing Machine</h3>
+	<b>Theorem:</b> There exists a Turing Machine $U$ which computes all computable functions.<br>
+	That is, for every computable function $f(x)$ there exists a number $s$ such that $U(s, x) = y$ if and only if $f(x) = y$.
+	<img class="fragment" data-fragment-index="1" data-src="images/hooray.svg">
+</section>
+
+<section>
+	<h3>Turing machine</h3>
+
+	<iframe width="560" height="315" src="https://www.youtube.com/embed/E3keLeMwfHY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</section>
+
+<section>
+	<h3>Halting problem</h3>
+	<b>Theorem:</b> Not everything is computable.<br>
+	For example, the following function is not computable
+	$$
+	  h(x) = \begin{cases}
+		  U(x, x) + 1,	& \mbox{ if } U(x, x) \downarrow\\
+		  0,		& \mbox{ otherwise}
+		\end{cases}
+	$$
+	<img class="fragment" data-fragment-index="1" data-src="images/oh_no.svg" width="30%">
+</section>
+
+<section>
+	<h3>Kolmogorov Complexity</h3>
+</section>
+
 <section>
 	A <b>pushdown automaton</b>, $M$, consists of:
 	<ul>
@@ -233,8 +399,8 @@
 	<img class="fragment" data-fragment-index="1" data-src="images/oh_no.svg" width="30%">
 </section>
 
-<section id="L2">
-	<h2>Lecture 2: <a href="https://youtu.be/733m6qBH-jI?t=57">How to read papers</a></h3>
+<section id="LX">
+	<h2>Lecture X: <a href="https://youtu.be/733m6qBH-jI?t=57">How to read papers</a></h2>
 </section>
 
 <section id="L3">
