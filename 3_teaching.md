@@ -6,6 +6,20 @@ title: Teaching
 ---
 
 
+## 2023 Algorithm in Data Science
+
+[Alex](/alex/) is teaching [DATA473](https://www.canterbury.ac.nz/courseinfo/GetCourseDetails.aspx?course=DATA473&occurrence=23S2(C)&year=2023).
+This course is offered for the first time in 2023 (Semester 2) so the course materials are still evolving and will appear hear as they mature.
+As an early cohort of students taking this course you will have an opportunity to shape its contents, so in-person participation is strongly encouraged.
+In 2023 the lectures are not recorded.
+
+The next lecture of the course is on **August 9** in the bioDS lab (room 515, Jack Erskine Building).
+The location is tentative and might be updated.
+
+- [Complete set of lecture slides](DATA473) is evolving as we progress, so please use the online version if you can
+- [Learning resources](DATA473#/1/1/)
+
+
 ## 2019 Theory of Computing
 
 [Alex](/alex/) and [Lena](/people/) are involved in teaching [COSC341](http://www.cs.otago.ac.nz/cosc341/) Theory of Computing.

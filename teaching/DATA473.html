@@ -54,10 +54,16 @@
 	<h3>Literature, resources</h3>
 	  <ul>
 	    <li> <a href="https://youtube.com">YouTube</a>
+		<ul>
+		  <li><a href="https://youtu.be/XfpMkf4rD6E?t=614">Introduction to transformers</a> <a href="#/P#">#P3</a>
+		</ul>
 	    <li> <a href="COSC341">These slides</a>
 	    <li> <a href="https://docs.google.com/document/d/1YkzpoqHQvIJTTDRF9bGhYUt43vKXMnYz95n3hyLkw1Q/edit">Complementary (rapidly evolving) lecture notes</a>
 	    <li> <a href="https://timroughgarden.org/">Tim Roughgarden</a>: Algorithms Illuminated
-	    <li> Papers that we will choose to read during the course will appear here
+	    <li> <a href="https://paperpile.com/shared/BqtRx0">Papers</a> including these that we will read:
+		<ul>
+		  <li> <a href="https://paperpile.com/app/p/1b25b93d-5ced-0e44-b477-965813bf4561">Mankowitz, Faster Sorting Algorithms, 2023</a>
+		</ul>
 	  </ul>
   </section>
 
@@ -85,7 +91,7 @@
 <section>
 	<img class="stretch" data-src="images/why_ToC.svg"><br>
 	<p style="font-size:11pt">
-	  Garey and Johnson. <i>Computers and Intractability.</i>
+	  Garey and Johnson. <i>Computers and Intractability.</i> 1979
 	</p>
 </section>
 
@@ -112,7 +118,7 @@
 </section>
 
 <section id="L1">
-	<h2>Lecture 1: What do we know? What do we want to learn?</h2>
+	<h2>Lecture 1: Background</h2>
 </section>
 
 <section>
@@ -135,18 +141,100 @@
 	<h3>Pumping Lemma</h3>
 </section>
 
+<section>
+	A <b>pushdown automaton</b>, $M$, consists of:
+	<ul>
+	  <li> A finite set $Q$ of <b>states</b>
+	  <li> A finite set $\Sigma$ called the <b>input alphabet</b> (lower case letters)
+	  <li> A finite set $\color{blue}{\Gamma}$ called the <b>stack alphabet</b> (upper case letters)
+	  <li> A relation $\delta \subseteq Q \times \Sigma \cup \{\lambda\} \times \color{blue}{\Gamma \cup \{\lambda\}} \times Q \times \color{blue}{\Gamma \cup \{\lambda\}}$<br>
+		called the <b>transition relation</b>
+	  <li> A distinguished state $q_0 \in Q$ called the <b>initial state</b>
+	  <li> A subset $F \subseteq Q$ called the <b>final</b> or <b>accepting states</b>.
+	</ul>
 
-<section id="L2">
-	<h2>Lecture 2: How to read papers</h3>
+	<p class="fragment" data-fragment-index="1">
+	  <b>The stack should be empty to accept a string!</b>
+	</p>
+	<img class="fragment" data-fragment-index="2" data-src="images/PDA.png" width="50%">
 </section>
 
 <section>
-	<h3>How to choose a paper to read</h3>
-	<ol>
-	  <li>Read many papers &#128512;</li>
-	  <li>Choose the one that is relevant &#x1F483;</li>
-	  <li>Just don't read them cover to cover!</li>
-	</ol>
+	A <b>context-free grammar</b>, $G$, consists of:
+	<ul>
+	  <li> A finite set $V$ of <b>nonterminals</b> (or variables)<br>
+		(upper case letters)
+	  <li> A finite set $\Sigma$ called the <b>alphabet</b> (or terminals)<br>
+		(lower case letters), $\Sigma \cap V = \varnothing$
+	  <li> A finite set $P$ of <b>production rules</b>,<br>
+		which is a subset of $V \times (V \cup \Sigma)^*$
+	  <li> A distinguished $S \in V$ called the <b>start symbol</b>
+	</ul>
+
+	<p class="fragment" data-fragment-index="1">
+	  <b>Examples</b><br>
+	  $S \to aS, S \to bS, S \to \lambda$
+	</p>
+
+	<p class="fragment" data-fragment-index="2">
+	  $S \to aS, S \to bT, T \to bT, T \to \lambda$
+	</p>
+
+	<p class="fragment" data-fragment-index="3">
+	  $\{a^nb^n \mid n \in \mathbb{N}\}$
+	</p>
+</section>
+
+<section>
+<section>
+	<h3>Theorem</h3>
+	$\mathcal L_{PDA} = \mathcal L_{CFG}$
+</section>
+
+<section data-background="images/human_male_karyotype.svg" data-background-size="900px">
+</section>
+
+<section>
+	<h3>Genome phasing</h3>
+	<img class="stretch" data-src="images/NFA_Schwartz.svg">
+	<p style="font-size:9pt">
+	Schwarz, Roland F., Anne Trinh, Botond Sipos, James D. Brenton, Nick Goldman, and Florian Markowetz. 2014. “Phylogenetic Quantification of Intra-Tumour Heterogeneity.” <i>PLoS Computational Biology</i> 10 (4): e1003535.<br>
+</section>
+
+<section>
+	<img data-src="images/CFG_Schwartz.png">
+	<p style="font-size:9pt">
+	Schwarz, Roland F., Anne Trinh, Botond Sipos, James D. Brenton, Nick Goldman, and Florian Markowetz. 2014. “Phylogenetic Quantification of Intra-Tumour Heterogeneity.” <i>PLoS Computational Biology</i> 10 (4): e1003535.<br>
+</section>
+</section>
+
+<section>
+	<h3>Church–Turing thesis</h3>
+	A problem can be solved by an algorithm if and only if it can be solved by a Turing machine.
+</section>
+
+<section>
+	<h3>Universal Turing Machine</h3>
+	<b>Theorem:</b> There exists a Turing Machine $U$ which computes all computable functions.<br>
+	That is, for every computable function $f(x)$ there exists a number $s$ such that $U(s, x) = y$ if and only if $f(x) = y$.
+	<img class="fragment" data-fragment-index="1" data-src="images/hooray.svg">
+</section>
+
+<section>
+	<h3>Halting problem</h3>
+	<b>Theorem:</b> Not everything is computable.<br>
+	For example, the following function is not computable
+	$$
+	  h(x) = \begin{cases}
+		  U(x, x) + 1,	& \mbox{ if } U(x, x) \downarrow\\
+		  0,		& \mbox{ otherwise}
+		\end{cases}
+	$$
+	<img class="fragment" data-fragment-index="1" data-src="images/oh_no.svg" width="30%">
+</section>
+
+<section id="L2">
+	<h2>Lecture 2: <a href="https://youtu.be/733m6qBH-jI?t=57">How to read papers</a></h3>
 </section>
 
 <section id="L3">
@@ -165,7 +253,6 @@
 <section>
 	<h3>Lower bound</h3>
 	$n \log n$<br>
-	<a href="http://timroughgarden.org/w11/l/median.pdf">Proof</a>
 </section>
 
 
@@ -184,7 +271,7 @@
 		history: true,
 		center: true,
 		slideNumber: 'h.v',
-		plugins: [ RevealMarkdown, RevealHighlight, RevealNotes, RevealMath.KaTeX ]
+		plugins: [ RevealMarkdown, RevealHighlight, RevealNotes, RevealMath.MathJax2 ]
 			});
 </script>
 
