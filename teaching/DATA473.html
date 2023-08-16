@@ -47,8 +47,12 @@
 		<ul>
 		  <li> <a href="#/L1">Lecture 1: Background</a>
 		  <li> <a href="#/L2">Lecture 2: Turing machines</a>
+		  <li> <a href="#/L3">Lecture 3: Universal Turing machine</a>
 		</ul>
 	  <li> <a href="#/P1">Part 1: Classical approaches to scalability</a>
+		<ul>
+		  <li> <a href="#/L3">Lecture 3: Universal Turing machine</a>
+		</ul>
 	  <li> <a href="#/P2">Part 2: Scalability in statistical learning</a>
 	  <li> <a href="#/P3">Part 3: Scalability in modern machine learning</a>
 	</ul>
@@ -295,6 +299,23 @@
 	<iframe width="560" height="315" src="https://www.youtube.com/embed/E3keLeMwfHY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </section>
 
+<section id="L3">
+	<h2>Lecture 3: Universal Turing machine</h2>
+</section>
+
+<section>
+	<h3>
+	  <b>Theorem:</b> There exists a universal Turing Machine $U$.<br>
+	</h3>
+	That is, for every Turing Machine $M(\bar x)$ there exists a number $s$ such that $U(s, \bar x) = y$ if and only if $M(\bar x) = y$.
+	<p class="fragment" data-fragment-index="1">
+	  <i><u>Proof</u></i><br>
+	  Idea 1: $s$ is $M$'s "number"</br>
+	  Idea 2: $U$ "decodes" $s$ into $M$'s program</br>
+	  Idea 3: $U$ "simulates" $M$'s execution on $\bar x$
+	</p>
+</section>
+
 <section>
 	<h3>Halting problem</h3>
 	<b>Theorem:</b> Not everything is computable.<br>
@@ -383,7 +404,7 @@
 	<h2>Lecture X: <a href="https://youtu.be/733m6qBH-jI?t=57">How to read papers</a></h2>
 </section>
 
-<section id="L3">
+<section id="LY">
 	<h2>Sorting</h2>
 </section>
 
