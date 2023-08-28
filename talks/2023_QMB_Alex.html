@@ -4,7 +4,8 @@
 <head>
 	<meta charset="utf-8">
 	<title>
-	  Algorithms in evolutionary and systems biology - Alex Gavryushkin</title>
+	  Algorithms in evolutionary and systems biology - Alex Gavryushkin
+	</title>
 	<meta name="author" content="Alex Gavryushkin">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 	<meta name="apple-mobile-web-app-capable" content="yes" />
@@ -21,7 +22,7 @@
 
 <section>
 	<h3>
-	  Algorithms in evolutionary and systems biology
+	  Model- and data-driven approaches for genotype-phenotype data
 	</h3>
 	<h4>
 	  <a href="https://biods.org/alex/">Alex Gavryushkin</a>
@@ -43,7 +44,7 @@
 
 <section>
 	<h4>Model-based approaches to genotype-phenotype data</h4>
-	<!-- TODO: image of a fitness landscape -->
+	<img data-src="../assets/fitland_cartoon.svg" width=60%>
 </section>
 
 <section>
@@ -71,11 +72,57 @@
 
 <section>
 	<h4>Problem #2: Scalability</h4>
-	<!-- TODO: image of Glinternet and xyz scalability -->
+	<img data-src="../assets/glinternet_xyz_runtime.svg"><br>
+	<font size="3">
+	  <a href="https://doi.org/10.1371/journal.pone.0254491">
+		Kieran Elmes et al. Learning epistatic gene interactions from perturbation screens. 2021
+	  </a>
+	</font>
 </section>
 
 <section>
-	<h4>Problem #3 (unsolved!): Model assumptions</h4>
+	<font size="6">
+	  Hierarchy and scalability are largely solved (until you sequence more)
+	</font>
+	<img data-src="../assets/pint_summary.svg"><br>
+	<font size="3">
+	  <a href="https://doi.org/10.1371/journal.pcbi.1010730">
+		Kieran Elmes et al. A fast lasso-based method for inferring higher-order interactions
+	  </a>
+	</font>
+</section>
+
+<section>
+	<h3>Problem #3 (unsolved!):</h3>
+	<h3>Model assumptions</h3>
+	$
+	  f(x_1,\, \ldots,\, x_p) = \beta_0 + \sum_{i} x_i \beta_i
+	  + \sum_{i \le j} x_i x_j \beta_{i,j}
+	$
+	$
+	  + \sum_{i \le j \le k} x_i x_j x_k \beta_{i,j,k}
+	  + \ldots
+	$<br>
+	<font size="3">
+	  <a href="https://doi.org/10.1371/journal.pcbi.1010730">
+		Kieran Elmes et al. A fast lasso-based method for inferring higher-order interactions
+	  </a>
+	</font>
+</section>
+
+<section>
+	<h3>SNVformer</h3>
+	<img data-src="../assets/snvformer_predictions.svg"><br>
+	<font size="3">
+	  <a href="https://icml-compbio.github.io/2022/papers/WCBICML2022_paper_58.pdf">
+		Kieran Elmes et al. SNVformer: an attention-based deep neural network for GWAS data
+	  </a>
+	</font>
+</section>
+
+<section>
+	<h4>"eQTL" simulations (work in progress)</h4>
+	<img data-src="../assets/eqtl_simulation.svg">
 </section>
 
 <section>
