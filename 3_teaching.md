@@ -13,8 +13,7 @@ This course is offered for the first time in 2023 (Semester 2) so the course mat
 As an early cohort of students taking this course you will have an opportunity to shape its contents, so in-person participation is strongly encouraged.
 In 2023 the lectures are not recorded.
 
-The next two lectures of the course are on **August 18, 23** in the bioDS lab (room 515, Jack Erskine Building).
-The location is tentative and might be updated.
+Lectures are held on **Wednesdays 8-9:30am** (and when necessary on Fridays 8-9am) in room **242**, Jack Erskine Building.
 
 - [Complete set of lecture slides](DATA473) is evolving as we progress, so please use the online version if you can
 - [Learning resources](DATA473#/1/1/)
