@@ -52,7 +52,8 @@
 	  <li> <a href="#/P1">Part 1: Classical approaches to scalability</a>
 		<ul>
 		  <li> <a href="#/L3">Lecture 3: Universal Turing machine</a>
-		  <li> <a href="#/L4">Lecture 4: Recursive functions, halting problem, Kolmogorov complexity</a>
+		  <li> <a href="#/L4">Lecture 4: Recursive functions, halting problem</a>
+		  <li> <a href="#/L5">Lecture 5: Kolmogorov complexity</a>
 		</ul>
 	  <li> <a href="#/P2">Part 2: Scalability in statistical learning</a>
 	  <li> <a href="#/P3">Part 3: Scalability in modern machine learning</a>
@@ -68,7 +69,7 @@
 		</ul>
 	    <li> <a href="COSC341">These slides</a>
 	    <li> <a href="https://docs.google.com/document/d/1YkzpoqHQvIJTTDRF9bGhYUt43vKXMnYz95n3hyLkw1Q/edit">Complementary (rapidly evolving) lecture notes</a>
-	    <li> <a href="https://timroughgarden.org/">Tim Roughgarden</a>: Algorithms Illuminated
+	    <li> <a href="https://timroughgarden.org/">Tim Roughgarden</a>: <a href="http://www.algorithmsilluminated.org/">Algorithms Illuminated</a>
 	    <li> <a href="https://paperpile.com/shared/BqtRx0">Papers</a> including these that we will use:
 		<ul>
 		  <li> <a href="https://paperpile.com/app/p/0abca75d-205e-0381-9b08-c59a61ad3029">Siegelmann, On the computational power of neural nets, 1992</a>
@@ -326,7 +327,7 @@
 </section>
 
 <section id="L4">
-	<h2>Lecture 4: Recursive functions, halting problem, Kolmogorov complexity</h2>
+	<h2>Lecture 4: Recursive functions, halting problem</h2>
 </section>
 
 <section>
@@ -354,8 +355,23 @@
 	<img class="fragment" data-fragment-index="1" data-src="images/oh_no.svg" width="25%">
 </section>
 
+<section id="L5">
+	<h2>Lecture 5: Kolmogorov Complexity</h2>
+</section>
+
 <section>
-	<h3>Kolmogorov Complexity</h3>
+	<h3>Definition</h3>
+	<b>Kolmogorov complexity</b> $K(x)$ of string $x$ is $$\min_{\{p ~|~ U(p)=x\}} l(p)$$ where $U$ is a universal Turing machine and $l(p)$ is the length of string $p$.
+</section>
+
+<section>
+	<h3>Theorem</h3>
+	The following problems cannot be solved by an algorithm:
+	  <ol>
+		<li> Kolmogorov complexity
+		<li> Algorithm equivalence
+		<li> Algorithm triviality
+	  </ol>
 </section>
 
 <section>
