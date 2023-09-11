@@ -361,7 +361,29 @@
 
 <section>
 	<h3>Definition</h3>
-	<b>Kolmogorov complexity</b> $K(x)$ of string $x$ is $$\min_{\{p ~|~ U(p)=x\}} l(p)$$ where $U$ is a universal Turing machine and $l(p)$ is the length of string $p$.
+	<b>Kolmogorov complexity</b> $K(\bar x)$ of string $\bar x$ is $$\min {\{|M_s| ~\bigg |~ U(s, 0) = \bar x\}}$$ where $U$ is a universal Turing machine.<br><br>
+
+	<h3 class="fragment" data-fragment-index="1">Theorem</h3>
+	<p class="fragment" data-fragment-index="1">
+	  The definition is invariant under the programming language, that is,
+	  $K_U(\bar x) \leq K_A (\bar x) + c_A$ for every algorithm $A$.
+	  
+	</p>
+</section>
+
+<section>
+	<a href="https://www.youtube.com/live/AKMuA_TVz3A?si=zZsN0Alflgigbled&t=870">Connection of KC to modern LLMs</a> by Ilya Sutskever (OpenAI).<br><br>
+
+	Given two languages $A$ and $B$ and a compression algorithm $M$, we say that $M$ is <i>good</i> if $$|M(A, B)| \leq |M(A)| + |M(B)| + c$$
+
+	<p class="fragment" data-fragment-index="1">
+	  With the idea of (unsupervised) model pre-training in mind, what is <i>the best</i> compression algorithm?
+	</p>
+</section>
+
+<section>
+	<h3>Kolmogorov complexity as the ultimate goal for compressors</h3>
+	And neural network training is effectively a search for such compressor.
 </section>
 
 <section>
