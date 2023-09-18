@@ -54,6 +54,7 @@
 		  <li> <a href="#/L3">Lecture 3: Universal Turing machine</a>
 		  <li> <a href="#/L4">Lecture 4: Recursive functions, halting problem</a>
 		  <li> <a href="#/L5">Lecture 5: Kolmogorov complexity</a>
+		  <li> <a href="#/L6">Lecture 6: Properties of Kolmogorov complexity</a>
 		</ul>
 	  <li> <a href="#/P2">Part 2: Scalability in statistical learning</a>
 	  <li> <a href="#/P3">Part 3: Scalability in modern machine learning</a>
@@ -359,7 +360,7 @@
 </section>
 
 <section id="L5">
-	<h2>Lecture 5: Kolmogorov Complexity</h2>
+	<h2>Lecture 5: Kolmogorov complexity</h2>
 </section>
 
 <section>
@@ -379,7 +380,7 @@
 	</p>
 </section>
 
-<section>
+<section id="dfn_good_compress">
 	<a href="https://www.youtube.com/live/AKMuA_TVz3A?si=zZsN0Alflgigbled&t=870">Connection of KC to modern LLMs</a> by Ilya Sutskever (OpenAI).<br><br>
 
 	Given two languages $A$ and $B$ and a compression algorithm $M$, we say that $M$ is <i>good</i> if $$|M(A, B)| \leq |M(A)| + |M(B)| + c$$
@@ -394,6 +395,15 @@
 	And neural network training is effectively a search for such compressor.
 </section>
 
+<section id="L6">
+	<h2>Lecture 6: Properties of Kolmogorov complexity</h2>
+</section>
+
+<section>
+	<h3>Definition</h3>
+	<b>Kolmogorov complexity</b> $K(x)$ of a string $x$ is $$\min {\{|M_s| ~\bigg |~ U(s, 0) = x\}}$$ where $U$ is a universal Turing machine.<br><br>
+</section>
+
 <section>
 	<h3>Theorem</h3>
 	The following problems cannot be solved by an algorithm:
@@ -405,70 +415,20 @@
 </section>
 
 <section>
-	A <b>pushdown automaton</b>, $M$, consists of:
-	<ul>
-	  <li> A finite set $Q$ of <b>states</b>
-	  <li> A finite set $\Sigma$ called the <b>input alphabet</b> (lower case letters)
-	  <li> A finite set $\color{blue}{\Gamma}$ called the <b>stack alphabet</b> (upper case letters)
-	  <li> A relation $\delta \subseteq Q \times \Sigma \cup \{\lambda\} \times \color{blue}{\Gamma \cup \{\lambda\}} \times Q \times \color{blue}{\Gamma \cup \{\lambda\}}$<br>
-		called the <b>transition relation</b>
-	  <li> A distinguished state $q_0 \in Q$ called the <b>initial state</b>
-	  <li> A subset $F \subseteq Q$ called the <b>final</b> or <b>accepting states</b>.
-	</ul>
-
-	<p class="fragment" data-fragment-index="1">
-	  <b>The stack should be empty to accept a string!</b>
-	</p>
-	<img class="fragment" data-fragment-index="2" data-src="images/PDA.png" width="50%">
-</section>
-
-<section>
-	A <b>context-free grammar</b>, $G$, consists of:
-	<ul>
-	  <li> A finite set $V$ of <b>nonterminals</b> (or variables)<br>
-		(upper case letters)
-	  <li> A finite set $\Sigma$ called the <b>alphabet</b> (or terminals)<br>
-		(lower case letters), $\Sigma \cap V = \varnothing$
-	  <li> A finite set $P$ of <b>production rules</b>,<br>
-		which is a subset of $V \times (V \cup \Sigma)^*$
-	  <li> A distinguished $S \in V$ called the <b>start symbol</b>
-	</ul>
-
-	<p class="fragment" data-fragment-index="1">
-	  <b>Examples</b><br>
-	  $S \to aS, S \to bS, S \to \lambda$
-	</p>
-
-	<p class="fragment" data-fragment-index="2">
-	  $S \to aS, S \to bT, T \to bT, T \to \lambda$
-	</p>
-
-	<p class="fragment" data-fragment-index="3">
-	  $\{a^nb^n \mid n \in \mathbb{N}\}$
-	</p>
-</section>
-
-<section>
-<section>
 	<h3>Theorem</h3>
-	$\mathcal L_{PDA} = \mathcal L_{CFG}$
-</section>
-
-<section data-background="images/human_male_karyotype.svg" data-background-size="900px">
-</section>
-
-<section>
-	<h3>Genome phasing</h3>
-	<img class="stretch" data-src="images/NFA_Schwartz.svg">
-	<p style="font-size:9pt">
-	Schwarz, Roland F., Anne Trinh, Botond Sipos, James D. Brenton, Nick Goldman, and Florian Markowetz. 2014. “Phylogenetic Quantification of Intra-Tumour Heterogeneity.” <i>PLoS Computational Biology</i> 10 (4): e1003535.<br>
+	Properties of $K(x)$:
+	  <ol>
+		<li> For all $x, K(x) \leq |x| + c$
+		<li> $K(xx) = K(x) + c$
+		<li> $K(1^n) \leq O(\log n)$
+		<li> $K(n!) \leq O(\log n)$
+		<li> $K(xy) \leq K(x) + K(y) + O(\log(\min\{K(x), K(y)\}))$ (compare with the definition of <a href="#/dfn_good_compress">"good compression algorithm"</a>)
+	  </ol>
 </section>
 
 <section>
-	<img data-src="images/CFG_Schwartz.png">
-	<p style="font-size:9pt">
-	Schwarz, Roland F., Anne Trinh, Botond Sipos, James D. Brenton, Nick Goldman, and Florian Markowetz. 2014. “Phylogenetic Quantification of Intra-Tumour Heterogeneity.” <i>PLoS Computational Biology</i> 10 (4): e1003535.<br>
-</section>
+	<h3>Conditional Kolmogorov complexity: connection to pre-training</h3>
+	$K(x|y)$ is the length of the smallest TM that generates $x$ given $y$.
 </section>
 
 <section id="LX">
@@ -491,6 +451,26 @@
 <section>
 	<h3>Lower bound</h3>
 	$n \log n$<br>
+</section>
+
+<section>
+
+</section>
+
+<section data-background="images/human_male_karyotype.svg" data-background-size="900px">
+</section>
+
+<section>
+	<h3>Genome phasing</h3>
+	<img class="stretch" data-src="images/NFA_Schwartz.svg">
+	<p style="font-size:9pt">
+	Schwarz, Roland F., Anne Trinh, Botond Sipos, James D. Brenton, Nick Goldman, and Florian Markowetz. 2014. “Phylogenetic Quantification of Intra-Tumour Heterogeneity.” <i>PLoS Computational Biology</i> 10 (4): e1003535.<br>
+</section>
+
+<section>
+	<img data-src="images/CFG_Schwartz.png">
+	<p style="font-size:9pt">
+	Schwarz, Roland F., Anne Trinh, Botond Sipos, James D. Brenton, Nick Goldman, and Florian Markowetz. 2014. “Phylogenetic Quantification of Intra-Tumour Heterogeneity.” <i>PLoS Computational Biology</i> 10 (4): e1003535.<br>
 </section>
 
 
