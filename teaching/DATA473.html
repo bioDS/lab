@@ -408,13 +408,14 @@
 	<h3>Theorem</h3>
 	The following problems cannot be solved by an algorithm:
 	  <ol>
-		<li> Kolmogorov complexity
-		<li> Algorithm equivalence
 		<li> Algorithm triviality
+		<li> Algorithm equivalence
+		<li> Kolmogorov complexity
 	  </ol>
 </section>
 
 <section>
+  <section>
 	<h3>Theorem</h3>
 	Properties of $K(x)$:
 	  <ol>
@@ -424,11 +425,25 @@
 		<li> $K(n!) \leq O(\log n)$
 		<li> $K(xy) \leq K(x) + K(y) + O(\log(\min\{K(x), K(y)\}))$ (compare with the definition of <a href="#/dfn_good_compress">"good compression algorithm"</a>)
 	  </ol>
+  </section>
+
+  <section>
+	<h3>Big O notation recap</h3>
+	Chapters 2.1 and 2.2 in Roughgarden's Algorithms Illuminated Part 1.
+  </section>
 </section>
 
 <section>
 	<h3>Conditional Kolmogorov complexity: connection to pre-training</h3>
 	$K(x|y)$ is the length of the smallest TM that generates $x$ given $y$.
+
+	<p class="fragment" data-fragment-index="1">
+	  <b>Properties:</b></br>
+	  <ul class="fragment" data-fragment-index="1">
+		<li> $K(x|\varnothing) = K(x)$
+		<li> $K(x|x) = c$
+	  <ul>
+	</p>
 </section>
 
 <section id="LX">
