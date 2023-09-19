@@ -422,7 +422,7 @@
 		<li> For all $x, K(x) \leq |x| + c$
 		<li> $K(xx) = K(x) + c$
 		<li> $K(1^n) \leq O(\log n)$
-		<li> $K(n!) \leq O(\log n)$
+		<li> $K(1^{n!}) \leq O(\log n)$
 		<li> $K(xy) \leq K(x) + K(y) + O(\log(\min\{K(x), K(y)\}))$ (compare with the definition of <a href="#/dfn_good_compress">"good compression algorithm"</a>)
 	  </ol>
   </section>
@@ -430,6 +430,34 @@
   <section>
 	<h3>Big O notation recap</h3>
 	Chapters 2.1 and 2.2 in Roughgarden's Algorithms Illuminated Part 1.
+  </section>
+
+  <section>
+	<img data-src="images/rai_bigo_seven_words.png">
+  </section>
+
+  <section>
+	<img data-src="images/rai_bigo_english_def.png">
+  </section>
+
+  <section>
+	<img data-src="images/rai_bigo_picture_def.png">
+  </section>
+
+  <section>
+	<img data-src="images/rai_bigo_math_def.png">
+  </section>
+
+  <section>
+	<img data-src="images/rai_search_one_array.png">
+  </section>
+
+  <section>
+	<img data-src="images/rai_search_two_arrays.png">
+  </section>
+
+  <section>
+	<img data-src="images/rai_check_common_element.png">
   </section>
 </section>
 
@@ -461,6 +489,15 @@
 	  <li>QuickSort</li>
 	  <li><a href="https://paperpile.com/app/p/c4f00e6c-9658-0c59-8301-c2fd300b9584">Sorting Networks</a></li>
 	</ul>
+</section>
+
+<section>
+	<h3>Running time of MergeSort</h3>
+	<b>Theorem 1.2</b> <i>For every input array of length $n \geq 1$, the $\mbox{MergeSort}$ algorithm performs at most</i>
+	$$
+	  6n\log_2 n + 6n
+	$$
+	<i>operations, where $log_2$ denotes the base-2 logarithm.</i>
 </section>
 
 <section>
