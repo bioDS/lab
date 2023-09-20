@@ -14,6 +14,12 @@ As an early cohort of students taking this course you will have an opportunity t
 In 2023 the lectures are not recorded.
 
 Lectures are held on **Wednesdays 8-9:30am** (and when necessary on Fridays 8-9am) in room **242**, Jack Erskine Building.
+The lecture on Wednesday, October 4<sup>th</sup> is canceled so the new few classes are on:
+- Friday, September 22<sup>nd</sup>
+- Wednesday, September 27<sup>th</sup>
+- Friday, September 29<sup>th</sup>
+- Friday, October 6<sup>th</sup>
+- Wednesdays from there on, unless arranged otherwise
 
 - [Complete set of lecture slides](DATA473) is evolving as we progress, so please use the online version if you can
 - [Learning resources](DATA473#/1/1/)
@@ -23,7 +29,7 @@ Lectures are held on **Wednesdays 8-9:30am** (and when necessary on Fridays 8-9a
 
 [Alex](/alex/) and [Lena](/people/) are involved in teaching [COSC341](http://www.cs.otago.ac.nz/cosc341/) Theory of Computing.
 
-[Complete set of lectures (first half of the semester)](COSC341) is being continuously updated and will be finalised before the final exam.
+[Complete set of lectures (first half of the semester)](COSC341) is being continuously updated and will be finalized before the final exam.
 **These slides do not have all the material delivered during the lectures.**
 Yes, you are supposed to attend them.
 
