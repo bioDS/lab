@@ -51,13 +51,15 @@
 		</ul>
 	  <li> <a href="#/P1">Part 1: Classical approaches to scalability</a>
 		<ul>
-		  <li> <a href="#/L3">Lecture 3: Universal Turing machine</a>
 		  <li> <a href="#/L4">Lecture 4: Recursive functions, halting problem</a>
 		  <li> <a href="#/L5">Lecture 5: Kolmogorov complexity</a>
 		  <li> <a href="#/L6">Lecture 6: Properties of Kolmogorov complexity</a>
+		  <li> <a href="#/L7">Lecture 7: Basic algorithms recap</a>
 		</ul>
-	  <li> <a href="#/P2">Part 2: Scalability in statistical learning</a>
-	  <li> <a href="#/P3">Part 3: Scalability in modern machine learning</a>
+	  <!--
+		<li> <a href="#/P2">Part 2: Scalability in statistical learning</a>
+		<li> <a href="#/P3">Part 3: Scalability in modern machine learning</a>
+	  -->
 	</ul>
   </section>
 
@@ -376,7 +378,7 @@
 	<p class="fragment" data-fragment-index="1">
 	  The definition is invariant under the programming language, that is,
 	  $K_U(\bar x) \leq K_A (\bar x) + c_A$ for every algorithm $A$.
-	  
+
 	</p>
 </section>
 
@@ -474,39 +476,89 @@
 	</p>
 </section>
 
-<section id="LX">
-	<h2>Lecture X: <a href="https://youtu.be/733m6qBH-jI?t=57">How to read papers</a></h2>
+<section data-markdown id="L7">
+	## Lecture 7: Basic algorithms recap
 </section>
 
-<section id="LY">
-	<h2>Sorting</h2>
+<section data-markdown>
+	### Why Study Algorithms?
+	- Important for all other branches of computer science
+	  - Routing protocols in communication networks piggyback on classical shortest path algorithms
+	  - Public-key cryptography relies on efficient number-theoretic algorithms
+	  - Computer graphics requires the computational primitives supplied by geometric algorithms
+	  - Database indices rely on balanced search tree data structures
+	  - Computational biology uses dynamic programming algorithms to measure genome similarity
 </section>
 
-<section>
-	<h3>Standard algorithms</h3>
-	<ul>
-	  <li>MergeSort</li>
-	  <li>QuickSort</li>
-	  <li><a href="https://paperpile.com/app/p/c4f00e6c-9658-0c59-8301-c2fd300b9584">Sorting Networks</a></li>
+<section data-markdown>
+	### Why Study Algorithms?
+	- Driver of technological innovation
+	  - $\mathtt{PageRank}$
+	  - From the President’s council of advisers on science and technology report to the United States White House, December 2010: *"Everyone knows Moore’s Law &mdash; a prediction made in 1965 by Intel co-founder Gordon Moore that the density of transistors in integrated circuits would continue to double every 1 to 2 years [...] in many areas, performance gains due to improvements in algorithms have vastly exceeded even the dramatic performance gains due to increased processor speed."*
+</section>
+
+<section data-markdown>
+	### Why Study Algorithms?
+	- Lens on other sciences
+	- Good for the brain
+	- Fun!
+</section>
+
+<section data-markdown>
+	### Sorting
+	#### Standard algorithms
+	- $\mathtt{MergeSort}$
+	- $\mathtt{QuickSort}$
+	- [Sorting Networks](https://paperpile.com/app/p/c4f00e6c-9658-0c59-8301-c2fd300b9584)
 	</ul>
 </section>
 
 <section>
-	<h3>Running time of MergeSort</h3>
-	<b>Theorem 1.2</b> <i>For every input array of length $n \geq 1$, the $\mbox{MergeSort}$ algorithm performs at most</i>
+	<h3>$\mathtt{MergeSort}$</h3>
+	<img data-src="images/rai_mergesort_figure.png" width="750">
+</section>
+
+<section>
+  <section>
+	<h3>Running time of $\mathtt{MergeSort}$</h3>
+	<b>Theorem 1.2</b> <i>For every input array of length $n \geq 1$, the $\mathtt{MergeSort}$ algorithm performs at most</i>
 	$$
 	  6n\log_2 n + 6n
 	$$
 	<i>operations, where $log_2$ denotes the base-2 logarithm.</i>
+  </section>
+
+  <section>
+	<img data-src="images/rai_mergesort_code.png">
+  </section>
+
+  <section>
+	<img data-src="images/rai_merge_subroutine.png">
+  </section>
+
+  <section>
+	<img data-src="images/rai_mergesort_main_proof.png">
+  </section>
 </section>
 
-<section>
-	<h3>Lower bound</h3>
-	$n \log n$<br>
+<section data-markdown>
+	### What is a "fast" algorithm?
+
+	**Classically:** *A "fast algorithm" is an algorithm whose worst-case running time grows slowly with the input size.* [Tim Roughgarden]
+
+	Possible alternative: *We define an algorithm to be any function that can be expressed with a short
+program.* [Wojciech Zaremba]
+
+	Either way, near-linear algorithms are "for-free primitives" that we can just run.
 </section>
 
-<section>
+<section data-markdown>
+	### Divide-and-conquer algorithms (Chapter 3)
+	#### Counting inversions
+</section>
 
+<section id="LX">
+	<h2>Lecture X: <a href="https://youtu.be/733m6qBH-jI?t=57">How to read papers</a></h2>
 </section>
 
 <section data-background="images/human_male_karyotype.svg" data-background-size="900px">
