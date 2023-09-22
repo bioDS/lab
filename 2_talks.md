@@ -7,6 +7,8 @@ title: Talks & Slides
 
 - [August 2023](https://www.queenstownresearchweek.org/qmb-2023/), QMB, Queenstown. Invited talk [Model- and data-driven approaches for genotype-phenotype data](2023_QMB_Alex)
 
+- [February 2023](https://www.canterbury.ac.nz/engineering/schools/mathematics-statistics/our-research/bio/events/deco-23/), The Interface of Mathematics and Biology, Napier. Talk [Online algorithms and cancer evolution](https://docs.google.com/presentation/d/1Q2B8anBZYCj5JIDJ7YHe0-PX7GGGp9UtrBRpIDNkCCM/).
+
 - [November 2020](https://blogs.otago.ac.nz/go/events/#GO%20Zoom%20Symposium), Genetics Otago Symposium, University of Otago, Dunedin. Invited talk [Cancer phylogenetics using single-cell RNA-seq data](2020_GO_Moravec.pdf)
 
 - [July 2020](https://www.auckland.ac.nz/en/news/2020/04/21/AI-for-every-day-and-the-end-of-work.html), Broad AI lab, University of Auckland.
