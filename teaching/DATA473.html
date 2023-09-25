@@ -55,6 +55,7 @@
 		  <li> <a href="#/L5">Lecture 5: Kolmogorov complexity</a>
 		  <li> <a href="#/L6">Lecture 6: Properties of Kolmogorov complexity</a>
 		  <li> <a href="#/L7">Lecture 7: Basic algorithms recap</a>
+		  <li> <a href="#/L8">Lecture 8: Sorting</a>
 		</ul>
 	  <!--
 		<li> <a href="#/P2">Part 2: Scalability in statistical learning</a>
@@ -541,14 +542,6 @@
   </section>
 </section>
 
-<section>
-	<img data-src="images/rai_nlogn_vs_quadro_graph.png">
-</section>
-
-<section>
-	<img data-src="images/rai_poly_vs_expo.png" width="750">
-</section>
-
 <section data-markdown>
 	### What is a "fast" algorithm?
 
@@ -560,14 +553,37 @@ program.* [Wojciech Zaremba]
 	Either way, near-linear algorithms are "for-free primitives" that we can just run.
 </section>
 
-<section data-markdown>
-	### Divide-and-conquer algorithms (Chapter 3)
+<section data-markdown id="L8">
+	## Lecture 8: Sorting
+</section>
 
+<section>
+	<h3>The divide-and-conquer paradigm</h3>
+	<ol>
+	  <li> <i>Divide</i> the input int smaller subproblems
+	  <li> <i>Conquer</i> the subproblems recursively
+	  <li> <i>Combine</i> the solution for the subproblems into a solution for the original problem
+	</ol>
+
+	Often, the clever bit is the <i>combine</i> step (e.g. the $\mathtt{Merge}$ subroutine in $\mathtt{MergeSort}$), but in $\mathtt{QuickSort}$, for example, the clever step is <i>divide</i>.
+</section>
+
+<section data-markdown>
 	#### **Problem: Counting Inversions**
 
 	- **Input:** An array $A$ of distinct integers.
 
 	- **Output:** The number of inversions of $A$ &mdash; the number of pairs $(i, j)$ of array indices with $i < j$ and $A[i] > A[j]$.
+
+	What is the largest possible number of inversions a 7-element array can have?
+</section>
+
+<section data-markdown>
+	$\mathtt{Merge}$-$\mathtt{and}$-$\mathtt{CountSplitInv}$
+</section>
+
+<section data-markdown>
+	## $\mathtt{QuickSort}$
 </section>
 
 <section id="LX">
