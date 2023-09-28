@@ -662,11 +662,17 @@ So don’t despair if it’s hard to imagine coming up with the $\mathtt{DSelect
 
 <section data-markdown>
 	### NP-hardness (main idea)
-	- A problem is *NP-hard* if it is at least as difficult as every problem with easily recognized solutions.
+	A problem is *NP-hard* if it is at least as difficult as every problem with easily recognized solutions.
+</section>
+
+<section data-markdown>
 	### The P$\neq$NP conjecture (informal version)
-	- Checking an alleged solution to a problem can be fundamentally easier than coming up with your own solution from scratch.
+	Checking an alleged solution to a problem can be fundamentally easier than coming up with your own solution from scratch.
+</section>
+
+<section data-markdown>
 	### NP-Hard problem (provisional definition)
-	- A computational problem is NP-hard if a polynomial-time algorithm solving it would refute the P$\neq$NP conjecture.
+	A computational problem is NP-hard if a polynomial-time algorithm solving it would refute the P$\neq$NP conjecture.
 </section>
 
 <section>
@@ -690,12 +696,30 @@ So don’t despair if it’s hard to imagine coming up with the $\mathtt{DSelect
 	</ol>
 </section>
 
-<section>
+<section data-markdown>
 	Proving NP-hardness
+
+	![](images/rai_proving_np_hardness.png)
 </section>
 
 <section>
-	Rookie mistakes and acceptable inaccuracies
+	<h3>Rookie mistakes</h3>
+	<ol>
+	  <li> Thinking that "NP" stands for "not polynomial".
+	  <li> Saying that a problem is "an NP problem" or "in NP" instead of "NP-hard".
+	  <li> Thinking that NP-hardness doesn't matter because NP-hard problems can generally be solved in practice.
+	  <li> Thinking that advances in computer technology will rescue us from NP-hardness.
+	  <li> Devising a reduction in the wrong direction.
+	</ol>
+</section>
+
+<section>
+	<h3>Acceptable inaccuracies</h3>
+	<ol>
+	  <li> Assuming that the P$\ne$NP conjecture is true.
+	  <li> Using the terms "NP-hard" and "NP-complete" interchangeably.
+	  <li> Conflating NP-hardness with requiring exponential time in the worst case.
+	</ol>
 </section>
 
 <section id="LX">
