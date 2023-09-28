@@ -56,6 +56,7 @@
 		  <li> <a href="#/L6">Lecture 6: Properties of Kolmogorov complexity</a>
 		  <li> <a href="#/L7">Lecture 7: Basic algorithms recap</a>
 		  <li> <a href="#/L8">Lecture 8: Sorting</a>
+		  <li> <a href="#/L9">Lecture 9: NP-hard problems</a>
 		</ul>
 	  <!--
 		<li> <a href="#/P2">Part 2: Scalability in statistical learning</a>
@@ -625,6 +626,76 @@ program.* [Wojciech Zaremba]
 
 <section data-markdown>
 	![](images/rai_quicksort_pseudocode.png)
+</section>
+
+<section data-markdown>
+	Choosing the pivot (among other things)
+
+	![](images/rai_rselect_dselect.svg)
+
+</section>
+
+<section data-markdown>
+	"One of the goals of this book series is to make famous algorithms seem so simple (at least in hindsight) that you feel like you could have come up with them yourself, had you been in the right place at the right time.
+Almost nobody feels this way about the $\mathtt{DSelect}$ algorithm, which was devised by a computer science superteam of five researchers, four of whom have been recognized with the ACM Turing Award (all for different things!), the equivalent of the Nobel Prize for computer science.
+So don’t despair if it’s hard to imagine coming up with the $\mathtt{DSelect}$ algorithm, even on your most creative days—it’s also hard to imagine beating Roger Federer (let alone five of him) on the tennis court!" &mdash; Tim Roughgarden
+</section>
+
+<section data-markdown id="L9">
+	## Lecture 9: NP-hard problems
+</section>
+
+<section data-markdown>
+	### Two problems
+	![](images/rai_mst_tsp_statements.png)
+</section>
+
+<section data-markdown>
+	### Kruskal's algorithm
+	![](images/KruskalDemo.gif)
+</section>
+
+<section data-markdown>
+	### Prim's algorithm
+	![](images/PrimAlgDemo.gif)
+</section>
+
+<section data-markdown>
+	### NP-hardness (main idea)
+	- A problem is *NP-hard* if it is at least as difficult as every problem with easily recognized solutions.
+	### The P$\neq$NP conjecture (informal version)
+	- Checking an alleged solution to a problem can be fundamentally easier than coming up with your own solution from scratch.
+	### NP-Hard problem (provisional definition)
+	- A computational problem is NP-hard if a polynomial-time algorithm solving it would refute the P$\neq$NP conjecture.
+</section>
+
+<section>
+	<h3>Three facts about NP-hard problems</h3>
+	<ol>
+	  <li> <i>Ubiquity:</i> Practically relevant NP-hard problems are everywhere.
+	  <li> <i>Intractability:</i> Under a widely believed mathematical conjecture, no NP-hard problem can be solved by any algorithm that is always correct and always runs in polynomial time.
+	  <li> <i>Not a death sentence:</i> NP-hard problems can often (but not always) be solved in practice, at least approximately, through sufficient investment of resources and algorithmic sophistication.
+	</ol>
+</section>
+
+<section>
+	<h3>Three properties (you can't have them all)</h3>
+	<ol>
+	  <li> <i>General-purpose.</i>
+		The algorithm accommodates all possible inputs of the computational problem.
+	  <li> <i>Correct.</i>
+		For every input, the algorithm correctly solves the problem.
+	  <li> <i>Fast.</i>
+		For every input, the algorithm runs in polynomial time.
+	</ol>
+</section>
+
+<section>
+	Proving NP-hardness
+</section>
+
+<section>
+	Rookie mistakes and acceptable inaccuracies
 </section>
 
 <section id="LX">
