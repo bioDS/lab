@@ -681,11 +681,15 @@ So don’t despair if it’s hard to imagine coming up with the $\mathtt{DSelect
 </section>
 
 <section data-markdown>
-	Definitions recap
-	- P
-	- NP
-	- P$\neq$NP
-	- NP-hardness
+	### The Complexity Class $\mathcal{NP}$
+	A search problem belongs to the complexity class $\mathcal{NP}$ if and only if:
+	  1. For every instance, every candidate solution has description length (in bits, say) bounded above by a polynomial function of the input size.
+	  2. For every instance and candidate solution, the alleged feasibility of the solution can be confirmed or denied in time polynomial in the input size.
+</section>
+
+<section data-markdown>
+	### The Complexity Class $\mathcal P$
+	A search problem belongs to the complexity class $\mathcal P$ if and only if it belongs to $\mathcal{NP}$ and can be solved with a polynomial-time algorithm
 </section>
 
 <section data-markdown>
