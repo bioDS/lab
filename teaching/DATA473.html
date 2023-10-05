@@ -57,6 +57,7 @@
 		  <li> <a href="#/L7">Lecture 7: Basic algorithms recap</a>
 		  <li> <a href="#/L8">Lecture 8: Sorting</a>
 		  <li> <a href="#/L9">Lecture 9: NP-hard problems</a>
+		  <li> <a href="#/L10">Lecture 10: Proving NP-hardness</a>
 		</ul>
 	  <!--
 		<li> <a href="#/P2">Part 2: Scalability in statistical learning</a>
@@ -675,6 +676,43 @@ So don’t despair if it’s hard to imagine coming up with the $\mathtt{DSelect
 	A computational problem is NP-hard if a polynomial-time algorithm solving it would refute the P$\neq$NP conjecture.
 </section>
 
+<section data-markdown id="L10">
+	## Lecture 10: Proving NP-hardness
+</section>
+
+<section data-markdown>
+	Definitions recap
+	- P
+	- NP
+	- P$\neq$NP
+	- NP-hardness
+</section>
+
+<section data-markdown>
+	Proving NP-hardness
+
+	![](images/rai_proving_np_hardness.png)
+</section>
+
+<section>
+  <section data-markdown>
+	### Cook-Levine Theorem
+  </section>
+
+  <section data-markdown>
+	### Problem: Satisfiability
+	- **Input**: A list of Boolean decision variables $x_1, x_2,\ldots, x_n$; and a list of constraints, each a disjunction of one or more literals.
+	- **Output**: A truth assignment to $x_1, x_2,\ldots, x_n$ that satisfies every constraint, or a correct declaration that no such truth assignment exists.
+  </section>
+</section>
+
+<section data-markdown>
+	### The Exponential Time Hypothesis (ETH)
+
+There is a constant $c > 1$ such that: Every algorithm that solves the 3-SAT problem requires time at least $c^n$ in the worst case, where n denotes the number of variables.
+</section>
+
+
 <section>
 	<h3>Three facts about NP-hard problems</h3>
 	<ol>
@@ -694,12 +732,6 @@ So don’t despair if it’s hard to imagine coming up with the $\mathtt{DSelect
 	  <li> <i>Fast.</i>
 		For every input, the algorithm runs in polynomial time.
 	</ol>
-</section>
-
-<section data-markdown>
-	Proving NP-hardness
-
-	![](images/rai_proving_np_hardness.png)
 </section>
 
 <section>
