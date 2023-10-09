@@ -43,26 +43,17 @@
 	<h3>Table of contents</h3>
 
 	<ul>
-	  <li> <a href="#/P0">Part 0: Introduction</a>
-		<ul>
-		  <li> <a href="#/L1">Lecture 1: Background</a>
-		  <li> <a href="#/L2">Lecture 2: Turing machines</a>
-		  <li> <a href="#/L3">Lecture 3: Universal Turing machine</a>
-		</ul>
-	  <li> <a href="#/P1">Part 1: Classical approaches to scalability</a>
-		<ul>
-		  <li> <a href="#/L4">Lecture 4: Recursive functions, halting problem</a>
-		  <li> <a href="#/L5">Lecture 5: Kolmogorov complexity</a>
-		  <li> <a href="#/L6">Lecture 6: Properties of Kolmogorov complexity</a>
-		  <li> <a href="#/L7">Lecture 7: Basic algorithms recap</a>
-		  <li> <a href="#/L8">Lecture 8: Sorting</a>
-		  <li> <a href="#/L9">Lecture 9: NP-hard problems</a>
-		  <li> <a href="#/L10">Lecture 10: Proving NP-hardness</a>
-		</ul>
-	  <!--
-		<li> <a href="#/P2">Part 2: Scalability in statistical learning</a>
-		<li> <a href="#/P3">Part 3: Scalability in modern machine learning</a>
-	  -->
+	  <li> <a href="#/L1">Lecture 1: Background</a>
+	  <li> <a href="#/L2">Lecture 2: Turing machines</a>
+	  <li> <a href="#/L3">Lecture 3: Universal Turing machine</a>
+	  <li> <a href="#/L4">Lecture 4: Recursive functions, halting problem</a>
+	  <li> <a href="#/L5">Lecture 5: Kolmogorov complexity</a>
+	  <li> <a href="#/L6">Lecture 6: Properties of Kolmogorov complexity</a>
+	  <li> <a href="#/L7">Lecture 7: Basic algorithms recap</a>
+	  <li> <a href="#/L8">Lecture 8: Sorting</a>
+	  <li> <a href="#/L9">Lecture 9: NP-hard problems</a>
+	  <li> <a href="#/L10">Lecture 10: Proving NP-hardness</a>
+	  <li> <a href="#/L11">Lecture 11: AI for discovering new algorithms</a>
 	</ul>
   </section>
 
@@ -70,10 +61,6 @@
     <font size="6">
 	<h3>Literature, resources</h3>
 	  <ul>
-	    <li> <a href="https://youtube.com">YouTube</a>
-		<ul>
-		  <li><a href="https://youtu.be/XfpMkf4rD6E?t=614">Introduction to transformers</a> <a href="#/P#">#P3</a>
-		</ul>
 	    <li> <a href="COSC341">These slides</a>
 	    <li> <a href="https://docs.google.com/document/d/1YkzpoqHQvIJTTDRF9bGhYUt43vKXMnYz95n3hyLkw1Q/edit">Complementary (rapidly evolving) lecture notes</a>
 	    <li> <a href="https://timroughgarden.org/">Tim Roughgarden</a>: <a href="http://www.algorithmsilluminated.org/">Algorithms Illuminated</a>
@@ -97,8 +84,8 @@
   </section>
 </section>
 
-<section id="P0">
-	<h3>Part 0: Introduction</h3>
+<section>
+	<h3>Introduction</h3>
 </section>
 
 <section>
@@ -701,12 +688,39 @@ So don’t despair if it’s hard to imagine coming up with the $\mathtt{DSelect
 <section>
   <section data-markdown>
 	### Cook-Levine Theorem
+	The 3-SAT problem is NP-hard.
   </section>
 
   <section data-markdown>
-	### Problem: Satisfiability
-	- **Input**: A list of Boolean decision variables $x_1, x_2,\ldots, x_n$; and a list of constraints, each a disjunction of one or more literals.
+	### Problem: $k$-SAT
+	- **Input**: A list of Boolean decision variables $x_1, x_2,\ldots, x_n$; and a list of constraints, each a disjunction of at most $k$ literals.
 	- **Output**: A truth assignment to $x_1, x_2,\ldots, x_n$ that satisfies every constraint, or a correct declaration that no such truth assignment exists.
+  </section>
+
+  <section>
+	<h3>Example</h3>
+	\begin{align}
+	  & x_1 \vee x_2 \vee x_3	& \neg x_1 \vee \neg x_2 \vee x_3	\\
+	  & \neg x_1 \vee x_2 \vee x_3	& \neg x_1 \vee x_2 \vee \neg x_3	\\
+	  & x_1 \vee \neg x_2 \vee x_3	& x_1 \vee \neg x_2 \vee \neg x_3	\\
+	  & x_1 \vee x_2 \neg \vee x_3	& \neg x_1 \vee \neg x_2 \vee \neg x_3	\\
+	\end{align}
+  </section>
+
+  <section data-markdown>
+	### Independent set in NP-hard
+
+	**Theorem:** The 3-SAT problem reduces to the independent set problem.
+
+	**Corollary:** The independent set problem is NP-hard.
+
+	**Proof:** Let's consider an example first:
+
+	$x_1 \vee x_2 \vee x_3$
+
+	$\neg x_1 \vee x_2 \vee x_3$
+
+	$\neg x_1 \vee \neg x_2 \vee \neg x_3$
   </section>
 </section>
 
@@ -756,6 +770,16 @@ There is a constant $c > 1$ such that: Every algorithm that solves the 3-SAT pro
 	  <li> Using the terms "NP-hard" and "NP-complete" interchangeably.
 	  <li> Conflating NP-hardness with requiring exponential time in the worst case.
 	</ol>
+</section>
+
+<section data-markdown id="L11">
+	## Lecture 11: AI for discovering new algorithms
+</section>
+
+<section data-markdown>
+	[Mankowitz, Faster Sorting Algorithms, 2023](https://paperpile.com/app/p/1b25b93d-5ced-0e44-b477-965813bf4561)
+
+	![](images/alphadev_abstract.png)
 </section>
 
 <section id="LX">
