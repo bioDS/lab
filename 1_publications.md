@@ -8,7 +8,7 @@ title: Publications
 
 - **The Fossilised Birth-Death Model is Identifiable**<br>
   Kate Truman, Timothy G Vaughan, Alex Gavryushkin, and Sasha Gavryushkina<br>
-  *bioRxiv* 2023<br>
+  *bioRxiv* 2024<br>
   [<i class="ai ai-biorxiv-square ai-3x"></i>](https://doi.org/10.1101/2024.02.08.579547)
 
 - **Automated convergence diagnostic for phylogenetic MCMC analyses**<br>
