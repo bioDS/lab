@@ -5,11 +5,16 @@ permalink: /publications/
 title: Publications
 ---
 
+
+- **The Fossilised Birth-Death Model is Identifiable**<br>
+  Kate Truman, Timothy G Vaughan, Alex Gavryushkin, and Sasha Gavryushkina<br>
+  *bioRxiv* 2023<br>
+  [<i class="ai ai-biorxiv-square ai-3x"></i>](https://doi.org/10.1101/2024.02.08.579547)
+
 - **Automated convergence diagnostic for phylogenetic MCMC analyses**<br>
    Lars Berling, Remco Bouckaert, and Alex Gavryushkin<br>
   *bioRxiv* 2023<br>
   [<i class="ai ai-biorxiv-square ai-3x"></i>](https://doi.org/10.1101/2023.08.10.552869)
-
 
 - **Estimating the mean in the space of ranked phylogenetic trees**<br>
    Lars Berling, Lena Collienne, and Alex Gavryushkin<br>
