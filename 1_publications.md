@@ -21,15 +21,16 @@ title: Publications
   *bioRxiv* 2023<br>
   [<i class="ai ai-biorxiv-square ai-3x"></i>](https://doi.org/10.1101/2023.05.08.539790)
 
-- **Ranked subtree prune and regraft**<br>
-  Lena Collienne, Chris Whidden, and Alex Gavryushkin<br>
-  *bioRxiv* 2023<br>
-  [<i class="ai ai-biorxiv-square ai-3x"></i>](https://doi.org/10.1101/2023.05.16.541039)
-
 - **Online Bayesian analysis with BEAST 2**<br>
    Remco Bouckaert, Lena Collienne, and Alex Gavryushkin<br>
   *bioRxiv* 2022<br>
   [<i class="ai ai-biorxiv-square ai-3x"></i>](https://doi.org/10.1101/2022.05.03.490538)
+
+- **Ranked subtree prune and regraft**<br>
+  Lena Collienne, Chris Whidden, and Alex Gavryushkin<br>
+  *Bulletin of Mathematical Biology* 2024<br>
+  [<i class="ai ai-open-access-square ai-3x"></i>](https://doi.org/10.1007/s11538-023-01244-2)
+  [<i class="ai ai-biorxiv-square ai-3x"></i>](https://doi.org/10.1101/2023.05.16.541039)
 
 - **Testing for phylogenetic signal in single-cell RNA-seq data**<br>
   Jiří Moravec, Rob Lanfear, David Spector, Sarah Diermeier, and Alex Gavryushkin<br>
