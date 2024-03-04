@@ -7,9 +7,14 @@ title: Publications
 
 
 - **The Fossilised Birth-Death Model is Identifiable**<br>
-  Kate Truman, Timothy G Vaughan, Alex Gavryushkin, and Sasha Gavryushkina<br>
+  Kate Truman, Timothy Vaughan, Alex Gavryushkin, and Sasha Gavryushkina<br>
   *bioRxiv* 2024<br>
   [<i class="ai ai-biorxiv-square ai-3x"></i>](https://doi.org/10.1101/2024.02.08.579547)
+
+- **A tractable tree distribution parameterized by clade probabilities and its application to Bayesian phylogenetic point estimation**<br>
+   Lars Berling, Jonathan Klawitter, Remco Bouckaert, Dong Xie, Alex Gavryushkin, and Alexei Drummond<br>
+  *bioRxiv* 2024<br>
+  [<i class="ai ai-biorxiv-square ai-3x"></i>](https://doi.org/10.1101/2024.02.20.581316)
 
 - **Automated convergence diagnostic for phylogenetic MCMC analyses**<br>
    Lars Berling, Remco Bouckaert, and Alex Gavryushkin<br>
