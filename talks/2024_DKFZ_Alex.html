@@ -1,0 +1,220 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<title>
+	  Algorithms for precision oncology - Alex Gavryushkin
+	</title>
+	<meta name="author" content="Alex Gavryushkin">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+	<meta name="apple-mobile-web-app-capable" content="yes" />
+	<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+	<link rel="stylesheet" href="revealjs/dist/reveal.css">
+	<link rel="stylesheet" href="revealjs_themes_biods/simple_gavruskin.css" id="theme">
+	<link rel="stylesheet" href="revealjs/plugin/highlight/zenburn.css">
+	<link rel="icon" href="../favicon.ico" />
+</head>
+
+<body>
+<div class="reveal">
+<div class="slides">
+
+<section>
+	<h3>
+	  Algorithms for reconstructing within-patient tumor histories to support precision oncology
+	</h3>
+	<h4>
+	  <a href="https://biods.org/alex/">Alex Gavryushkin</a>
+	</h4>
+	<h5>
+	  <a href="https://biods.org/people/">
+	    <img data-src="../assets/bioDS_lab_UC_logo.png" width=20%>
+	  </a>
+	</h5>
+	<font size="5">
+	  DKFZ (The German Cancer Research Center), March 15, 2024, Heidelberg
+	</font>
+</section>
+
+<section>
+	<h3>Disclaimers</h3>
+</section>
+
+<section data-background-image="./images/what_is_cancer_evo.svg">
+</section>
+
+<section data-background-image="./images/what_is_cancer_evo_problem.svg">
+</section>
+
+<section data-background-image="./images/multiomic_cancer_evo.svg">
+</section>
+
+<section>
+	Follow the slides from Napier on the expression + SNV result
+</section>
+
+<section>
+	<h3>Problem</h3>
+	<h4>This is not reproducible!</h4>
+</section>
+
+<section>
+	New results including HVGs etc.
+</section>
+
+<section>
+	Finding important genes
+</section>
+
+<section>
+	<h4>Model-based approaches to genotype-phenotype data</h4>
+	<img data-src="../assets/fitland_cartoon.svg" width=50%>
+	$
+	  f(x_1,\, \ldots,\, x_p) = \beta_0 + \sum_{i} x_i \beta_i
+	  + \sum_{i \le j} x_i x_j \beta_{i,j}
+	$
+	$
+	  + \sum_{i \le j \le k} x_i x_j x_k \beta_{i,j,k}
+	  + \ldots
+	$<br>
+</section>
+
+<section>
+	<img data-src="../assets/fitlands_outline.png" width=60%>
+</section>
+
+<section data-background-iframe="https://mathematikon.de/mathematikon">
+</section>
+
+<section>
+	<h4>State of the art in 2018</h4>
+	<img data-src="../assets/GlinternetVSxyz.svg" width=80%></br>
+	<font size="3">
+	  <a href="https://doi.org/10.1371/journal.pone.0254491">
+		Kieran Elmes et al. Learning epistatic gene interactions from perturbation screens. 2021
+	  </a>
+	</font>
+</section>
+
+<section>
+	<h4>Problem #1: The hierarchy assumptions</h4>
+	<img data-src="https://upload.wikimedia.org/wikipedia/commons/4/4f/Manhattan_plot_from_a_GWAS_of_kidney_stone_disease.png"><br>
+	<font size="3">
+	  <a href="https://doi.org/10.1038/s41467-019-13145-x">
+	  Sarah Howles et al. Genetic variants of calcium and vitamin D metabolism in kidney stone disease. 2019</a>
+	</font>
+</section>
+
+<section>
+	<h4>Problem #2: Scalability</h4>
+	<img data-src="../assets/glinternet_xyz_runtime.svg"><br>
+	<font size="3">
+	  <a href="https://doi.org/10.1371/journal.pone.0254491">
+		Kieran Elmes et al. Learning epistatic gene interactions from perturbation screens. 2021
+	  </a>
+	</font>
+</section>
+
+<section>
+	<font size="6">
+	  Hierarchy and scalability are largely solved (until you sequence more)
+	</font>
+	<img data-src="../assets/pint_summary.svg"><br>
+	<font size="3">
+	  <a href="https://doi.org/10.1371/journal.pcbi.1010730">
+		Kieran Elmes et al. A fast lasso-based method for inferring higher-order interactions
+	  </a>
+	</font>
+</section>
+
+<section>
+	<h3>Problem #3 (unsolved!):</h3>
+	<h3>Model assumptions</h3>
+	$
+	  f(x_1,\, \ldots,\, x_p) = \beta_0 + \sum_{i} x_i \beta_i
+	  + \sum_{i \le j} x_i x_j \beta_{i,j}
+	$
+	$
+	  + \sum_{i \le j \le k} x_i x_j x_k \beta_{i,j,k}
+	  + \ldots
+	$<br>
+	<font size="3">
+	  <a href="https://doi.org/10.1371/journal.pcbi.1010730">
+		Kieran Elmes et al. A fast lasso-based method for inferring higher-order interactions
+	  </a>
+	</font>
+</section>
+
+<section>
+	<h3>SNVformer</h3>
+	<img data-src="../assets/snvformer_predictions.svg"><br>
+	<font size="3">
+	  <a href="https://icml-compbio.github.io/2022/papers/WCBICML2022_paper_58.pdf">
+		Kieran Elmes et al. SNVformer: an attention-based deep neural network for GWAS data
+	  </a>
+	</font>
+</section>
+
+<section>
+	<h4>"eQTL" simulations (work in progress)</h4>
+	<img data-src="../assets/eqtl_simulation.svg">
+	<font size="3">
+	  <ul>
+		<li >Multi-Layer Perceptron [ AI ]
+		<li> Logistic Regression [ :) ]
+		<li> Transformer-encoder [ AI ]
+		<li> LightGBM (Random Forests) [ AI? ]
+		<li> Differentiable Logic [ AI ]
+		<li> Support Vector Machines [ AI? ]
+	  </ul>
+	</font>
+</section>
+
+<section>
+	<h4>Why don't you just do AI?</h4>
+	<img data-src="../assets/linformer_model_selection.png" width=60%><br>
+	What AI?
+</section>
+
+<section>
+	<h4><a href="https://biods.org">bioDS lab @UCNZ</a></h4>
+	<img data-src="../assets/2023-02-17-bioDS_lab.jpg" width=75%>
+</section>
+
+<section>
+	<h4>Thank you!</h4>
+	<img data-src="../assets/thanks_kieran_megan_michael_rdf_marsden_mbie.svg">
+</section>
+
+
+</div>
+</div>
+
+<script src="../talks/revealjs/dist/reveal.js"></script>
+<script src="../talks/revealjs/plugin/markdown/markdown.js"></script>
+<script src="../talks/revealjs/plugin/highlight/highlight.js"></script>
+<script src="../talks/revealjs/plugin/notes/notes.js"></script>
+<script src="../talks/revealjs/plugin/math/math.js"></script>
+<script>
+	Reveal.initialize({
+		controls: true,
+		progress: true,
+		history: true,
+		center: true,
+		slideNumber: 'h.v',
+		plugins: [ RevealMarkdown, RevealHighlight, RevealNotes, RevealMath.MathJax2 ]
+			});
+</script>
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-86783531-1', 'auto');
+  ga('send', 'pageview');
+</script>
+</body>
+</html>
