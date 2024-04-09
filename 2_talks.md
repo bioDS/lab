@@ -5,6 +5,8 @@ permalink: /talks/
 title: Talks & Slides
 ---
 
+- [March 2024](German Cancer Research Center (DKFZ)), Heidelberg, Germany. Seminar talk [Algorithms for reconstructing within-patient tumor histories to support precision oncology](2024_DKFZ_Alex)
+
 - [August 2023](https://www.queenstownresearchweek.org/qmb-2023/), QMB, Queenstown. Invited talk [Model- and data-driven approaches for genotype-phenotype data](2023_QMB_Alex)
 
 - [February 2023](https://www.canterbury.ac.nz/engineering/schools/mathematics-statistics/our-research/bio/events/deco-23/), The Interface of Mathematics and Biology, Napier. Talk [Online algorithms and cancer evolution](https://docs.google.com/presentation/d/1Q2B8anBZYCj5JIDJ7YHe0-PX7GGGp9UtrBRpIDNkCCM/).
