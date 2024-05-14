@@ -8,7 +8,7 @@ title: Teaching
 
 ## 2024 Deep Learning [DATA425](https://courseinfo.canterbury.ac.nz/GetCourseDetails.aspx?course=DATA425&occurrence=24S1(C)&year=2024)
 
-- All teaching materials, including lecture recordings are available on [Learn](https://learn.canterbury.ac.nz/)
+- All teaching materials, including lecture recordings are available on [Learn](https://learn.canterbury.ac.nz/) (second half of the semester)
 
 
 ## 2023 Algorithm in Data Science [DATA473](https://www.canterbury.ac.nz/courseinfo/GetCourseDetails.aspx?course=DATA473&occurrence=23S2(C)&year=2023)
