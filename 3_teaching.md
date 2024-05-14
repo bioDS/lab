@@ -6,7 +6,12 @@ title: Teaching
 ---
 
 
-## 2023 Algorithm in Data Science[DATA473](https://www.canterbury.ac.nz/courseinfo/GetCourseDetails.aspx?course=DATA473&occurrence=23S2(C)&year=2023)
+## 2024 Deep Learning [DATA425](https://courseinfo.canterbury.ac.nz/GetCourseDetails.aspx?course=DATA425&occurrence=24S1(C)&year=2024)
+
+- All teaching materials, including lecture recordings are available on [Learn](https://learn.canterbury.ac.nz/)
+
+
+## 2023 Algorithm in Data Science [DATA473](https://www.canterbury.ac.nz/courseinfo/GetCourseDetails.aspx?course=DATA473&occurrence=23S2(C)&year=2023)
 
 - [Complete set of lecture slides](DATA473) is evolving as we progress, so please use the online version if you can
 - [Learning resources](DATA473#/1/1/)
