@@ -5,6 +5,10 @@ permalink: /talks/
 title: Talks & Slides
 ---
 
+
+- [July 2024](http://www.ivpp.ac.cn/), IVPP (Chinese Academy of Sciences), Beijing, China.
+  Seminar talk [Algorithms for reconstructing within-patient tumor histories to support precision oncology](2024_Beijing_Alex)
+
 - [March 2024](https://www.dkfz.de/en/dkfz/index.html), German Cancer Research Center (DKFZ), Heidelberg, Germany.
   Seminar talk [Algorithms for reconstructing within-patient tumor histories to support precision oncology](2024_DKFZ_Alex)
 
