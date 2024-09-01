@@ -21,15 +21,16 @@ title: Publications
   *bioRxiv* 2023<br>
   [<i class="ai ai-biorxiv-square ai-3x"></i>](https://doi.org/10.1101/2023.08.10.552869)
 
-- **Estimating the mean in the space of ranked phylogenetic trees**<br>
-   Lars Berling, Lena Collienne, and Alex Gavryushkin<br>
-  *bioRxiv* 2023<br>
-  [<i class="ai ai-biorxiv-square ai-3x"></i>](https://doi.org/10.1101/2023.05.08.539790)
-
 - **Online Bayesian analysis with BEAST 2**<br>
    Remco Bouckaert, Lena Collienne, and Alex Gavryushkin<br>
   *bioRxiv* 2022<br>
   [<i class="ai ai-biorxiv-square ai-3x"></i>](https://doi.org/10.1101/2022.05.03.490538)
+
+- **Estimating the mean in the space of ranked phylogenetic trees**<br>
+   Lars Berling, Lena Collienne, and Alex Gavryushkin<br>
+  *Bioinformatics* 2024<br>
+  [<i class="ai ai-open-access-square ai-3x"></i>](https://doi.org/10.1093/bioinformatics/btae514)
+  [<i class="ai ai-biorxiv-square ai-3x"></i>](https://doi.org/10.1101/2023.05.08.539790)
 
 - **Ranked subtree prune and regraft**<br>
   Lena Collienne, Chris Whidden, and Alex Gavryushkin<br>
