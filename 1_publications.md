@@ -6,6 +6,11 @@ title: Publications
 ---
 
 
+- **Filtering for highly variable genes and high quality spots improves phylogenetic analysis of cancer spatial transcriptomics Visium data**<br>
+   Sasha Gavryushkina, Holly Pinkney, Sarah Diermeier, Alex Gavryushkin<br>
+  *bioRxiv* 2024<br>
+  [<i class="ai ai-biorxiv-square ai-3x"></i>](https://doi.org/10.1101/2024.07.11.603166)
+
 - **The Fossilised Birth-Death Model is Identifiable**<br>
   Kate Truman, Timothy Vaughan, Alex Gavryushkin, and Sasha Gavryushkina<br>
   *Systematic Biology* 2024 (to appear)<br>
