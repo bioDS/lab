@@ -8,6 +8,7 @@ title: Publications
 
 - **The Fossilised Birth-Death Model is Identifiable**<br>
   Kate Truman, Timothy Vaughan, Alex Gavryushkin, and Sasha Gavryushkina<br>
+  *Systematic Biology* 2024 (to appear)<br>
   *bioRxiv* 2024<br>
   [<i class="ai ai-biorxiv-square ai-3x"></i>](https://doi.org/10.1101/2024.02.08.579547)
 
@@ -18,6 +19,7 @@ title: Publications
 
 - **Automated convergence diagnostic for phylogenetic MCMC analyses**<br>
    Lars Berling, Remco Bouckaert, and Alex Gavryushkin<br>
+   *IEEE/ACM Transactions on Computational Biology and Bioinformatics* 2024 (to appear)<br>
   *bioRxiv* 2023<br>
   [<i class="ai ai-biorxiv-square ai-3x"></i>](https://doi.org/10.1101/2023.08.10.552869)
 
