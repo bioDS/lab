@@ -7,20 +7,20 @@ title: Pictures
 
 
 ### [bioDS lab](/) in February 2023:
-![February 2023](assets/2023-02-17-bioDS_lab.jpg)
+![February 2023](/assets/2023-02-17-bioDS_lab.jpg)
 
 ### [bioDS lab](/) in December 2021:
-![December 2021](assets/2021-12-20-bioDS_lab.jpg)
+![December 2021](/assets/2021-12-20-bioDS_lab.jpg)
 
 ### [bioDS lab](/) in December 2019:
-![December 2019](assets/2019-12-02-bioDS_lab.jpeg)
+![December 2019](/assets/2019-12-02-bioDS_lab.jpeg)
 [Tom](/people/), [Jiří](/people/), [Lena](/people/), [Alex](/alex/), [Surayo](/people/), [Moizle](/people/), [Astra](/people/), [Kieran](/kieran/)
 
 ### Anna and Moizle are graduating:
-![December 2019](assets/2019-12-11-anna_moizle_graduating.jpg)
+![December 2019](/assets/2019-12-11-anna_moizle_graduating.jpg)
 
 ### Lena and Kieran are served Best Presentation awards at Otago CS-IS postgrad symposium:
-![October 2019](assets/2019-10-15-lena_kieran_talk_prise.svg)
+![October 2019](/assets/2019-10-15-lena_kieran_talk_prise.svg)
 
 ### Joint retreat [bioDS](/) and [Gardner Binf](http://www.gardner-binflab.org/) labs in Pounawea:
 ![August 2019](/assets/2019-08-26-bioDS_binf_retreat.jpg)
