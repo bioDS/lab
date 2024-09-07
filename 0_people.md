@@ -35,7 +35,7 @@ We are part of the [Biomathematics Research Centre](https://www.canterbury.ac.nz
 
 ### Alumni
 
-- [Kieran Collienne](https://www.linkedin.com/in/kieran-collienne-62600887/): Msc, PhD: Detecting epistasis and deep learning fitness landscapes, co-supervised by [Michael Witbrock](http://www.science.auckland.ac.nz/people/profile/m-witbrock). Currently postdoc at the [Fred Hutch Cancer Center](https://www.fredhutch.org/en.html) with [JT McCrone](https://mccronelab.github.io/)
-- [Lena Collienne](https://www.lenacoll.de/) (MSc, PhD, postdoc; currently postdoc at [Fred Hutch Cancer Center](https://www.fredhutch.org/en.html) with [Erick Matsen](https://matsen.fhcrc.org/))
+- [Kieran Collienne](https://www.linkedin.com/in/kieran-collienne-62600887/) (MSc, PhD; currently postdoc at the [Fred Hutch Cancer Center](https://www.fredhutch.org/en.html) with [JT McCrone](https://mccronelab.github.io/)
+- [Lena Collienne](https://www.lenacoll.de/) (MSc, PhD, postdoc; currently postdoc at the [Fred Hutch Cancer Center](https://www.fredhutch.org/en.html) with [Erick Matsen](https://matsen.fhcrc.org/))
 - [Jiří Moravec](https://www.linkedin.com/in/ji%C5%99%C3%AD-moravec-2a104815b/) (postdoc; currently Senior R&D Data Scientist at [BioLumic](https://www.biolumic.com/))
 - [Astra Heywood](https://www.linkedin.com/in/astra-heywood-a43229163/) (postdoc; currently Bioinformatician at [Plant and Food Research](https://careers.sciencenewzealand.org/plant-and-food-research/about-us))
