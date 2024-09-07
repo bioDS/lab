@@ -13,11 +13,7 @@ We are part of the [Biomathematics Research Centre](https://www.canterbury.ac.nz
 ### Faculty
 
 - [Alex Gavryushkin](/alex/)
-
-
-### Postdocs
-
-- [Sasha Gavryushkina](https://www.linkedin.com/in/alexandra-sasha-gavryushkina-5a24a4228/): Phylodynamics of cancer using single cells and spatial transcriptomics
+- [Sasha Gavryushkina](https://www.linkedin.com/in/alexandra-sasha-gavryushkina-5a24a4228/)
 
 
 ### PhD students
