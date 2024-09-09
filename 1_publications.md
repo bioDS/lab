@@ -17,7 +17,7 @@ title: Publications
   *bioRxiv* 2024<br>
   [<i class="ai ai-biorxiv-square ai-3x"></i>](https://doi.org/10.1101/2024.02.08.579547)
 
-- **A tractable tree distribution parameterized by clade probabilities and its application to Bayesian phylogenetic point estimation**<br>
+- **Accurate Bayesian phylogenetic point estimation using a tree distribution parameterized by clade probabilities**<br>
    Lars Berling, Jonathan Klawitter, Remco Bouckaert, Dong Xie, Alex Gavryushkin, and Alexei Drummond<br>
   *bioRxiv* 2024<br>
   [<i class="ai ai-biorxiv-square ai-3x"></i>](https://doi.org/10.1101/2024.02.20.581316)
