@@ -20,7 +20,6 @@
 <div class="reveal">
 <div class="slides">
 
-
 <section>
 	<h3>
 	  Scalable algorithms<br>
@@ -39,12 +38,6 @@
 	</font>
 </section>
 
-
-<section>
-	<h3>Disclaimers, about myself, RNAfold.AI</h3>
-</section>
-
-
 <section>
 	<h4>Model-based approaches to genotype-phenotype data</h4>
 	<img data-src="/assets/fitland_cartoon.svg" width=50%>
@@ -56,6 +49,43 @@
 	  + \sum_{i \le j \le k} x_i x_j x_k \beta_{i,j,k}
 	  + \ldots
 	$<br>
+</section>
+
+<section>
+	<h3>The linear model</h3>
+	$
+	  f(x_1,\, \ldots,\, x_p) = \beta_0 + \sum_{i} x_i \beta_i
+	$
+	<img class="fragment" data-src="/assets/95_ai_linear.png">
+</section>
+
+<section>
+	<img data-src="images/fitness_shapes_2_loci_BPS_axis.svg">
+	<p align="left">
+	  The set of genotypes is $\mathcal G = \{0,1\}^{p}$.
+	</p>
+	<p align="left">
+	  A <i>fitness landscape</i> is a function $f:\mathcal G \to \mathbb R^+$.
+	</p>
+	<p align="left">
+	  For $g \in \mathcal G$, &ensp;$f(g)$ is called the <i>fitness</i> of genotype $g$.
+	</p>
+</section>
+
+<section>
+	<h3>The epistasis model</h3>
+	$
+	  f(x_1,\, \ldots,\, x_p) = \beta_0 + \sum_{i} x_i \beta_i
+	  + \sum_{i \le j} x_i x_j \beta_{i,j}
+	$
+	<img data-src="images/fitness_shapes_2_loci_BPS_axis.png">
+	
+	Epistasis is the deviation from the additive expectation of allelic effects:
+	$$e = f(00) + f(11) - \Big(f(01) + f(10)\Big)$$
+
+	<aside class="notes">
+	  Mention shapes
+	</aside>
 </section>
 
 <section>
