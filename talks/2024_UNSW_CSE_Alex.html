@@ -38,8 +38,21 @@
 	</font>
 </section>
 
-<section data-background-image="/assets/"
-        data-background-size=80%>
+<section data-background-image="/assets/fold_cover_slide.svg"
+        data-background-size=60%>
+</section>
+
+<section data-background-image="/assets/fold_outline_slide.svg"
+        data-background-size=60%>
+</section>
+
+<section data-background-image="/assets/fold_team_slide.svg"
+        data-background-size=60%>
+</section>
+
+<section>
+	<h4>Supported by NSW Biosciences Fund</h4>
+	<img data-src="/assets/biosf_ceremony.jpeg" width="80%">
 </section>
 
 <section>
@@ -191,9 +204,12 @@
 		Kieran Elmes et al. SNVformer: an attention-based deep neural network for GWAS data. 2022
 	  </a>
 	</font>
+</section>
 
+<section>
+	<img data-src="/assets/gene_graph_snvformer_encoder.svg" width="110%">
 	<aside class="notes">
-	  Move technical details down under this slide for if we have time.
+	  Optionally, genes can be encoded accounting for interaction reported in the BioGRID database
 	</aside>
 </section>
 
@@ -244,21 +260,30 @@
 
 <section>
 	<h4>KAN is better than the transformer? (unpublished work)</h4>
-	<img data-src="/assets/kan_snv_former_3_6w_0_.jpg" width="75%">
-</section>
-
-<section>
-	<h4><a href="https://biods.org">bioDS lab @UCNZ</a></h4>
-	<img data-src="/assets/2023-02-17-bioDS_lab.jpg" width=75%>
-</section>
-
-<section>
-	<img data-src="/assets/thanks_rdf_marsden_mbie.svg">
+	<img data-src="/assets/KAN_for_GWAS_no_noise_summary_Lilin.svg">
+	<p style="font-size:10pt" align="center">
+	Lilin Zhang, Kieran Collienne, and Alex Gavryushkin (2024).
+	</p>
 </section>
 
 <section>
 	<h4>Precision oncology</h4>
 	<img data-src="/assets/precision_oncology_by_vicka.svg">
+</section>
+
+<section>
+	<img class="stretch" data-src="images/multiregion_tumour_samples.png">
+	<p style="font-size:10pt" align="center">
+	Alves, Joao, Sonia Prado-Lopez, Jose Manuel Cameselle-Teijeiro, David Posada. "Rapid evolution and biogeographic spread in a colorectal cancer" <i>bioRxiv</i> (2019).
+	</p>
+</section>
+
+<section>
+	<h3>Timing tumour evolution</h3>
+	<img class="stretch" data-src="images/Sottoriva_tumour_time_tree.png">
+	<p style="font-size:10pt" align="center">
+	Lote, H., I. Spiteri, L. Ermini, A. Vatsiou, A. Roy, A. McDonald, N. Maka, et al. 2017. "Carbon Dating Cancer: Defining the Chronology of Metastatic Progression in Colorectal Cancer." <i>Annals of Oncology</i> 28 (6): 1243–49.
+	</p>
 </section>
 
 <section data-background-image="./images/what_is_cancer_evo_problem.svg">
@@ -303,6 +328,67 @@
 
 <section data-background-image="./images/tree_on_cells_with_same_genotype_expression_snv.svg"
 	data-background-size=80%>
+</section>
+
+<section>
+	<h3>The big challenge: scalable algorithms for reconstructing evolutionary histories from sequence data</h3>
+</section>
+
+<section>
+	<h3>NNI graph</h3>
+	<img class="stretch" data-src="images/NNI.pdf.png">
+</section>
+
+<section>
+	<h3>Theorem (phylogenetic classic)</h3>
+	Computing the NNI distance is NP-hard.
+</section>
+
+<section>
+	<h3>Discrete time-tree space</h3>
+	<img class="stretch" data-src="images/DtT_with_rank_move.pdf.png">
+</section>
+
+<section>
+	<h3>Theorem (Collienne, G)</h3>
+	There exists an efficient (polynomial) algorithm for computing the RNNI distance.<br>
+	<img data-src="/assets/lena_hatherton.jpg" width="60%">
+</section>
+
+<section>
+	<h4>Geodesic in time-tree space</h4>
+	<div style="font-size:10pt">
+	<ul>
+	  <li> Gavryushkin, Alex, and Alexei J. Drummond. "The space of ultrametric phylogenetic trees."
+	  <i>Journal of Theoretical Biology</i> 403 (2016): 197-208.
+	  <li> Gavryushkin, Alex, and Alexei Drummond. <i>tauGeodesic</i>. Mar. 2015. doi: 10.5281/zenodo.47152.
+	<a href="https://github.com/gavruskin/tauGeodesic">https://github.com/gavruskin/tauGeodesic</a>
+	</ul>
+	<img data-src="images/trees.gif" width="60%">
+	<div>
+</section>
+
+<section data-transition="fade-in slide-out" data-background-image="images/penguin_emperor_background.svg">
+	<div style="font-size:10pt">
+	<ul>
+	  <li> Gavryushkina, Alexandra, Tracy A. Heath, Daniel T. Ksepka, Tanja Stadler,
+	  David Welch, and Alexei J. Drummond.
+	  "Bayesian total-evidence dating reveals the recent crown radiation of penguins."
+	  <i>Systematic Biology</i> 66.1 (2016): 57-73.
+	  <li> Gavryushkin, Alex, and Alexei Drummond. <i>tauGeodesic</i>. Mar. 2015. doi: 10.5281/zenodo.47152.
+	<a href="https://github.com/gavruskin/tauGeodesic">https://github.com/gavruskin/tauGeodesic</a>
+	</ul>
+	<img data-src="images/trees_penguins.gif" width="60%">
+	<div>
+</section>
+
+<section>
+	<h4><a href="https://biods.org">bioDS lab @UCNZ</a></h4>
+	<img data-src="/assets/2023-02-17-bioDS_lab.jpg" width=75%>
+</section>
+
+<section>
+	<img data-src="/assets/thanks_rdf_marsden_mbie.svg">
 </section>
 
 </div>
