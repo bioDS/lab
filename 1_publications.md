@@ -7,7 +7,7 @@ title: Publications
 
 
 - **Filtering for highly variable genes and high quality spots improves phylogenetic analysis of cancer spatial transcriptomics Visium data**<br>
-   Sasha Gavryushkina, Holly Pinkney, Sarah Diermeier, and Alex Gavryushkin<br>
+  Sasha Gavryushkina, Holly Pinkney, Sarah Diermeier, and Alex Gavryushkin<br>
   *bioRxiv* 2024<br>
   [<i class="ai ai-biorxiv-square ai-3x"></i>](https://doi.org/10.1101/2024.07.11.603166)
 
@@ -18,20 +18,20 @@ title: Publications
   [<i class="ai ai-biorxiv-square ai-3x"></i>](https://doi.org/10.1101/2024.02.08.579547)
 
 - **Accurate Bayesian phylogenetic point estimation using a tree distribution parameterized by clade probabilities**<br>
-   Lars Berling, Jonathan Klawitter, Remco Bouckaert, Dong Xie, Alex Gavryushkin, and Alexei Drummond<br>
+  Lars Berling, Jonathan Klawitter, Remco Bouckaert, Dong Xie, Alex Gavryushkin, and Alexei Drummond<br>
   *bioRxiv* 2024<br>
   [<i class="ai ai-biorxiv-square ai-3x"></i>](https://doi.org/10.1101/2024.02.20.581316)
+
+- **Online Bayesian analysis with BEAST 2**<br>
+  Remco Bouckaert, Lena Collienne, and Alex Gavryushkin<br>
+  *bioRxiv* 2022<br>
+  [<i class="ai ai-biorxiv-square ai-3x"></i>](https://doi.org/10.1101/2022.05.03.490538)
 
 - **Automated convergence diagnostic for phylogenetic MCMC analyses**<br>
    Lars Berling, Remco Bouckaert, and Alex Gavryushkin<br>
    *IEEE/ACM Transactions on Computational Biology and Bioinformatics* 2024<br>
   [<i class="ai ai-open-access-square ai-3x"></i>](https://doi.org/10.1109/TCBB.2024.3457875)
   [<i class="ai ai-biorxiv-square ai-3x"></i>](https://doi.org/10.1101/2023.08.10.552869)
-
-- **Online Bayesian analysis with BEAST 2**<br>
-   Remco Bouckaert, Lena Collienne, and Alex Gavryushkin<br>
-  *bioRxiv* 2022<br>
-  [<i class="ai ai-biorxiv-square ai-3x"></i>](https://doi.org/10.1101/2022.05.03.490538)
 
 - **Estimating the mean in the space of ranked phylogenetic trees**<br>
    Lars Berling, Lena Collienne, and Alex Gavryushkin<br>
