@@ -24,8 +24,8 @@ title: Publications
 
 - **Automated convergence diagnostic for phylogenetic MCMC analyses**<br>
    Lars Berling, Remco Bouckaert, and Alex Gavryushkin<br>
-   *IEEE/ACM Transactions on Computational Biology and Bioinformatics* 2024 (to appear)<br>
-  *bioRxiv* 2023<br>
+   *IEEE/ACM Transactions on Computational Biology and Bioinformatics* 2024<br>
+  [<i class="ai ai-open-access-square ai-3x"></i>](https://doi.org/10.1109/TCBB.2024.3457875)
   [<i class="ai ai-biorxiv-square ai-3x"></i>](https://doi.org/10.1101/2023.08.10.552869)
 
 - **Online Bayesian analysis with BEAST 2**<br>
