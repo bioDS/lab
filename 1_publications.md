@@ -28,13 +28,13 @@ title: Publications
   [<i class="ai ai-biorxiv-square ai-3x"></i>](https://doi.org/10.1101/2022.05.03.490538)
 
 - **Automated convergence diagnostic for phylogenetic MCMC analyses**<br>
-   Lars Berling, Remco Bouckaert, and Alex Gavryushkin<br>
-   *IEEE/ACM Transactions on Computational Biology and Bioinformatics* 2024<br>
+  Lars Berling, Remco Bouckaert, and Alex Gavryushkin<br>
+  *IEEE/ACM Transactions on Computational Biology and Bioinformatics* 2024<br>
   [<i class="ai ai-open-access-square ai-3x"></i>](https://doi.org/10.1109/TCBB.2024.3457875)
   [<i class="ai ai-biorxiv-square ai-3x"></i>](https://doi.org/10.1101/2023.08.10.552869)
 
 - **Estimating the mean in the space of ranked phylogenetic trees**<br>
-   Lars Berling, Lena Collienne, and Alex Gavryushkin<br>
+  Lars Berling, Lena Collienne, and Alex Gavryushkin<br>
   *Bioinformatics* 2024<br>
   [<i class="ai ai-open-access-square ai-3x"></i>](https://doi.org/10.1093/bioinformatics/btae514)
   [<i class="ai ai-biorxiv-square ai-3x"></i>](https://doi.org/10.1101/2023.05.08.539790)
@@ -58,13 +58,13 @@ title: Publications
   [<i class="ai ai-biorxiv-square ai-3x"></i>](https://doi.org/10.1101/2021.12.13.471844)
 
 - **SNVformer: an attention-based deep neural network for GWAS data**<br>
-   Kieran Elmes, Diana Benavides-Prado, Neset Ozkan Tan, Trung Bao Nguyen, Nicholas Sumpter, Megan Leask, Michael Witbrock, and Alex Gavryushkin<br>
+  Kieran Elmes, Diana Benavides-Prado, Neset Ozkan Tan, Trung Bao Nguyen, Nicholas Sumpter, Megan Leask, Michael Witbrock, and Alex Gavryushkin<br>
   *ICML Workshop on Computational Biology* 2022<br>
   [<i class="ai ai-open-access-square ai-3x"></i>](https://icml-compbio.github.io/2022/papers/WCBICML2022_paper_58.pdf)
   [<i class="ai ai-biorxiv-square ai-3x"></i>](https://doi.org/10.1101/2022.07.07.499217)
 
 - **Accounting for errors in data improves timing in single-cell cancer evolution**<br>
-   Kylie Chen, Jiří Moravec, Alex Gavryushkin, David Welch, and Alexei Drummond<br>
+  Kylie Chen, Jiří Moravec, Alex Gavryushkin, David Welch, and Alexei Drummond<br>
   *Molecular Biology and Evolution* 2022<br>
   [<i class="ai ai-open-access-square ai-3x"></i>](https://doi.org/10.1093/molbev/msac143)
   [<i class="ai ai-biorxiv-square ai-3x"></i>](https://doi.org/10.1101/2021.03.17.435906)
@@ -75,7 +75,7 @@ title: Publications
   [<i class="ai ai-open-access-square ai-3x"></i>](https://www.ncbi.nlm.nih.gov/pmc/articles/pmc9059781/)
 
 - **Sustained software development, not number of citations or journal choice, is indicative of accurate bioinformatic software**<br>
-   Paul Gardner, James Paterson, Stephanie McGimpsey, Fatemeh Ashari-Ghomi, Sinan Umu, Aleksandra Pawlik, Alex Gavryushkin, and Michael Black<br>
+  Paul Gardner, James Paterson, Stephanie McGimpsey, Fatemeh Ashari-Ghomi, Sinan Umu, Aleksandra Pawlik, Alex Gavryushkin, and Michael Black<br>
   *Genome Biology* 2022<br>
   [<i class="ai ai-open-access-square ai-3x"></i>](https://doi.org/10.1186/s13059-022-02625-x)
   [<i class="ai ai-biorxiv-square ai-3x"></i>](https://doi.org/10.1101/092205)
