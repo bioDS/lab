@@ -11,12 +11,6 @@ title: Publications
   *bioRxiv* 2024<br>
   [<i class="ai ai-biorxiv-square ai-3x"></i>](https://doi.org/10.1101/2024.07.11.603166)
 
-- **The Fossilised Birth-Death Model is Identifiable**<br>
-  Kate Truman, Timothy Vaughan, Alex Gavryushkin, and Sasha Gavryushkina<br>
-  *Systematic Biology* 2024 (to appear)<br>
-  *bioRxiv* 2024<br>
-  [<i class="ai ai-biorxiv-square ai-3x"></i>](https://doi.org/10.1101/2024.02.08.579547)
-
 - **Accurate Bayesian phylogenetic point estimation using a tree distribution parameterized by clade probabilities**<br>
   Lars Berling, Jonathan Klawitter, Remco Bouckaert, Dong Xie, Alex Gavryushkin, and Alexei Drummond<br>
   *bioRxiv* 2024<br>
@@ -26,6 +20,12 @@ title: Publications
   Remco Bouckaert, Lena Collienne, and Alex Gavryushkin<br>
   *bioRxiv* 2022<br>
   [<i class="ai ai-biorxiv-square ai-3x"></i>](https://doi.org/10.1101/2022.05.03.490538)
+
+- **The Fossilised Birth-Death Model is Identifiable**<br>
+  Kate Truman, Timothy Vaughan, Alex Gavryushkin, and Sasha Gavryushkina<br>
+  *Systematic Biology* 2024<br>
+  [<i class="ai ai-open-access-square ai-3x"></i>](https://doi.org/10.1093/sysbio/syae058)
+  [<i class="ai ai-biorxiv-square ai-3x"></i>](https://doi.org/10.1101/2024.02.08.579547)
 
 - **Automated convergence diagnostic for phylogenetic MCMC analyses**<br>
   Lars Berling, Remco Bouckaert, and Alex Gavryushkin<br>
