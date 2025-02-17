@@ -1,0 +1,424 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<title>
+	  Algorithms for biomolecular data - Alex Gavryushkin
+	</title>
+	<meta name="author" content="Alex Gavryushkin">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+	<meta name="apple-mobile-web-app-capable" content="yes" />
+	<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+	<link rel="stylesheet" href="revealjs/dist/reveal.css">
+	<link rel="stylesheet" href="revealjs_themes_biods/simple_gavruskin.css" id="theme">
+	<link rel="stylesheet" href="revealjs/plugin/highlight/zenburn.css">
+	<link rel="icon" href="../favicon.ico" />
+</head>
+
+<body>
+<div class="reveal">
+<div class="slides">
+
+<section>
+	<h3>
+	  Scalable algorithms<br>
+	  for biomolecular data
+	</h3>
+	<h4>
+	  <a href="https://biods.org/alex/">Alex Gavryushkin</a>
+	</h4>
+	<h5>
+	  <a href="https://rnafold.ai">
+	    <img data-src="/assets/bioDS_UC_fold_RNAi_logo.svg">
+	  </a>
+	</h5>
+	<font size="5">
+	  UNSW Sydney (CSE Seminar), September 12, 2024
+	</font>
+</section>
+
+<section data-background-image="/assets/fold_cover_slide.svg"
+        data-background-size=60%>
+</section>
+
+<section data-background-image="/assets/fold_outline_slide.svg"
+        data-background-size=60%>
+</section>
+
+<section data-background-image="/assets/fold_team_slide.svg"
+        data-background-size=60%>
+</section>
+
+<section>
+	<h4>Supported by NSW Biosciences Fund</h4>
+	<img data-src="/assets/biosf_ceremony.jpeg" width="80%">
+</section>
+
+<section>
+	<h4>Model-based approaches to genotype-phenotype data</h4>
+	<img data-src="/assets/fitland_cartoon.svg" width=50%>
+	$
+	  f(x_1,\, \ldots,\, x_p) = \beta_0 + \sum_{i} x_i \beta_i
+	  + \sum_{i \le j} x_i x_j \beta_{i,j}
+	$
+	$
+	  + \sum_{i \le j \le k} x_i x_j x_k \beta_{i,j,k}
+	  + \ldots
+	$<br>
+</section>
+
+<section>
+	<h3>The linear model</h3>
+	$
+	  f(x_1,\, \ldots,\, x_p) = \beta_0 + \sum_{i} x_i \beta_i
+	$
+	<img class="fragment" data-src="/assets/95_ai_linear.png">
+</section>
+
+<section>
+	<h4>Genome-Wide Association Studies</h4>
+	<img data-src="https://upload.wikimedia.org/wikipedia/commons/4/4f/Manhattan_plot_from_a_GWAS_of_kidney_stone_disease.png"><br>
+	<font size="3">
+	  <a href="https://doi.org/10.1038/s41467-019-13145-x">
+	  Sarah Howles et al. Genetic variants of calcium and vitamin D metabolism in kidney stone disease. 2019</a>
+	</font>
+</section>
+
+<section>
+	<img data-src="images/fitness_shapes_2_loci_BPS_axis.svg">
+	<p align="left">
+	  The set of genotypes is $\mathcal G = \{0,1\}^{p}$.
+	</p>
+	<p align="left">
+	  A <i>fitness landscape</i> is a function $f:\mathcal G \to \mathbb R^+$.
+	</p>
+	<p align="left">
+	  For $g \in \mathcal G$, &ensp;$f(g)$ is called the <i>fitness</i> of genotype $g$.
+	</p>
+</section>
+
+<section>
+	<h3>The epistasis model</h3>
+	$
+	  f(x_1,\, \ldots,\, x_p) = \beta_0 + \sum_{i} x_i \beta_i
+	  + \sum_{i \le j} x_i x_j \beta_{i,j}
+	$
+	<img data-src="images/fitness_shapes_2_loci_BPS_axis.png">
+	
+	Epistasis is the deviation from the additive expectation of allelic effects:
+	$$e = f(00) + f(11) - \Big(f(01) + f(10)\Big)$$
+
+	<aside class="notes">
+	  Mention shapes, higher-order interaction detection, TCS, etc.
+	</aside>
+</section>
+
+<section>
+	<img data-src="/assets/fitlands_outline.png" width=60%>
+
+	<aside class="notes">
+	  This is SotA pre AI in Bio revolution -- AF(1) came out in 2018.
+	</aside>
+</section>
+
+<section>
+	<h4>State of the art in 2018</h4>
+	<img data-src="/assets/GlinternetVSxyz.svg" width=80%></br>
+	<font size="3">
+	  <a href="https://doi.org/10.1371/journal.pone.0254491">
+		Kieran Elmes et al. Learning epistatic gene interactions from perturbation screens. 2021
+	  </a>
+	</font>
+
+	<aside class="notes">
+	  AF was published in 2018 (1), 2020 (2), 2024 (3).<br>
+	  Conclusion: Glinternet is in, xyz is out.
+	</aside>
+</section>
+
+<section>
+	<h4>Problem #1: The hierarchy assumptions</h4>
+	<img data-src="https://upload.wikimedia.org/wikipedia/commons/4/4f/Manhattan_plot_from_a_GWAS_of_kidney_stone_disease.png"><br>
+	<font size="3">
+	  <a href="https://doi.org/10.1038/s41467-019-13145-x">
+	  Sarah Howles et al. Genetic variants of calcium and vitamin D metabolism in kidney stone disease. 2019</a>
+	</font>
+</section>
+
+<section>
+	<h4>Problem #2: Scalability</h4>
+	<img data-src="/assets/glinternet_xyz_runtime.svg"><br>
+	<font size="3">
+	  <a href="https://doi.org/10.1371/journal.pone.0254491">
+		Kieran Elmes et al. Learning epistatic gene interactions from perturbation screens. 2021
+	  </a>
+	</font>
+</section>
+
+<section>
+	<font size="6">
+	  Hierarchy and scalability are largely solved (for now)
+	</font>
+	<img data-src="/assets/pint_summary.svg"><br>
+	<font size="3">
+	  <a href="https://doi.org/10.1371/journal.pcbi.1010730">
+		Kieran Elmes et al. A fast lasso-based method for inferring higher-order interactions. 2022
+	  </a>
+	</font>
+</section>
+
+<section>
+	<h3>Problem #3:</h3>
+	<h3>Model assumptions</h3>
+	$
+	  f(x_1,\, \ldots,\, x_p) = \beta_0 + \sum_{i} x_i \beta_i
+	  + \sum_{i \le j} x_i x_j \beta_{i,j}
+	$
+	$
+	  + \sum_{i \le j \le k} x_i x_j x_k \beta_{i,j,k}
+	  + \ldots
+	$<br>
+	<font size="3">
+	  <a href="https://doi.org/10.1371/journal.pcbi.1010730">
+		Kieran Elmes et al. A fast lasso-based method for inferring higher-order interactions. 2022
+	  </a>
+	</font>
+</section>
+
+<section>
+	<h4>Why don't you just use AI?</h4>
+	<img data-src="/assets/linformer_model_selection.png" width=60%><br>
+	What AI?
+
+	<aside class="notes">
+	  Transformer 2017, Linformer 2020
+	</aside>
+</section>
+
+<section>
+	<h3>SNVformer</h3>
+	<img data-src="/assets/snvformer_predictions.svg"><br>
+	<font size="3">
+	  <a href="https://icml-compbio.github.io/2022/papers/WCBICML2022_paper_58.pdf">
+		Kieran Elmes et al. SNVformer: an attention-based deep neural network for GWAS data. 2022
+	  </a>
+	</font>
+</section>
+
+<section>
+	<img data-src="/assets/gene_graph_snvformer_encoder.svg" width="110%">
+	<aside class="notes">
+	  Optionally, genes can be encoded accounting for interaction reported in the BioGRID database
+	</aside>
+</section>
+
+<section>
+	<h3>Validation through simulations</h3>
+	<ul>
+	  <li> Just simulating from the epistasis (or higher-order interaction) model doesn't work&mdash;a liner approximation is typically good enough
+	  <li> Can we simulate from a model for which a linear approximation fails?
+	  <li> Can this model be also relevant?
+	</ul>
+</section>
+
+<section>
+	<h4>"eQTL" simulations summary</h4>
+	$$
+	  g \iff \beta_0 + \beta_1 v_1 + \dots + \beta_k v_k > 0
+	$$
+	<img data-src="/assets/eqtl_simulation_diagram.svg">
+</section>
+
+<section>
+	<h4>"eQTL" simulations results</h4>
+	<img data-src="/assets/eqtl_simulation_no_noise_results.svg"><br>
+	<font size="3">
+	  Spot the AI one!
+	</font>
+</section>
+
+<section>
+	<h4>Transformer performance</h4>
+	<img data-src="/assets/eqtl_simulation_transformers_with_noise.svg">
+</section>
+
+<section>
+	<h4>Transformer's time complexity</h4>
+	<img data-src="/assets/eqtl_simulation_transformers_with_noise_time_complexity.svg">
+</section>
+
+<section>
+	<h4>Kolmogorov-Arnold Networks</h4>
+	<img data-src="/assets/kan_theorem.jpg">
+</section>
+
+<section>
+	<h4>Kolmogorov-Arnold Networks</h4>
+	<img data-src="/assets/kan_diagram.jpg">
+</section>
+
+<section>
+	<h4>KAN is better than the transformer? (unpublished work)</h4>
+	<img data-src="/assets/KAN_for_GWAS_no_noise_summary_Lilin.svg">
+	<p style="font-size:10pt" align="center">
+	Lilin Zhang, Kieran Collienne, and Alex Gavryushkin (2024).
+	</p>
+</section>
+
+<section>
+	<h4>Precision oncology</h4>
+	<img data-src="/assets/precision_oncology_by_vicka.svg">
+</section>
+
+<section>
+	<img class="stretch" data-src="images/multiregion_tumour_samples.png">
+	<p style="font-size:10pt" align="center">
+	Alves, Joao, Sonia Prado-Lopez, Jose Manuel Cameselle-Teijeiro, David Posada. "Rapid evolution and biogeographic spread in a colorectal cancer" <i>bioRxiv</i> (2019).
+	</p>
+</section>
+
+<section>
+	<h3>Timing tumour evolution</h3>
+	<img class="stretch" data-src="images/Sottoriva_tumour_time_tree.png">
+	<p style="font-size:10pt" align="center">
+	Lote, H., I. Spiteri, L. Ermini, A. Vatsiou, A. Roy, A. McDonald, N. Maka, et al. 2017. "Carbon Dating Cancer: Defining the Chronology of Metastatic Progression in Colorectal Cancer." <i>Annals of Oncology</i> 28 (6): 1243–49.
+	</p>
+</section>
+
+<section data-background-image="./images/what_is_cancer_evo_problem.svg">
+</section>
+
+<section>
+	<h4>Phylogenetic trees on tumor cells</h4>
+	<img data-src="./images/tumor_cell_tree.svg" width=80%>
+</section>
+
+<section data-background-image="./images/multiomic_cancer_evo.svg"
+	data-background-size=80%>
+</section>
+
+<section data-background-image="./images/spatial_phylo_on_all_cells.svg"
+	data-background-size=80%>
+</section>
+
+<section data-background-image="./images/pathologist_annotated_cells.svg"
+	data-background-size=80%>
+</section>
+
+<section data-background-image="./images/twenty_quality_cells.svg"
+	data-background-size=80%>
+</section>
+
+<section data-background-image="./images/cells_with_same_genotypes.svg"
+	data-background-size=80%>
+</section>
+
+<section data-background-image="./images/tree_on_all_quality_cells_expression.svg"
+	data-background-size=80%>
+</section>
+
+<section data-background-image="./images/tree_on_cells_with_same_genotype_expression.svg"
+	data-background-size=80%>
+</section>
+
+<section data-background-image="./images/tree_on_cells_with_same_genotype_snv.svg"
+	data-background-size=80%>
+</section>
+
+<section data-background-image="./images/tree_on_cells_with_same_genotype_expression_snv.svg"
+	data-background-size=80%>
+</section>
+
+<section>
+	<h3>The big challenge: scalable algorithms for reconstructing evolutionary histories from sequence data</h3>
+</section>
+
+<section>
+	<h3>NNI graph</h3>
+	<img class="stretch" data-src="images/NNI.pdf.png">
+</section>
+
+<section>
+	<h3>Theorem (phylogenetic classic)</h3>
+	Computing the NNI distance is NP-hard.
+</section>
+
+<section>
+	<h3>Discrete time-tree space</h3>
+	<img class="stretch" data-src="images/DtT_with_rank_move.pdf.png">
+</section>
+
+<section>
+	<h3>Theorem (Collienne, G)</h3>
+	There exists an efficient (polynomial) algorithm for computing the RNNI distance.<br>
+	<img data-src="/assets/lena_hatherton.jpg" width="60%">
+</section>
+
+<section>
+	<h4>Geodesic in time-tree space</h4>
+	<div style="font-size:10pt">
+	<ul>
+	  <li> Gavryushkin, Alex, and Alexei J. Drummond. "The space of ultrametric phylogenetic trees."
+	  <i>Journal of Theoretical Biology</i> 403 (2016): 197-208.
+	  <li> Gavryushkin, Alex, and Alexei Drummond. <i>tauGeodesic</i>. Mar. 2015. doi: 10.5281/zenodo.47152.
+	<a href="https://github.com/gavruskin/tauGeodesic">https://github.com/gavruskin/tauGeodesic</a>
+	</ul>
+	<img data-src="images/trees.gif" width="60%">
+	<div>
+</section>
+
+<section data-transition="fade-in slide-out" data-background-image="images/penguin_emperor_background.svg">
+	<div style="font-size:10pt">
+	<ul>
+	  <li> Gavryushkina, Alexandra, Tracy A. Heath, Daniel T. Ksepka, Tanja Stadler,
+	  David Welch, and Alexei J. Drummond.
+	  "Bayesian total-evidence dating reveals the recent crown radiation of penguins."
+	  <i>Systematic Biology</i> 66.1 (2016): 57-73.
+	  <li> Gavryushkin, Alex, and Alexei Drummond. <i>tauGeodesic</i>. Mar. 2015. doi: 10.5281/zenodo.47152.
+	<a href="https://github.com/gavruskin/tauGeodesic">https://github.com/gavruskin/tauGeodesic</a>
+	</ul>
+	<img data-src="images/trees_penguins.gif" width="60%">
+	<div>
+</section>
+
+<section>
+	<h4><a href="https://biods.org">bioDS lab @UCNZ</a></h4>
+	<img data-src="/assets/2023-02-17-bioDS_lab.jpg" width=75%>
+</section>
+
+<section>
+	<img data-src="/assets/thanks_rdf_marsden_mbie.svg">
+</section>
+
+</div>
+</div>
+
+
+<script src="../talks/revealjs/dist/reveal.js"></script>
+<script src="../talks/revealjs/plugin/markdown/markdown.js"></script>
+<script src="../talks/revealjs/plugin/highlight/highlight.js"></script>
+<script src="../talks/revealjs/plugin/notes/notes.js"></script>
+<script src="../talks/revealjs/plugin/math/math.js"></script>
+<script>
+	Reveal.initialize({
+		controls: true,
+		progress: true,
+		history: true,
+		center: true,
+		slideNumber: 'h.v',
+		plugins: [ RevealMarkdown, RevealHighlight, RevealNotes, RevealMath.MathJax2 ]
+			});
+</script>
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-86783531-1', 'auto');
+  ga('send', 'pageview');
+</script>
+</body>
+</html>
