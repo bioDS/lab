@@ -278,6 +278,112 @@
 </section>
 
 <section>
+	<h4>
+	Notation
+	</h4>
+	For a genotype $g$, $w_g$ denotes the fitness of $g$,<br>
+	for example, $w_{11}$ is the fitness of the double mutant.
+	<h3>
+	<p class="fragment" data-fragment-index="1">
+	Epistasis &nbsp; $u_{11}$
+	</p>
+	</h3>
+	<h4>
+	<p class="fragment" data-fragment-index="1">
+	Additive allelic effect &nbsp; $=$ &nbsp; no epistasis:
+	</p>
+	</h4>
+	<p class="fragment" data-fragment-index="1">
+	$$
+	w_{11} + w_{00} = w_{01} + w_{10}
+	$$
+	<br>
+	</p>
+	<h4>
+	<p class="fragment" data-fragment-index="2">
+	Deviation from the additive expectation of allelic effects:
+	<p>
+	</h4>
+	<p class="fragment" data-fragment-index="2">
+	$u_{11} = w_{00} + w_{11} - (w_{01} + w_{10})$
+	</p>
+</section>
+
+<section>
+	<h3>Understanding three-way interactions</h3>
+
+	<h4>
+	<p class="fragment" data-fragment-index="1">
+	Marginal epistasis?
+	</p>
+	</h4>
+	<p class="fragment" data-fragment-index="1">
+	$\small u_{\color{blue}{0}11} = w_{\color{blue}{0}00} + w_{\color{blue}{1}00} + w_{\color{blue}{0}11} + w_{\color{blue}{1}11} − (w_{\color{blue}{0}01} + w_{\color{blue}{1}01}) − (w_{\color{blue}{0}10} + w_{\color{blue}{1}10})$
+	</p>
+
+	<h4>
+	<p class="fragment" data-fragment-index="2">
+	Total three-way interaction?
+	</p>
+	</h4>
+	 <p class="fragment" data-fragment-index="2">
+	$\small u_{111} = w_{000} + w_{011} + w_{101} + w_{110} - (w_{001} + w_{010} + w_{100} + w_{111})$
+	</p>
+
+	<h4>
+	<p class="fragment" data-fragment-index="3">
+	Conditional epistasis?
+	<p>
+	</h4>
+	<p class="fragment" data-fragment-index="3">
+	$\small e = w_{\color{blue}{0}00} − w_{\color{blue}{0}01} − w_{\color{blue}{0}10} + w_{\color{blue}{0}11}$
+	</p>
+	<h4>
+	<p class="fragment" data-fragment-index="4">
+	Total mess!
+	</p>
+	</h4>
+</section>
+
+<section>
+	<h3>(Algebraic) Geometry sorts out the mess!</h3>
+	$e = u_{011} + u_{111}$
+	<p class="fragment" data-fragment-index="1">
+	In general, the four <i>interaction coordinates</i>
+	$$
+	u_{011}, u_{101}, u_{110}, u_{111}
+	$$
+	allow to describe <i>all</i> possible kinds of interaction!
+	</p>
+	<p class="fragment" data-fragment-index="2">
+	There are 20 types of interaction and they are known as <i>circuits</i> to Algebraic Geometry 111 students
+	</p>
+	<p class="fragment" data-fragment-index="3">
+	Yep, we've got the list!
+	</p>
+</section>
+
+<section data-transition="slide-in none-out">
+	$$
+	\scriptsize
+	\begin{align*}
+	a&= w_{000}-w_{010}-w_{100}+w_{110} & m&=w_{001}+w_{010}+w_{100}-w_{111}-2w_{000}\\
+	b&=w_{001}-w_{011}-w_{101}+w_{111} & n&=w_{011}+w_{101}+w_{110}-w_{000}-2w_{111}\\
+	c&=w_{000}-w_{001}-w_{100}+w_{101} & o&=w_{010}+w_{100}+w_{111}-w_{001}-2w_{110}\\
+	d&=w_{010}-w_{011}-w_{110}+w_{111} & p&=w_{000}+w_{011}+w_{101}-w_{110}-2w_{001}\\
+	e&=w_{000}-w_{001}-w_{010}+w_{011} & q&=w_{001}+w_{100}+ w_{111}-w_{010}-2w_{101}\\
+	f&=w_{100}-w_{101}-w_{110}+w_{111} & r&=w_{000}+w_{011}+ w_{110}-w_{101}-2w_{010}\\
+	g&=w_{000}-w_{011}-w_{100}+w_{111} & s&=w_{000}+w_{101}+ w_{110}-w_{011}-2w_{100}\\
+	h&=w_{001}-w_{010}-w_{101}+w_{110} & t&=w_{001}+w_{010}+w_{111}-w_{100}-2w_{011}\\
+	i&=w_{000}-w_{010}-w_{101}+w_{111}\\
+	j&=w_{001}-w_{011}-w_{100}+w_{110}\\
+	k&=w_{000}-w_{001}-w_{110}+w_{111}\\
+	l&=w_{010}-w_{011}-w_{100}+w_{101}\\
+	\end{align*}
+	$$
+</section>
+
+<section>
 	<h4>Precision oncology</h4>
 	<img data-src="/assets/precision_oncology_by_vicka.svg">
 </section>
