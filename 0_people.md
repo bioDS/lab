@@ -18,7 +18,6 @@ We are part of the [Biomathematics Research Centre](https://www.canterbury.ac.nz
 
 ### PhD students
 
-- [Lars Berling](https://github.com/Lars-B): Statistics in the time-tree space
 - [Kate Truman](/kate/): Identifiability of phylogenetic models, supervised by [Sasha Gavryushkina](https://www.linkedin.com/in/alexandra-sasha-gavryushkina-5a24a4228/)
 - [Lilin Zhang](): AI for GWAS, co-supervised by [Michael Witbrock](http://www.science.auckland.ac.nz/people/profile/m-witbrock) at the [University of Auckland](https://www.auckland.ac.nz/en/science/about-the-faculty/school-of-computer-science.html)
 - [Bruna Caveion](): Algorithms for precision oncology, supervised by [Sasha Gavryushkina](https://www.linkedin.com/in/alexandra-sasha-gavryushkina-5a24a4228/)
