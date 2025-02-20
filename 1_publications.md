@@ -11,15 +11,16 @@ title: Publications
   *bioRxiv* 2024<br>
   [<i class="ai ai-biorxiv-square ai-3x"></i>](https://doi.org/10.1101/2024.07.11.603166)
 
-- **Accurate Bayesian phylogenetic point estimation using a tree distribution parameterized by clade probabilities**<br>
-  Lars Berling, Jonathan Klawitter, Remco Bouckaert, Dong Xie, Alex Gavryushkin, and Alexei Drummond<br>
-  *bioRxiv* 2024<br>
-  [<i class="ai ai-biorxiv-square ai-3x"></i>](https://doi.org/10.1101/2024.02.20.581316)
-
 - **Online Bayesian analysis with BEAST 2**<br>
   Remco Bouckaert, Lena Collienne, and Alex Gavryushkin<br>
   *bioRxiv* 2022<br>
   [<i class="ai ai-biorxiv-square ai-3x"></i>](https://doi.org/10.1101/2022.05.03.490538)
+
+- **Accurate Bayesian phylogenetic point estimation using a tree distribution parameterized by clade probabilities**<br>
+  Lars Berling, Jonathan Klawitter, Remco Bouckaert, Dong Xie, Alex Gavryushkin, and Alexei Drummond<br>
+  *PLOS Computational Biology* 2025<br>
+  [<i class="ai ai-open-access-square ai-3x"></i>](https://doi.org/10.1371/journal.pcbi.1012789)
+  [<i class="ai ai-biorxiv-square ai-3x"></i>](https://doi.org/10.1101/2024.02.20.581316)
 
 - **The Fossilised Birth-Death Model is Identifiable**<br>
   Kate Truman, Timothy Vaughan, Alex Gavryushkin, and Sasha Gavryushkina<br>
