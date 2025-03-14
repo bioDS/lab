@@ -6,4 +6,4 @@ title: Sasha Gavryushkina
 
 ### Alexandra "Sasha" Gavryushkina
 
-I am a research fellow working on developing methods for analysis of single cell spatial data. 
+I am a Lecture at the University of Adelaide working across a range of topics in mathematical and computational biology
