@@ -14,14 +14,14 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 author: Alex Gavryushkin
-timezone: Pacific/Auckland
-title: Biological Data Science Lab @UCNZ
+timezone: Australia/Sydney
+title: Biological AI Lab
 email: alex@biods.org
 description: > # this means to ignore newlines until "baseurl:"
   We build algorithms that learn from biological data.
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "https://biods.org" # the base hostname & protocol for your site, e.g. http://example.com
-twitter_username: bioDS_lab
+url: "https://bioai.au" # the base hostname & protocol for your site, e.g. http://example.com
+twitter_username: alexfoldai
 github_username: bioDS
 
 # Build settings
