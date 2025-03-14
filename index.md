@@ -5,7 +5,7 @@ title: Biological AI Lab
 ---
 
 
-#### bioAI lab is located across UNSW Sydney (UNSW RNA Institute) and Macquarie University campuses.
+#### bioAI lab is an affiliate of [Fold AI](https://rnafold.ai) and located across the UNSW Sydney (the RNA Institute) and Macquarie University campuses in Sydney, New South Wales.
 
 
 ### Faculty
