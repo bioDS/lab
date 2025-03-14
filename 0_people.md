@@ -6,8 +6,7 @@ title: People
 ---
 
 
-#### bioDS lab is located across Levels 5 & 7 in [Jack Erskine building](https://goo.gl/maps/nmr6eneSwTB84hhr6).
-We are part of the [Biomathematics Research Centre](https://www.canterbury.ac.nz/engineering/schools/mathematics-statistics/our-research/bio/contact-us/) and the [School of Mathematics and Statistics](https://www.canterbury.ac.nz/engineering/schools/mathematics-statistics/) at [University of Canterbury](https://www.canterbury.ac.nz/) in beautiful [Christchurch](https://www.christchurchnz.com/)
+#### bioAI lab is located across UNSW Sydney (UNSW RNA Institute) and Macquarie University campuses.
 
 
 ### Faculty
