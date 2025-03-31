@@ -12,7 +12,6 @@ title: People
 ### Faculty
 
 - [Alex Gavryushkin](/alex/)
-- [Sasha Gavryushkina](https://www.linkedin.com/in/alexandra-sasha-gavryushkina-5a24a4228/)
 
 
 ### PhD students
@@ -24,7 +23,8 @@ title: People
 
 ### Alumni
 
-- [Lars Berling](https://github.com/Lars-B) (MSc, PhD; currently postdoc at at [Simon Fraser University](https://www.sfu.ca/) with [Caroline Colijn](https://www.sfu.ca/math/people/faculty/ccolijn/))
+- [Sasha Gavryushkina](https://www.linkedin.com/in/alexandra-sasha-gavryushkina-5a24a4228/) (research fellow; currently lecturer at the [Adelaide University](https://www.adelaide.edu.au/))
+- [Lars Berling](https://github.com/Lars-B) (MSc, PhD; currently postdoc at [Simon Fraser University](https://www.sfu.ca/) with [Caroline Colijn](https://www.sfu.ca/math/people/faculty/ccolijn/))
 - [Kieran Collienne](https://www.linkedin.com/in/kieran-collienne-62600887/) (MSc, PhD; currently postdoc at the [Fred Hutch Cancer Center](https://www.fredhutch.org/en.html) with [JT McCrone](https://mccronelab.github.io/))
 - [Lena Collienne](https://www.lenacoll.de/) (MSc, PhD, postdoc; currently postdoc at the [Fred Hutch Cancer Center](https://www.fredhutch.org/en.html) with [Erick Matsen](https://matsen.fhcrc.org/))
 - [Jiří Moravec](https://www.linkedin.com/in/ji%C5%99%C3%AD-moravec-2a104815b/) (postdoc; currently Senior R&D Data Scientist at [BioLumic](https://www.biolumic.com/))
