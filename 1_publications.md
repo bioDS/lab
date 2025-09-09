@@ -8,13 +8,9 @@ title: Publications
 
 - **Filtering for highly variable genes and high quality spots improves phylogenetic analysis of cancer spatial transcriptomics Visium data**<br>
   Sasha Gavryushkina, Holly Pinkney, Sarah Diermeier, and Alex Gavryushkin<br>
-  *bioRxiv* 2024<br>
+  *Journal of Computational Biology* 2025<br>
+  [<i class="ai ai-open-access-square ai-3x"></i>](https://doi.org/10.1089/cmb.2024.0614)
   [<i class="ai ai-biorxiv-square ai-3x"></i>](https://doi.org/10.1101/2024.07.11.603166)
-
-- **Online Bayesian analysis with BEAST 2**<br>
-  Remco Bouckaert, Lena Collienne, and Alex Gavryushkin<br>
-  *bioRxiv* 2022<br>
-  [<i class="ai ai-biorxiv-square ai-3x"></i>](https://doi.org/10.1101/2022.05.03.490538)
 
 - **Accurate Bayesian phylogenetic point estimation using a tree distribution parameterized by clade probabilities**<br>
   Lars Berling, Jonathan Klawitter, Remco Bouckaert, Dong Xie, Alex Gavryushkin, and Alexei Drummond<br>
@@ -51,6 +47,11 @@ title: Publications
   *Journal of Computational Biology* 2023<br>
   [<i class="ai ai-open-access-square ai-3x"></i>](http://doi.org/10.1089/cmb.2022.0357)
   [<i class="ai ai-biorxiv-square ai-3x"></i>](https://doi.org/10.1101/2021.01.07.425804)
+
+- **Online Bayesian analysis with BEAST 2**<br>
+  Remco Bouckaert, Lena Collienne, and Alex Gavryushkin<br>
+  *bioRxiv* 2022<br>
+  [<i class="ai ai-biorxiv-square ai-3x"></i>](https://doi.org/10.1101/2022.05.03.490538)
 
 - **A fast lasso-based method for inferring higher-order interactions**<br>
   Kieran Elmes, Astra Heywood, Zhiyi Huang, and Alex Gavryushkin<br>
