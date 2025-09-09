@@ -5,7 +5,7 @@ title: Biological AI Lab
 ---
 
 
-#### bioAI lab is an affiliate of [Fold AI](https://rnafold.ai) situated across two locations at the [RNA Institute](https://www.rna.unsw.edu.au/) of [UNSW Sydney](https://www.unsw.edu.au/) and the [Centre for Data Science and Artificial Intelligence](https://www.wgtn.ac.nz/cdsai) of [Victoria University of Wellington](https://www.wgtn.ac.nz/).
+#### bioAI lab, an affiliate of [Fold AI](https://rnafold.ai), is a world-class global laboratory developing AI automation for biotechnology, situated across two physical locations at the [RNA Institute](https://www.rna.unsw.edu.au/) of [UNSW Sydney](https://www.unsw.edu.au/) and the [Centre for Data Science and Artificial Intelligence](https://www.wgtn.ac.nz/cdsai) of [Victoria University of Wellington](https://www.wgtn.ac.nz/).
 
 
 ### Faculty
