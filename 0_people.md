@@ -6,7 +6,7 @@ title: People
 ---
 
 
-#### bioAI lab is an affiliate of [Fold AI](https://rnafold.ai) and located across the [UNSW Sydney](https://www.unsw.edu.au/) (the [RNA Institute](https://www.rna.unsw.edu.au/)) and [Macquarie University](https://www.mq.edu.au/) campuses in Sydney, New South Wales.
+#### bioAI lab is an affiliate of [Fold AI](https://rnafold.ai) situated across two locations at the [RNA Institute](https://www.rna.unsw.edu.au/) of [UNSW Sydney](https://www.unsw.edu.au/) and the [Centre for Data Science and Artificial Intelligence](https://www.wgtn.ac.nz/cdsai) of [Victoria University of Wellington](https://www.wgtn.ac.nz/).
 
 
 ### Faculty
