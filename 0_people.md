@@ -11,7 +11,7 @@ title: People
 
 ### Faculty
 
-- [Alex Gavryushkin](/alex/)
+- [Alex Gavryushkin](https://www.linkedin.com/in/alex-gavryushkin/)
 
 
 ### PhD students
