@@ -17,7 +17,7 @@ title: People
 ### PhD students
 
 - [Zhiheng Zhou](https://www.linkedin.com/in/zhiheng-zhou-a51432208/): AI for RNA interactions, supervised by [Eduardo Eyras](https://www.linkedin.com/in/eduardo-eyras-3732604/) at the [Shine-Dalgarno Centre for RNA Innovation](https://jcsmr.anu.edu.au/research/centres/sdcri), [Australian National University](https://www.anu.edu.au/)
-- [Kate Truman](/kate/): Identifiability of phylogenetic models, supervised by [Sasha Gavryushkina](https://www.linkedin.com/in/alexandra-sasha-gavryushkina-5a24a4228/) at [Adelaide University](https://adelaide.edu.au/)
+- [Kate Truman](https://www.linkedin.com/in/kate-e-truman/): Identifiability of phylogenetic models, supervised by [Sasha Gavryushkina](https://www.linkedin.com/in/alexandra-sasha-gavryushkina-5a24a4228/) at [Adelaide University](https://adelaide.edu.au/)
 - [Lilin Zhang](https://www.linkedin.com/in/lilin-zhang-986710307/): AI for GWAS, co-supervised by [Michael Witbrock](http://www.science.auckland.ac.nz/people/profile/m-witbrock) at the [School of Computer Science](https://www.auckland.ac.nz/en/science/about-the-faculty/school-of-computer-science.html), [University of Auckland](https://www.auckland.ac.nz)
 
 
