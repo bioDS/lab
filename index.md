@@ -5,7 +5,7 @@ title: Biological AI Lab
 ---
 
 
-#### bioAI lab, an affiliate of [Fold AI](https://rnafold.ai), is a world-class global laboratory developing AI automation for biotechnology, situated across three physical locations at the [RNA Institute](https://www.rna.unsw.edu.au/) of [UNSW Sydney](https://www.unsw.edu.au/), the [Centre for Data Science and Artificial Intelligence](https://www.wgtn.ac.nz/cdsai) of [Victoria University of Wellington](https://www.wgtn.ac.nz/), and the [Shine-Dalgarno Centre for RNA Innovation](https://jcsmr.anu.edu.au/research/centres/sdcri) at [Australian National University](https://www.anu.edu.au/).
+#### bioAI lab is a global laboratory pioneering AI automation across mathematics, biology, chemistry, and medicine. With a core focus on accelerating drug discovery and precision oncology, we operate across three world-class nodes: [Faculty of Science](https://www.sydney.edu.au/science/) at the [University of Sydney](https://www.sydney.edu.au/), the [Centre for Data Science and Artificial Intelligence](https://www.wgtn.ac.nz/cdsai) at [Victoria University of Wellington](https://www.wgtn.ac.nz/), and the [Shine-Dalgarno Centre for RNA Innovation](https://jcsmr.anu.edu.au/research/centres/sdcri) at [Australian National University](https://www.anu.edu.au/).
 
 
 ### Faculty
@@ -15,6 +15,8 @@ title: Biological AI Lab
 
 ### PhD students
 
+
+- [Ha Hoang](): AI driven design of ionisable lipids for mRNA delivery, supervised by [Binh Nguyen](https://www.linkedin.com/in/phubinh/) at the [Centre for Data Science and Artificial Intelligence](https://www.wgtn.ac.nz/cdsai) at [Victoria University of Wellington](https://www.wgtn.ac.nz/) and [Gavin Painter](https://www.malaghan.org.nz/our-people/science-leadership/professor-gavin-painter) at [Malaghan Institute of Medical Research](https://www.malaghan.org.nz/)
 - [Zhiheng Zhou](https://www.linkedin.com/in/zhiheng-zhou-a51432208/): AI for RNA interactions, supervised by [Eduardo Eyras](https://www.linkedin.com/in/eduardo-eyras-3732604/) at the [Shine-Dalgarno Centre for RNA Innovation](https://jcsmr.anu.edu.au/research/centres/sdcri), [Australian National University](https://www.anu.edu.au/)
 - [Kate Truman](https://www.linkedin.com/in/kate-e-truman/): Identifiability of phylogenetic models, supervised by [Sasha Gavryushkina](https://www.linkedin.com/in/alexandra-sasha-gavryushkina-5a24a4228/) at [Adelaide University](https://adelaide.edu.au/)
 - [Lilin Zhang](https://www.linkedin.com/in/lilin-zhang-986710307/): AI for GWAS, co-supervised by [Michael Witbrock](http://www.science.auckland.ac.nz/people/profile/m-witbrock) at the [School of Computer Science](https://www.auckland.ac.nz/en/science/about-the-faculty/school-of-computer-science.html), [University of Auckland](https://www.auckland.ac.nz)
