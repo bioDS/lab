@@ -5,7 +5,7 @@ title: Biological AI Lab
 ---
 
 
-#### bioAI lab is a global laboratory pioneering AI automation across mathematics, biology, chemistry, and medicine. With a core focus on accelerating drug discovery and precision oncology, we operate across three world-class nodes: [Faculty of Science](https://www.sydney.edu.au/science/) at the [University of Sydney](https://www.sydney.edu.au/), the [Centre for Data Science and Artificial Intelligence](https://www.wgtn.ac.nz/cdsai) at [Victoria University of Wellington](https://www.wgtn.ac.nz/), and the [Shine-Dalgarno Centre for RNA Innovation](https://jcsmr.anu.edu.au/research/centres/sdcri) at [Australian National University](https://www.anu.edu.au/).
+#### bioAI lab is a global laboratory pioneering AI automation across mathematics, biology, chemistry, and medicine. With a core focus on accelerating drug discovery and precision oncology, we operate across three world-class nodes: [Faculty of Science](https://www.sydney.edu.au/science/) at the [University of Sydney](https://www.sydney.edu.au/) in NSW, the [Centre for Data Science and Artificial Intelligence](https://www.wgtn.ac.nz/cdsai) at [Victoria University of Wellington](https://www.wgtn.ac.nz/) in NZ, and the [Shine-Dalgarno Centre for RNA Innovation](https://jcsmr.anu.edu.au/research/centres/sdcri) at [Australian National University](https://www.anu.edu.au/) in ACT.
 
 
 ### Faculty
